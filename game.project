@@ -1,5 +1,5 @@
 [project]
-title = eulerui
+title = 欧拉
 version = 1.0
 
 [bootstrap]
@@ -7,6 +7,8 @@ main_collection = /main/main.collectionc
 
 [input]
 game_binding = /input/game.input_bindingc
+repeat_delay = 0.2
+repeat_interval = 0.1
 
 [display]
 width = 1280

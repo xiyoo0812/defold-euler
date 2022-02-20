@@ -18,7 +18,6 @@ euler.colors = {
 euler.utf8_gfind = "([%z\1-\127\194-\244][\128-\191]*)"
 euler.slider_fmt = "%.3f"
 
-
 function euler.is_enabled(self, node)
     local parent = gui.get_parent(node)
     if parent then
@@ -28,11 +27,11 @@ function euler.is_enabled(self, node)
 end
 
 local function safe_get_node(node)
-	if pcall(function() gui.get_node(node) end) then
-		return gui.get_node(node)
-	else
-		return nil
-	end
+    if pcall(function() gui.get_node(node) end) then
+        return gui.get_node(node)
+    else
+        return nil
+    end
 end
 
 local function hit_test(self, node, action_id, action)
@@ -54,9 +53,7 @@ function euler.hit(self, node, action_id, action, cb)
     return hit
 end
 
-
 function euler.button(self, node, action_id, action, cb)
-
     local node_bg = gui.get_node(node .. "/button")
     local node_label = gui.get_node(node .. "/label")
 
@@ -71,47 +68,36 @@ function euler.button(self, node, action_id, action, cb)
             flipbook = "button_pressed"
         end
     end
-
     gui.play_flipbook(node_bg, flipbook)
     gui.set_position(node_label, label_p)
-
 end
 
-
 function euler.checkbox(self, node, action_id, action, value)
-
     local checked = value
-
     local node_bg = gui.get_node(node .. "/checkbox")
     local node_label = gui.get_node(node .. "/label")
-
     local hit = hit_test(self, node_bg, action_id, action) or hit_test(self, node_label, action_id, action)
     if hit and action.released then
         checked = not checked
     end
-
     local flipbook = "checkbox_" .. (checked and "checked_" or "") .. (hit and not action.released and "pressed" or "normal")
     gui.play_flipbook(node_bg, flipbook)
     return checked
 end
 
 function euler.radio(self, node, action_id, action, id, value)
-
     local node_bg = gui.get_node(node .. "/radio")
     local node_label = gui.get_node(node .. "/label")
-
     local hit = hit_test(self, node_bg, action_id, action) or hit_test(self, node_label, action_id, action)
     if hit and action.released then
         value = id
     end
-
     local flipbook = "radio_" .. (value == id and "checked_" or "") .. (hit and not action.released and "pressed" or "normal")
     gui.play_flipbook(node_bg, flipbook)
     return value
 end
 
 function euler.input(self, node, action_id, action, type, empty_text)
-
     local node_bg = gui.get_node(node .. "/bg")
     local node_inner = gui.get_node(node .. "/inner")
     local node_content = gui.get_node(node .. "/content")
@@ -240,84 +226,84 @@ function euler.scrollarea(self, node_str, action_id, action, scroll, cb)
     
     local scroll = scroll
     if not scroll then
-    	-- assume initial call
-    	local p = gui.get_position(node)
-    	local s = gui.get_size(node)
-    	scroll = {drag=false,started=false,dx=0,dy=0,ox=p.x,oy=p.y,ow=s.x,oh=s.y}
-    	
-    	scroll.bar_x = safe_get_node(node_str .. "_barx")
-    	scroll.bar_y = safe_get_node(node_str .. "_bary")
+        -- assume initial call
+        local p = gui.get_position(node)
+        local s = gui.get_size(node)
+        scroll = {drag=false,started=false,dx=0,dy=0,ox=p.x,oy=p.y,ow=s.x,oh=s.y}
+        
+        scroll.bar_x = safe_get_node(node_str .. "_barx")
+        scroll.bar_y = safe_get_node(node_str .. "_bary")
     end
     
     local hit = false
-	if parent then
-		hit = hit_test(self, parent, action_id, action)
-	else
-		hit = hit_test(self, node, action_id, action)
-	end
+    if parent then
+        hit = hit_test(self, parent, action_id, action)
+    else
+        hit = hit_test(self, node, action_id, action)
+    end
     
     local consumed_input = false
-	if touch then
-	    
-	    -- end scroll/drag
-    	if scroll.drag and action.released then
-    		scroll.drag = false
-    		scroll.started = false
-    		consumed_input = true
-    		
-    	-- potentially start scroll/drag
-    	elseif hit and action.pressed then
-    		scroll.started = true
-    		
-    	-- start scroll/drag
-    	elseif scroll.started and hit and (action.dx ~= 0 or action.dy ~= 0) then
-    		scroll.drag = true
-    		scroll.started = false
-    		consumed_input = true
-    	end
-    	
-    	if scroll.drag then
-	    	consumed_input = true
-	
-    		scroll.dx = scroll.dx - action.dx
-    		scroll.dy = scroll.dy + action.dy
-    		
-    		if parent then
-    			local s = gui.get_size(parent)
-	    		local min_x = 0
-	    		local min_y = 0
-    			local max_x = math.max(0, scroll.ow - s.x)
-    			local max_y = math.max(0, scroll.oh - s.y)
-    			
-    			if scroll.dx < min_x then scroll.dx = min_x end	
-	    		if scroll.dx > max_x then scroll.dx = max_x end
-	    		if scroll.dy < min_y then scroll.dy = min_y end
-	    		if scroll.dy > max_y then scroll.dy = max_y end
-	    		
-	    		if scroll.bar_x and max_x > 0 then
-	    			local delta_x = scroll.dx / max_x
-	    			local bar_s = gui.get_size(scroll.bar_x)
-	    			local p = vmath.vector3((s.x-bar_s.x) * delta_x, -s.y, 0)
-	    			gui.set_position(scroll.bar_x, p)
-	    		end
-	    		if scroll.bar_y and max_y > 0 then
-	    			local delta_y = scroll.dy / max_y
-	    			local bar_s = gui.get_size(scroll.bar_y)
-	    			local p = vmath.vector3(s.x, -(s.y-bar_s.y) * delta_y, 0)
-	    			gui.set_position(scroll.bar_y, p)
-	    		end
-    		end
-    		
-    		gui.set_position(node, vmath.vector3(scroll.ox-scroll.dx, scroll.oy+scroll.dy, 0))
-	    	
-    	end
+    if touch then
+        
+        -- end scroll/drag
+        if scroll.drag and action.released then
+            scroll.drag = false
+            scroll.started = false
+            consumed_input = true
+            
+        -- potentially start scroll/drag
+        elseif hit and action.pressed then
+            scroll.started = true
+            
+        -- start scroll/drag
+        elseif scroll.started and hit and (action.dx ~= 0 or action.dy ~= 0) then
+            scroll.drag = true
+            scroll.started = false
+            consumed_input = true
+        end
+        
+        if scroll.drag then
+            consumed_input = true
+    
+            scroll.dx = scroll.dx - action.dx
+            scroll.dy = scroll.dy + action.dy
+            
+            if parent then
+                local s = gui.get_size(parent)
+                local min_x = 0
+                local min_y = 0
+                local max_x = math.max(0, scroll.ow - s.x)
+                local max_y = math.max(0, scroll.oh - s.y)
+                
+                if scroll.dx < min_x then scroll.dx = min_x end	
+                if scroll.dx > max_x then scroll.dx = max_x end
+                if scroll.dy < min_y then scroll.dy = min_y end
+                if scroll.dy > max_y then scroll.dy = max_y end
+                
+                if scroll.bar_x and max_x > 0 then
+                    local delta_x = scroll.dx / max_x
+                    local bar_s = gui.get_size(scroll.bar_x)
+                    local p = vmath.vector3((s.x-bar_s.x) * delta_x, -s.y, 0)
+                    gui.set_position(scroll.bar_x, p)
+                end
+                if scroll.bar_y and max_y > 0 then
+                    local delta_y = scroll.dy / max_y
+                    local bar_s = gui.get_size(scroll.bar_y)
+                    local p = vmath.vector3(s.x, -(s.y-bar_s.y) * delta_y, 0)
+                    gui.set_position(scroll.bar_y, p)
+                end
+            end
+            
+            gui.set_position(node, vmath.vector3(scroll.ox-scroll.dx, scroll.oy+scroll.dy, 0))
+            
+        end
     end
-	    
-	if not consumed_input and ((touch and hit) or not touch) then
-    	cb(self, action_id, action)
+        
+    if not consumed_input and ((touch and hit) or not touch) then
+        cb(self, action_id, action)
     end
 
-	return scroll
+    return scroll
 end
 
 local function clamp(v, min, max)
@@ -339,7 +325,7 @@ function euler.slider(self, node_str, action_id, action, min_value, max_value, v
 
     if action.released and action_id == euler.action_id_touch and euler.active_node == node_sa then
         euler.active_node = nil
-    elseif hit and action.pressed and euler.active_node == nil then
+    elseif hit and action.pressed then
         euler.active_node = node_sa
     end
 
@@ -377,7 +363,6 @@ function euler.slider(self, node_str, action_id, action, min_value, max_value, v
     --local flipbook = "radio_" .. (sliding and "checked_" or "") .. (hit and not action.released and "pressed" or "normal")
     local flipbook = "radio_checked_" .. (hit and not action.released and "pressed" or "normal")
     gui.play_flipbook(node_cursor, flipbook)
-
     return slider_value
 end
 
