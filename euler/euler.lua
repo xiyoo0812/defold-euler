@@ -1,5 +1,10 @@
 local euler = {}
 
+require("luaoop.enum")
+require("luaoop.class")
+require("luaoop.mixin")
+require("luaoop.property")
+
 euler.action_id_touch       = hash("touch")
 euler.action_id_text        = hash("text")
 euler.action_id_marked_text = hash("marked_text")
