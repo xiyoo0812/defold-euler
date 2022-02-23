@@ -1,11 +1,11 @@
 script: ""
 fonts {
   name: "eulerfont"
-  font: "/euler/eulerfont.font"
+  font: "/widget/eulerfont.font"
 }
 textures {
   name: "button"
-  texture: "/euler/euler.atlas"
+  texture: "/widget/euler.atlas"
 }
 background_color {
   x: 0.0

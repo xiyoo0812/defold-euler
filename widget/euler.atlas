@@ -1,41 +1,41 @@
 images {
-  image: "/euler/atles/button_normal.png"
+  image: "/widget/atles/button_normal.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
-  image: "/euler/atles/button_pressed.png"
+  image: "/widget/atles/button_pressed.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
-  image: "/euler/atles/checkbox_checked_normal.png"
+  image: "/widget/atles/checkbox_checked_normal.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
-  image: "/euler/atles/checkbox_checked_pressed.png"
+  image: "/widget/atles/checkbox_checked_pressed.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
-  image: "/euler/atles/checkbox_normal.png"
+  image: "/widget/atles/checkbox_normal.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
-  image: "/euler/atles/checkbox_pressed.png"
+  image: "/widget/atles/checkbox_pressed.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
-  image: "/euler/atles/radio_checked_normal.png"
+  image: "/widget/atles/radio_checked_normal.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
-  image: "/euler/atles/radio_checked_pressed.png"
+  image: "/widget/atles/radio_checked_pressed.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
-  image: "/euler/atles/radio_normal.png"
+  image: "/widget/atles/radio_normal.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
-  image: "/euler/atles/radio_pressed.png"
+  image: "/widget/atles/radio_pressed.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 margin: 0

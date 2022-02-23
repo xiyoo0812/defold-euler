@@ -10,6 +10,10 @@ local WRITER    = 1
 local READER    = 2
 local ACCESSOR  = 3
 
+local pack = function(...)
+	return {n = select('#',...), ...}
+end
+
 local function unequal(a, b)
 	if type(a) ~= "table" then
 		return a ~= b
@@ -30,7 +34,7 @@ local function on_prop_changed(object, name, value)
 end
 
 local function prop_accessor(class, name, default, mode, watch)
-	class.__props[name] = tpack(default, mode, watch)
+	class.__props[name] = pack(default, mode, watch)
 	if bit.band(mode, READER) == READER then
 		class["get_" .. name] = function(self)
 			return self[name]

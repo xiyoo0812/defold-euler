@@ -1,11 +1,11 @@
 script: ""
 fonts {
   name: "eulerfont"
-  font: "/euler/eulerfont.font"
+  font: "/widget/eulerfont.font"
 }
 textures {
-  name: "button"
-  texture: "/euler/euler.atlas"
+  name: "checkbox"
+  texture: "/widget/euler.atlas"
 }
 background_color {
   x: 0.0
@@ -33,8 +33,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 300.0
-    y: 88.0
+    x: 64.0
+    y: 68.0
     z: 0.0
     w: 1.0
   }
@@ -46,8 +46,8 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/button_normal"
-  id: "button"
+  texture: "checkbox/checkbox_normal"
+  id: "checkbox"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_CENTER
@@ -55,10 +55,10 @@ nodes {
   layer: ""
   inherit_alpha: true
   slice9 {
-    x: 32.0
-    y: 32.0
-    z: 32.0
-    w: 32.0
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 0.0
   }
   clipping_mode: CLIPPING_MODE_NONE
   clipping_visible: true
@@ -87,8 +87,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 200.0
-    y: 100.0
+    x: 64.0
+    y: 68.0
     z: 0.0
     w: 1.0
   }
@@ -98,37 +98,29 @@ nodes {
     z: 1.0
     w: 1.0
   }
-  type: TYPE_TEXT
+  type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  text: "Euler UI"
-  font: "eulerfont"
-  id: "label"
+  texture: "checkbox/checkbox_checked_normal"
+  id: "selected"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_CENTER
-  outline {
+  adjust_mode: ADJUST_MODE_FIT
+  parent: "checkbox"
+  layer: ""
+  inherit_alpha: true
+  slice9 {
     x: 0.0
     y: 0.0
     z: 0.0
-    w: 1.0
+    w: 0.0
   }
-  shadow {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  adjust_mode: ADJUST_MODE_FIT
-  line_break: false
-  parent: "button"
-  layer: ""
-  inherit_alpha: true
+  clipping_mode: CLIPPING_MODE_NONE
+  clipping_visible: true
+  clipping_inverted: false
   alpha: 1.0
-  outline_alpha: 1.0
-  shadow_alpha: 1.0
   template_node_child: false
-  text_leading: 1.0
-  text_tracking: 0.0
+  size_mode: SIZE_MODE_MANUAL
 }
 material: "/builtins/materials/gui.material"
 adjust_reference: ADJUST_REFERENCE_PARENT

@@ -5,7 +5,12 @@ require("luaoop.class")
 require("luaoop.mixin")
 require("luaoop.property")
 
-euler.action_id_touch       = hash("touch")
+--euler utils
+require("euler.const")
+
+local Button = require("euler.button")
+
+euler.action_id_touch       = hash("lbutton")
 euler.action_id_text        = hash("text")
 euler.action_id_marked_text = hash("marked_text")
 euler.action_id_backspace   = hash("backspace")
@@ -166,11 +171,13 @@ function euler.input(self, node, action_id, action, type, empty_text)
 
         -- new raw text input
         if (action_id == euler.action_id_text) then
+            print("text input: ", action.text)
             euler.active_node.data = euler.active_node.data .. action.text
             euler.active_input_marked = ""
 
         -- new marked text input (uncommitted text)
         elseif (action_id == euler.action_id_marked_text) then
+            print("marked text input: ", action.text)
             euler.active_input_marked = action.text
 
         -- input deletion
@@ -369,6 +376,10 @@ function euler.slider(self, node_str, action_id, action, min_value, max_value, v
     local flipbook = "radio_checked_" .. (hit and not action.released and "pressed" or "normal")
     gui.play_flipbook(node_cursor, flipbook)
     return slider_value
+end
+
+function euler.init_button(id, pressed_img, hovered_img, disabled_img)
+    return Button(id, pressed_img, hovered_img, disabled_img)
 end
 
 return euler

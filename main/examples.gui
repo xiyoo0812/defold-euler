@@ -1,11 +1,11 @@
 script: "/main/examples.gui_script"
 fonts {
   name: "eulerfont"
-  font: "/euler/eulerfont.font"
+  font: "/widget/eulerfont.font"
 }
 textures {
   name: "euler"
-  texture: "/euler/euler.atlas"
+  texture: "/widget/euler.atlas"
 }
 textures {
   name: "examples"
@@ -53,7 +53,7 @@ nodes {
   layer: ""
   inherit_alpha: true
   alpha: 1.0
-  template: "/euler/button.gui"
+  template: "/widget/button.gui"
   template_node_child: false
 }
 nodes {
@@ -211,7 +211,7 @@ nodes {
   layer: ""
   inherit_alpha: true
   alpha: 1.0
-  template: "/euler/button.gui"
+  template: "/widget/button.gui"
   template_node_child: false
 }
 nodes {
@@ -423,7 +423,7 @@ nodes {
   layer: ""
   inherit_alpha: true
   alpha: 1.0
-  template: "/euler/input.gui"
+  template: "/widget/input.gui"
   template_node_child: false
 }
 nodes {
@@ -693,7 +693,7 @@ nodes {
   layer: ""
   inherit_alpha: true
   alpha: 1.0
-  template: "/euler/input.gui"
+  template: "/widget/input.gui"
   template_node_child: false
 }
 nodes {
@@ -963,7 +963,7 @@ nodes {
   layer: ""
   inherit_alpha: true
   alpha: 1.0
-  template: "/euler/input.gui"
+  template: "/widget/input.gui"
   template_node_child: false
 }
 nodes {
@@ -1233,7 +1233,7 @@ nodes {
   layer: ""
   inherit_alpha: true
   alpha: 1.0
-  template: "/euler/input.gui"
+  template: "/widget/input.gui"
   template_node_child: false
 }
 nodes {
@@ -1501,7 +1501,7 @@ nodes {
   layer: ""
   inherit_alpha: true
   alpha: 1.0
-  template: "/euler/button.gui"
+  template: "/widget/button.gui"
   template_node_child: false
 }
 nodes {
@@ -1661,7 +1661,7 @@ nodes {
   layer: ""
   inherit_alpha: true
   alpha: 1.0
-  template: "/euler/checkbox_label.gui"
+  template: "/widget/checkbox_label.gui"
   template_node_child: false
 }
 nodes {
@@ -1721,6 +1721,61 @@ nodes {
 }
 nodes {
   position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  size {
+    x: 64.0
+    y: 68.0
+    z: 0.0
+    w: 1.0
+  }
+  color {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  type: TYPE_BOX
+  blend_mode: BLEND_MODE_ALPHA
+  texture: "checkbox/checkbox_checked_normal"
+  id: "checkbox_a/selected"
+  xanchor: XANCHOR_NONE
+  yanchor: YANCHOR_NONE
+  pivot: PIVOT_CENTER
+  adjust_mode: ADJUST_MODE_FIT
+  parent: "checkbox_a/checkbox"
+  layer: ""
+  inherit_alpha: true
+  slice9 {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 0.0
+  }
+  clipping_mode: CLIPPING_MODE_NONE
+  clipping_visible: true
+  clipping_inverted: false
+  alpha: 1.0
+  template_node_child: true
+  size_mode: SIZE_MODE_MANUAL
+}
+nodes {
+  position {
     x: 46.0
     y: 3.0
     z: 0.0
@@ -1739,7 +1794,7 @@ nodes {
     w: 1.0
   }
   size {
-    x: 100.0
+    x: 200.0
     y: 50.0
     z: 0.0
     w: 1.0
@@ -1772,13 +1827,12 @@ nodes {
   }
   adjust_mode: ADJUST_MODE_FIT
   line_break: false
-  parent: "checkbox_a"
+  parent: "checkbox_a/checkbox"
   layer: ""
   inherit_alpha: true
   alpha: 1.0
   outline_alpha: 1.0
   shadow_alpha: 1.0
-  overridden_fields: 4
   template_node_child: true
   text_leading: 1.0
   text_tracking: 0.0
@@ -1820,7 +1874,7 @@ nodes {
   layer: ""
   inherit_alpha: true
   alpha: 1.0
-  template: "/euler/radio_label.gui"
+  template: "/widget/radio_label.gui"
   template_node_child: false
 }
 nodes {
@@ -1979,7 +2033,7 @@ nodes {
   layer: ""
   inherit_alpha: true
   alpha: 1.0
-  template: "/euler/radio_label.gui"
+  template: "/widget/radio_label.gui"
   template_node_child: false
 }
 nodes {
@@ -2138,7 +2192,7 @@ nodes {
   layer: ""
   inherit_alpha: true
   alpha: 1.0
-  template: "/euler/radio_label.gui"
+  template: "/widget/radio_label.gui"
   template_node_child: false
 }
 nodes {
@@ -2297,7 +2351,7 @@ nodes {
   layer: ""
   inherit_alpha: true
   alpha: 1.0
-  template: "/euler/checkbox_label.gui"
+  template: "/widget/checkbox_label.gui"
   template_node_child: false
 }
 nodes {
@@ -2357,6 +2411,61 @@ nodes {
 }
 nodes {
   position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  size {
+    x: 64.0
+    y: 68.0
+    z: 0.0
+    w: 1.0
+  }
+  color {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  type: TYPE_BOX
+  blend_mode: BLEND_MODE_ALPHA
+  texture: "checkbox/checkbox_checked_normal"
+  id: "checkbox_b/selected"
+  xanchor: XANCHOR_NONE
+  yanchor: YANCHOR_NONE
+  pivot: PIVOT_CENTER
+  adjust_mode: ADJUST_MODE_FIT
+  parent: "checkbox_b/checkbox"
+  layer: ""
+  inherit_alpha: true
+  slice9 {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 0.0
+  }
+  clipping_mode: CLIPPING_MODE_NONE
+  clipping_visible: true
+  clipping_inverted: false
+  alpha: 1.0
+  template_node_child: true
+  size_mode: SIZE_MODE_MANUAL
+}
+nodes {
+  position {
     x: 46.0
     y: 3.0
     z: 0.0
@@ -2375,7 +2484,7 @@ nodes {
     w: 1.0
   }
   size {
-    x: 300.0
+    x: 200.0
     y: 50.0
     z: 0.0
     w: 1.0
@@ -2388,7 +2497,7 @@ nodes {
   }
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
-  text: "Another checkbox"
+  text: "Label"
   font: "eulerfont"
   id: "checkbox_b/label"
   xanchor: XANCHOR_NONE
@@ -2408,14 +2517,12 @@ nodes {
   }
   adjust_mode: ADJUST_MODE_FIT
   line_break: false
-  parent: "checkbox_b"
+  parent: "checkbox_b/checkbox"
   layer: ""
   inherit_alpha: true
   alpha: 1.0
   outline_alpha: 1.0
   shadow_alpha: 1.0
-  overridden_fields: 4
-  overridden_fields: 8
   template_node_child: true
   text_leading: 1.0
   text_tracking: 0.0
@@ -2457,7 +2564,7 @@ nodes {
   layer: ""
   inherit_alpha: true
   alpha: 1.0
-  template: "/euler/input.gui"
+  template: "/widget/input.gui"
   template_node_child: false
 }
 nodes {
@@ -2728,7 +2835,7 @@ nodes {
   layer: ""
   inherit_alpha: true
   alpha: 1.0
-  template: "/euler/slider.gui"
+  template: "/widget/slider.gui"
   template_node_child: false
 }
 nodes {
@@ -3277,7 +3384,7 @@ nodes {
   layer: ""
   inherit_alpha: false
   alpha: 1.0
-  template: "/euler/button.gui"
+  template: "/widget/button.gui"
   template_node_child: false
 }
 nodes {
@@ -3435,7 +3542,7 @@ nodes {
   layer: ""
   inherit_alpha: false
   alpha: 1.0
-  template: "/euler/button.gui"
+  template: "/widget/button.gui"
   template_node_child: false
 }
 nodes {
@@ -3593,7 +3700,7 @@ nodes {
   layer: ""
   inherit_alpha: false
   alpha: 1.0
-  template: "/euler/button.gui"
+  template: "/widget/button.gui"
   template_node_child: false
 }
 nodes {
@@ -3751,7 +3858,7 @@ nodes {
   layer: ""
   inherit_alpha: false
   alpha: 1.0
-  template: "/euler/button.gui"
+  template: "/widget/button.gui"
   template_node_child: false
 }
 nodes {
@@ -3909,7 +4016,7 @@ nodes {
   layer: ""
   inherit_alpha: false
   alpha: 1.0
-  template: "/euler/button.gui"
+  template: "/widget/button.gui"
   template_node_child: false
 }
 nodes {
@@ -4067,7 +4174,7 @@ nodes {
   layer: ""
   inherit_alpha: false
   alpha: 1.0
-  template: "/euler/button.gui"
+  template: "/widget/button.gui"
   template_node_child: false
 }
 nodes {
@@ -4225,7 +4332,7 @@ nodes {
   layer: ""
   inherit_alpha: false
   alpha: 1.0
-  template: "/euler/button.gui"
+  template: "/widget/button.gui"
   template_node_child: false
 }
 nodes {
@@ -4383,7 +4490,7 @@ nodes {
   layer: ""
   inherit_alpha: false
   alpha: 1.0
-  template: "/euler/button.gui"
+  template: "/widget/button.gui"
   template_node_child: false
 }
 nodes {
@@ -4541,7 +4648,7 @@ nodes {
   layer: ""
   inherit_alpha: false
   alpha: 1.0
-  template: "/euler/button.gui"
+  template: "/widget/button.gui"
   template_node_child: false
 }
 nodes {
@@ -4699,7 +4806,7 @@ nodes {
   layer: ""
   inherit_alpha: false
   alpha: 1.0
-  template: "/euler/button.gui"
+  template: "/widget/button.gui"
   template_node_child: false
 }
 nodes {
@@ -4875,6 +4982,6 @@ nodes {
   template_node_child: false
   size_mode: SIZE_MODE_MANUAL
 }
-material: "/euler/euler.material"
+material: "/widget/euler.material"
 adjust_reference: ADJUST_REFERENCE_PARENT
 max_nodes: 512

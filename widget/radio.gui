@@ -1,11 +1,11 @@
 script: ""
 fonts {
   name: "eulerfont"
-  font: "/euler/eulerfont.font"
+  font: "/widget/eulerfont.font"
 }
 textures {
-  name: "checkbox"
-  texture: "/euler/euler.atlas"
+  name: "radio"
+  texture: "/widget/euler.atlas"
 }
 background_color {
   x: 0.0
@@ -46,8 +46,8 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "checkbox/checkbox_normal"
-  id: "checkbox"
+  texture: "radio/radio_normal"
+  id: "radio"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_CENTER

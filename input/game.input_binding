@@ -3,8 +3,16 @@ key_trigger {
   action: "backspace"
 }
 mouse_trigger {
-  input: MOUSE_BUTTON_1
-  action: "touch"
+  input: MOUSE_BUTTON_LEFT
+  action: "lbutton"
+}
+mouse_trigger {
+  input: MOUSE_WHEEL_DOWN
+  action: "dwheel"
+}
+mouse_trigger {
+  input: MOUSE_WHEEL_UP
+  action: "uwheel"
 }
 text_trigger {
   input: TEXT
