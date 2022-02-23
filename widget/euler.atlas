@@ -1,17 +1,25 @@
 images {
-  image: "/widget/atles/button_normal.png"
+  image: "/widget/atles/btn_blue_normal.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
-  image: "/widget/atles/button_pressed.png"
+  image: "/widget/atles/btn_blue_pressed.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
-  image: "/widget/atles/checkbox_checked_normal.png"
+  image: "/widget/atles/btn_white_normal.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
-  image: "/widget/atles/checkbox_checked_pressed.png"
+  image: "/widget/atles/btn_white_pressed.png"
+  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+}
+images {
+  image: "/widget/atles/btn_yellow_normal.png"
+  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+}
+images {
+  image: "/widget/atles/btn_yellow_pressed.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
@@ -19,15 +27,19 @@ images {
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
-  image: "/widget/atles/checkbox_pressed.png"
+  image: "/widget/atles/checkbox_selected.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
-  image: "/widget/atles/radio_checked_normal.png"
+  image: "/widget/atles/progress_bar.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
-  image: "/widget/atles/radio_checked_pressed.png"
+  image: "/widget/atles/progress_bg.png"
+  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+}
+images {
+  image: "/widget/atles/editbox.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
@@ -35,7 +47,27 @@ images {
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
-  image: "/widget/atles/radio_pressed.png"
+  image: "/widget/atles/radio_selected.png"
+  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+}
+images {
+  image: "/widget/atles/slider.png"
+  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+}
+images {
+  image: "/widget/atles/switch_blue_off.png"
+  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+}
+images {
+  image: "/widget/atles/switch_blue_on.png"
+  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+}
+images {
+  image: "/widget/atles/switch_yellow_off.png"
+  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+}
+images {
+  image: "/widget/atles/switch_yellow_on.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 margin: 0

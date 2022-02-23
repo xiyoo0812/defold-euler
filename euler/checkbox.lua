@@ -27,7 +27,7 @@ function Checkbox:register_changed(func)
 end
 
 function Checkbox:on_lbutton_up(action)
-	self:set_checked(not checked)
+	self:set_checked(not self.checked)
 	return true
 end
 

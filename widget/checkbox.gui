@@ -33,8 +33,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 64.0
-    y: 68.0
+    x: 30.0
+    y: 30.0
     z: 0.0
     w: 1.0
   }
@@ -55,10 +55,10 @@ nodes {
   layer: ""
   inherit_alpha: true
   slice9 {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 0.0
+    x: 8.0
+    y: 8.0
+    z: 8.0
+    w: 8.0
   }
   clipping_mode: CLIPPING_MODE_NONE
   clipping_visible: true
@@ -87,8 +87,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 64.0
-    y: 68.0
+    x: 28.0
+    y: 28.0
     z: 0.0
     w: 1.0
   }
@@ -100,7 +100,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "checkbox/checkbox_checked_normal"
+  texture: "checkbox/checkbox_selected"
   id: "selected"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
