@@ -15,6 +15,9 @@ function Checkbox:__init(id, checked)
 end
 
 function Checkbox:set_checked(checked)
+	if self.checked == checked then
+		return
+	end
 	self.checked = checked
 	gui.set_enabled(self.selected, checked)
 	if self.on_changed then
