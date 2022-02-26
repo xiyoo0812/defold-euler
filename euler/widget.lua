@@ -9,11 +9,27 @@ prop:reader("root", nil)
 prop:reader("label", nil)
 prop:reader("focus", false)
 prop:reader("hover", false)
+prop:reader("childrens", {})
 prop:accessor("focus_enable", false)
 prop:accessor("hover_enable", false)
 
 function Widget:__init(id)
 	self.id = id
+end
+
+function Widget:add_child(name, child)
+	gui.set_parent(child, self.root)
+	self.childrens[name] = child
+end
+
+function Widget:get_child(name)
+	return self.childrens[name]
+end
+
+function Widget:show_child(name)
+	for _name, child in pairs(self.childrens) do
+		gui.set_enabled(child, _name == name)
+	end
 end
 
 function Widget:is_enable(func)

@@ -12,11 +12,11 @@ local Image = require("euler.image")
 local Radio  = require("euler.radio")
 local Button = require("euler.button")
 local Switch  = require("euler.switch")
-local Slider  = require("euler.slider")
+--local Slider  = require("euler.slider")
 local Editbox  = require("euler.editbox")
 local Checkbox  = require("euler.checkbox")
 local RadioGroup  = require("euler.radio_group")
-local ProgressBar  = require("euler.progress_bar")
+--local ProgressBar  = require("euler.progress_bar")
 
 local euler = {}
 
@@ -40,8 +40,8 @@ function euler.init_radio_group()
     return RadioGroup()
 end
 
-function euler.init_button(id, pressed_img, hovered_img, disabled_img)
-    return Button(id, pressed_img, hovered_img, disabled_img)
+function euler.init_button(id)
+    return Button(id)
 end
 
 function euler.init_slider(id, value)

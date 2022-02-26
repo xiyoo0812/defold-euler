@@ -70,6 +70,10 @@ images {
   image: "/widget/atles/switch_yellow_on.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
+images {
+  image: "/widget/atles/alpha.png"
+  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+}
 margin: 0
 extrude_borders: 8
 inner_padding: 0

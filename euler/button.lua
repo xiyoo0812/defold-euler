@@ -6,30 +6,33 @@ local UIStatus	= enum("UIStatus")
 local Button = class(Widget)
 local prop = property(Button)
 prop:reader("on_click", nil)
-prop:accessor("normal_image", nil)
-prop:accessor("hovered_image", nil)
-prop:accessor("pressed_image", nil)
-prop:accessor("disabled_image", nil)
 prop:accessor("status", UIStatus.NORMAL)
 
-function Button:__init(id, pressed_img, hovered_img, disabled_img)
+function Button:__init(id)
 	self.hover_enable = true
 	self.root = gui.get_node(id .. "/button")
 	self.label = gui.get_node(id .. "/label")
-	local normal_image = gui.get_flipbook(self.root)
-	self.normal_image = normal_image
-	self.pressed_image = pressed_img or normal_image
-	self.hovered_image = hovered_img or normal_image
-	self.disabled_image = disabled_img or normal_image
+	self:add_child("normal", gui.get_node(id .. "/normal"))
+	self:add_child("pressed", gui.get_node(id .. "/pressed"))
+	self:add_child("hovered", gui.get_node(id .. "/hovered"))
+	self:add_child("disabled", gui.get_node(id .. "/disabled"))
+	self:show_child("normal")
+end
+
+function Button:set_image(name, image)
+	local child = self.childrens[name]
+	if child then
+		gui.play_flipbook(child, image)
+	end
 end
 
 function Button:set_disabled(disabled)
 	if disabled then
 		self.status = UIStatus.DISABLED
-		gui.play_flipbook(self.root, self.disabled_image)
+		self:show_child("disabled")
 	else
 		self.status = UIStatus.NORMAL
-		gui.play_flipbook(self.root, self.normal_image)
+		self:show_child("normal")
 	end
 end
 
@@ -39,31 +42,36 @@ end
 
 function Button:on_mouse_enter(action)
 	if self.status == UIStatus.NORMAL then
-		gui.play_flipbook(self.root, self.hovered_image)
+		self:show_child("hovered")
 	end
 	return true
 end
 
 function Button:on_mouse_leave(action)
 	if self.status == UIStatus.NORMAL then
-		gui.play_flipbook(self.root, self.normal_image)
+		self:show_child("normal")
 	end
 	return true
 end
 
 function Button:on_lbutton_down(action)
+	if self.status == UIStatus.DISABLED then
+		return
+	end
+	self:show_child("pressed")
 	self:set_status(UIStatus.PRESSED)
-	gui.play_flipbook(self.root, self.pressed_image)
 	gui.set_position(self.label, vmath.vector3(0.0, -2.0, 0.0))
+	gui.set_size(self.root, vmath.vector3(300.0, 60.0, 0.0))
 	return true
 end
 
 function Button:on_lbutton_up(action)
-	self:set_status(UIStatus.NORMAL)
-	gui.set_position(self.label, vmath.vector3(0.0))
-	if self.hover then
-		gui.play_flipbook(self.root, self.hovered_image)
+	if self.status == UIStatus.DISABLED then
+		return
 	end
+	self:set_status(UIStatus.NORMAL)
+	self:show_child(self.hover and "hovered" or "normal")
+	gui.set_position(self.label, vmath.vector3(0.0))
 	if self.on_click then
 		self.on_click(self)
 	end

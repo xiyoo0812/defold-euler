@@ -3,9 +3,9 @@ local Widget = require("euler.widget")
 
 local Checkbox = class(Widget)
 local prop = property(Checkbox)
+prop:reader("checked", true)
 prop:reader("selected", nil)
 prop:reader("on_changed", nil)
-prop:reader("checked", true)
 
 function Checkbox:__init(id, checked)
 	self.label = gui.get_node(id .. "/label")

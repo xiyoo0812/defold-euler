@@ -1,7 +1,7 @@
 --radio_group.lua
 
 local RadioGroup = class()
-local prop = property(Radio)
+local prop = property(RadioGroup)
 prop:reader("selected", nil)
 prop:reader("childrens", {})
 prop:reader("on_changed", nil)
