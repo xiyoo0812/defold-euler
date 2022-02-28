@@ -1,5 +1,5 @@
 [project]
-title = 欧拉
+title = euler
 version = 1.0
 
 [bootstrap]

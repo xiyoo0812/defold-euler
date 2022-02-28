@@ -2,48 +2,80 @@ local euler = require "euler/euler"
 
 function init(self)
     msg.post(".", "acquire_input_focus")
-    self.checkbox_a_value = false
-    self.checkbox_b_value = true
-    self.radio_value = "a"
-    self.slider_value = 0.0
+
+    self.progress_bar = euler.init_progress_bar("progress_bar", 30)
+
+    self.radio_group = euler.init_radio_group()
+    local radio_a = euler.init_radio("radio_a", true)
+    local radio_b = euler.init_radio("radio_b", false)
+    local radio_c = euler.init_radio("radio_c", false)
+    self.radio_group:add_radio(radio_a, 40)
+    self.radio_group:add_radio(radio_b, 60)
+    self.radio_group:add_radio(radio_c, 80)
+    self.radio_group:register_changed(function(box, value)
+        print("click radio: " .. box.id)
+        self.progress_bar:set_progress(value)
+    end)
+    
+    self.switch_a = euler.init_switch("switch_a", true)
+    self.switch_a:register_changed(function(box)
+        print("click switch: " .. box.id)
+    end)
+    self.switch_b = euler.init_switch("switch_b", false)
+    self.switch_b:register_changed(function(box)
+        print("click switch: " .. box.id)
+    end)
+    
+    self.checkbox_a = euler.init_checkbox("checkbox_a", true)
+    self.checkbox_a:register_changed(function(box)
+        print("click checkbox: " .. box.id)
+    end)
+    self.checkbox_b = euler.init_checkbox("checkbox_b", false)
+    self.checkbox_b:register_changed(function(box)
+        print("click checkbox: " .. box.id)
+    end)
+    
+    self.button_print = euler.init_button("button_print")
+    self.button_print:register_click(function(btn)
+        print("Switch A: " .. tostring(self.switch_a:is_checked()))
+        print("Switch B: " .. tostring(self.switch_b:is_checked()))
+        print("Checkbox A: " .. tostring(self.checkbox_a:is_checked()))
+        print("Checkbox B: " .. tostring(self.checkbox_b:is_checked()))
+        print("Radio Group: " .. tostring(self.radio_group:get_value()))
+        print("Progress Bar: " .. tostring(self.progress_bar:get_percent()))
+    end)
+
+    self.button_toggle_euler = euler.init_button("button_toggle_euler")
+    self.button_toggle_euler:register_click(function(btn)
+        local enabled = not gui.is_enabled(gui.get_node("euler_root"))
+        gui.set_enabled(gui.get_node("euler_root"), enabled)
+        btn:set_text(enabled and "Hide Euler" or "Show Euler")
+    end)
+
+    self.button_euler = euler.init_button("button_euler")
+    self.button_euler:register_click(function(btn)
+        print("I'm Euler")
+    end)
 end
 
 function on_input(self, action_id, action)
+    self.switch_a:on_input(action_id, action)
+    self.switch_b:on_input(action_id, action)
+    self.checkbox_a:on_input(action_id, action)
+    self.checkbox_b:on_input(action_id, action)
+    self.radio_group:on_input(action_id, action)
+    self.button_print:on_input(action_id, action)
+    self.button_euler:on_input(action_id, action)
+    self.button_toggle_euler:on_input(action_id, action)
+    
+    --[[
     self.input_default  = euler:input("input_default", action_id, action, gui.KEYBOARD_TYPE_DEFAULT, "Default text")
     self.input_email    = euler:input("input_email", action_id, action, gui.KEYBOARD_TYPE_EMAIL, "Email")
     self.input_number   = euler:input("input_number", action_id, action, gui.KEYBOARD_TYPE_NUMBER_PAD, "Number")
     self.input_password = euler:input("input_password", action_id, action, gui.KEYBOARD_TYPE_PASSWORD, "Password")
     self.input_smaller  = euler:input("input_smaller", action_id, action, gui.KEYBOARD_TYPE_DEFAULT, "Tiny input")
 
-    euler:button("button_print", action_id, action, function ()
-        print("Input: " .. tostring(self.input_default))
-        print("Email: " .. tostring(self.input_email))
-        print("Number: " .. tostring(self.input_number))
-        print("Password: " .. tostring(self.input_password))
-        print("Checkbox A: " .. tostring(self.checkbox_a_value))
-        print("Checkbox B: " .. tostring(self.checkbox_b_value))
-        print("Radio: " .. tostring(self.radio_value))
-        print("Tiny: " .. tostring(self.input_smaller))
-    end)
-
-    self.checkbox_a_value = euler:checkbox("checkbox_a", action_id, action, self.checkbox_a_value)
-    self.checkbox_b_value = euler:checkbox("checkbox_b", action_id, action, self.checkbox_b_value)
-
-    self.radio_value = euler:radio("radio_a", action_id, action, "a", self.radio_value)
-    self.radio_value = euler:radio("radio_b", action_id, action, "b", self.radio_value)
-    self.radio_value = euler:radio("radio_c", action_id, action, "c", self.radio_value)
-
     self.slider_value = euler:slider("slider", action_id, action, -1.0, 1.0, self.slider_value)
-    
-    euler:button("button_toggle_euler", action_id, action, function ()
-        local enabled = not gui.is_enabled(gui.get_node("euler_root"))
-        gui.set_enabled(gui.get_node("euler_root"), enabled)
-        gui.set_text(gui.get_node("button_toggle_euler/label"), enabled and "Hide Euler" or "Show Euler")
-    end)
-    
-    euler:button("button_euler", action_id, action, function ()
-        print("I'm Euler")
-    end)
     
     self.scrollarea = euler:scrollarea("scrollarea", action_id, action, self.scrollarea, function(self, action_id, action)
         local tmp_func = function ()
@@ -67,5 +99,5 @@ function on_input(self, action_id, action)
     gui.set_scale(node, vmath.vector3(1.2))
     gui.animate(node, "scale", 1.0, gui.EASING_OUTELASTIC, 0.8)
     end)
-    
+    ]]
 end
