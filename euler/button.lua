@@ -19,13 +19,6 @@ function Button:__init(id)
 	self:show_child("normal")
 end
 
-function Button:set_image(name, image)
-	local child = self.childrens[name]
-	if child then
-		gui.play_flipbook(child, image)
-	end
-end
-
 function Button:set_disabled(disabled)
 	if disabled then
 		self.status = UIStatus.DISABLED

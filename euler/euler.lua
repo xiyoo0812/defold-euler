@@ -32,8 +32,8 @@ function euler.init_checkbox(id, checked)
     return Checkbox(id, checked)
 end
 
-function euler.init_switch(id, ison, off_img)
-    return Switch(id, ison, off_img)
+function euler.init_switch(id, ison)
+    return Switch(id, ison)
 end
 
 function euler.init_radio_group()

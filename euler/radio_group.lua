@@ -25,12 +25,22 @@ function RadioGroup:register_changed(func)
 	self.on_changed = func
 end
 
+function RadioGroup:get_value()
+	return self.selected:get_value()
+end
+
 function RadioGroup:changed(radio)
 	self.selected:set_checked(false)
 	self.selected = radio
 	if self.on_changed then
-		self.on_changed(radio:get_value())
+		self.on_changed(radio, radio:get_value())
 	end
 end
 
-return Radio
+function RadioGroup:on_input(action_id, action)
+	for _, radio in pairs(self.childrens) do
+		radio:on_input(action_id, action)
+	end
+end
+
+return RadioGroup

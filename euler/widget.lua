@@ -32,6 +32,13 @@ function Widget:show_child(name)
 	end
 end
 
+function Widget:set_image(name, image)
+	local child = self.childrens[name]
+	if child then
+		gui.play_flipbook(child, image)
+	end
+end
+
 function Widget:is_enable(func)
 	return gui.is_enabled(self.root)
 end
@@ -49,6 +56,7 @@ end
 function Widget:set_text(text)
 	if self.label then
 		gui.set_text(self.label, text)
+		self:on_text_changed(self.label, text)
 	end
 end
 
@@ -56,7 +64,7 @@ function Widget:hit_test(action)
 	return gui.pick_node(self.root, action.x, action.y)
 end
 
-function Widget:input(action_id, action)
+function Widget:on_input(action_id, action)
 	if not gui.is_enabled(self.root) then
 		return false
 	end
@@ -143,6 +151,9 @@ end
 
 function Widget:on_char(action)
 	return true
+end
+
+function Widget:on_text_changed(label, text)
 end
 
 return Widget

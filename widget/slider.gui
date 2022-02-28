@@ -15,60 +15,6 @@ background_color {
 }
 nodes {
   position {
-    x: -5.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  size {
-    x: 210.0
-    y: 30.0
-    z: 0.0
-    w: 1.0
-  }
-  color {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  type: TYPE_BOX
-  blend_mode: BLEND_MODE_ALPHA
-  texture: ""
-  id: "slider"
-  xanchor: XANCHOR_NONE
-  yanchor: YANCHOR_NONE
-  pivot: PIVOT_W
-  adjust_mode: ADJUST_MODE_FIT
-  layer: ""
-  inherit_alpha: true
-  slice9 {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 0.0
-  }
-  clipping_mode: CLIPPING_MODE_NONE
-  clipping_visible: true
-  clipping_inverted: false
-  alpha: 0.0
-  template_node_child: false
-  size_mode: SIZE_MODE_MANUAL
-}
-nodes {
-  position {
     x: 5.0
     y: 0.0
     z: 0.0
@@ -101,14 +47,13 @@ nodes {
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
   texture: "euler/progress_bg"
-  id: "slider_bar"
+  id: "slider"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_W
   adjust_mode: ADJUST_MODE_FIT
-  parent: "slider"
   layer: ""
-  inherit_alpha: false
+  inherit_alpha: true
   slice9 {
     x: 8.0
     y: 6.0
@@ -161,7 +106,7 @@ nodes {
   yanchor: YANCHOR_NONE
   pivot: PIVOT_W
   adjust_mode: ADJUST_MODE_FIT
-  parent: "slider_bar"
+  parent: "slider"
   layer: ""
   inherit_alpha: true
   slice9 {
@@ -179,7 +124,7 @@ nodes {
 }
 nodes {
   position {
-    x: 215.0
+    x: 202.0
     y: 0.0
     z: 0.0
     w: 1.0

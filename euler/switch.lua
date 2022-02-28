@@ -6,16 +6,13 @@ local UIStatus	= enum("UIStatus")
 local Switch = class(Widget)
 local prop = property(Switch)
 prop:reader("on", true)
+prop:reader("on_image", nil)
 prop:reader("on_changed", nil)
-prop:accessor("on_image", nil)
-prop:accessor("off_image", nil)
 
-function Switch:__init(id, ison, off_img)
+function Switch:__init(id, ison)
 	self.root  = gui.get_node(id .. "/switch")
 	self.label = gui.get_node(id .. "/label")
-	local on_image = gui.get_flipbook(self.root)
-	self.on_image = on_image
-	self.off_image = off_img or on_image
+	self.on_image = gui.get_node(id .. "/on")
 	self:set_status(ison)
 end
 
@@ -32,7 +29,7 @@ function Switch:set_status(status)
 		return
 	end
 	self.on = status
-	gui.play_flipbook(self.root, status and self.on_image or self.off_image)
+	gui.set_enabled(self.on_image, status)
 	if self.on_changed then
 		self.on_changed(self, status)
 	end
