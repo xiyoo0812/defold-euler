@@ -16,7 +16,7 @@ local Switch  = require("euler.switch")
 local Editbox  = require("euler.editbox")
 local Checkbox  = require("euler.checkbox")
 local RadioGroup  = require("euler.radio_group")
---local ProgressBar  = require("euler.progress_bar")
+local ProgressBar  = require("euler.progress_bar")
 
 local euler = {}
 
@@ -52,8 +52,8 @@ function euler.init_editbox(id, placeholder, text)
     return Editbox(id, placeholder, text)
 end
 
-function euler.init_progress_bar(id, value)
-    return ProgressBar(id, value)
+function euler.init_progress_bar(id, progress)
+    return ProgressBar(id, progress)
 end
 
 return euler

@@ -3,10 +3,10 @@ local Widget = require("euler.widget")
 
 local Radio = class(Widget)
 local prop = property(Radio)
-prop:reader("checked", true)
 prop:reader("selected", nil)
 prop:accessor("group", nil)
 prop:accessor("value", nil)
+prop:accessor("checked", true, true)
 
 function Radio:__init(id, checked)
 	self.label = gui.get_node(id .. "/label")
@@ -15,11 +15,7 @@ function Radio:__init(id, checked)
 	self:set_checked(checked)
 end
 
-function Radio:set_checked(checked)
-	if self.checked == checked then
-		return
-	end
-	self.checked = checked
+function Radio:on_prop_changed(checked)
 	gui.set_enabled(self.selected, checked)
 	if checked and self.group then
 		self.group:changed(self)

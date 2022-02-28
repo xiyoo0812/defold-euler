@@ -47,7 +47,7 @@ nodes {
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
   texture: "euler/progress_bg"
-  id: "progress_bg"
+  id: "progress_bar"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_W
@@ -101,12 +101,12 @@ nodes {
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
   texture: "euler/progress_bar"
-  id: "progress_bar"
+  id: "progress"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_W
   adjust_mode: ADJUST_MODE_FIT
-  parent: "progress_bg"
+  parent: "progress_bar"
   layer: ""
   inherit_alpha: true
   slice9 {
@@ -176,7 +176,7 @@ nodes {
   }
   adjust_mode: ADJUST_MODE_FIT
   line_break: false
-  parent: "progress_bg"
+  parent: "progress_bar"
   layer: ""
   inherit_alpha: true
   alpha: 1.0
@@ -239,7 +239,7 @@ nodes {
   }
   adjust_mode: ADJUST_MODE_FIT
   line_break: false
-  parent: "progress_bg"
+  parent: "progress_bar"
   layer: ""
   inherit_alpha: true
   alpha: 1.0
