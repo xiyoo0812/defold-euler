@@ -1,8 +1,6 @@
 --switch.lua
 local Widget = require("euler.widget")
 
-local UIStatus	= enum("UIStatus")
-
 local Switch = class(Widget)
 local prop = property(Switch)
 prop:reader("on_image", nil)

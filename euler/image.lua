@@ -7,11 +7,10 @@ prop:reader("on_click", nil)
 prop:reader("image", nil)
 
 function Image:__init(id, img)
+	self.input_enable = false
 	self.root  = gui.get_node(id .. "/image")
 	if img then
 		self:set_image(img)
-	else
-		self.image = gui.get_flipbook(self.root)
 	end
 end
 
@@ -21,6 +20,7 @@ function Image:set_image(image)
 end
 
 function Image:register_click(func)
+	self.input_enable = true
 	self.on_click = func
 end
 

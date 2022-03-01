@@ -37,10 +37,4 @@ function RadioGroup:changed(radio)
 	end
 end
 
-function RadioGroup:on_input(action_id, action)
-	for _, radio in pairs(self.childrens) do
-		radio:on_input(action_id, action)
-	end
-end
-
 return RadioGroup

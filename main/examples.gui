@@ -774,6 +774,102 @@ nodes {
 }
 nodes {
   position {
+    x: 766.0
+    y: 112.0
+    z: 0.0
+    w: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  size {
+    x: 200.0
+    y: 100.0
+    z: 0.0
+    w: 1.0
+  }
+  color {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  type: TYPE_TEMPLATE
+  id: "defold"
+  layer: ""
+  inherit_alpha: true
+  alpha: 1.0
+  template: "/widget/image.gui"
+  template_node_child: false
+}
+nodes {
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  size {
+    x: 180.0
+    y: 180.0
+    z: 0.0
+    w: 1.0
+  }
+  color {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  type: TYPE_BOX
+  blend_mode: BLEND_MODE_ALPHA
+  texture: "examples/defold"
+  id: "defold/image"
+  xanchor: XANCHOR_NONE
+  yanchor: YANCHOR_NONE
+  pivot: PIVOT_CENTER
+  adjust_mode: ADJUST_MODE_FIT
+  parent: "defold"
+  layer: ""
+  inherit_alpha: true
+  slice9 {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 0.0
+  }
+  clipping_mode: CLIPPING_MODE_NONE
+  clipping_visible: true
+  clipping_inverted: false
+  alpha: 1.0
+  overridden_fields: 9
+  overridden_fields: 38
+  template_node_child: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
     x: 0.0
     y: 0.0
     z: 0.0
@@ -2712,7 +2808,7 @@ nodes {
 }
 nodes {
   position {
-    x: 29.0
+    x: 30.0
     y: 0.0
     z: 0.0
     w: 1.0
@@ -2925,7 +3021,7 @@ nodes {
 }
 nodes {
   position {
-    x: 29.0
+    x: 30.0
     y: 0.0
     z: 0.0
     w: 1.0
@@ -3138,7 +3234,7 @@ nodes {
 }
 nodes {
   position {
-    x: 85.0
+    x: 88.0
     y: 0.0
     z: 0.0
     w: 1.0
@@ -3351,7 +3447,7 @@ nodes {
 }
 nodes {
   position {
-    x: 85.0
+    x: 88.0
     y: 0.0
     z: 0.0
     w: 1.0
@@ -3564,7 +3660,7 @@ nodes {
 }
 nodes {
   position {
-    x: 29.0
+    x: 31.0
     y: 0.0
     z: 0.0
     w: 1.0
@@ -3777,7 +3873,7 @@ nodes {
 }
 nodes {
   position {
-    x: 29.0
+    x: 31.0
     y: 0.0
     z: 0.0
     w: 1.0
@@ -3990,7 +4086,7 @@ nodes {
 }
 nodes {
   position {
-    x: 29.0
+    x: 31.0
     y: 0.0
     z: 0.0
     w: 1.0
@@ -4093,7 +4189,7 @@ nodes {
 }
 nodes {
   position {
-    x: 5.0
+    x: 0.0
     y: 0.0
     z: 0.0
     w: 1.0
@@ -4148,7 +4244,7 @@ nodes {
 }
 nodes {
   position {
-    x: 134.0
+    x: 0.0
     y: 0.0
     z: 0.0
     w: 1.0
@@ -4203,7 +4299,7 @@ nodes {
 }
 nodes {
   position {
-    x: 202.0
+    x: 200.0
     y: 0.0
     z: 0.0
     w: 1.0
@@ -4222,7 +4318,7 @@ nodes {
   }
   size {
     x: 100.0
-    y: 30.0
+    y: 20.0
     z: 0.0
     w: 1.0
   }
@@ -4234,75 +4330,13 @@ nodes {
   }
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
-  text: "0.5"
-  font: "eulerfont"
-  id: "slider/value"
-  xanchor: XANCHOR_NONE
-  yanchor: YANCHOR_NONE
-  pivot: PIVOT_W
-  outline {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  shadow {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  adjust_mode: ADJUST_MODE_FIT
-  line_break: false
-  parent: "slider/slider"
-  layer: ""
-  inherit_alpha: true
-  alpha: 1.0
-  outline_alpha: 1.0
-  shadow_alpha: 1.0
-  template_node_child: true
-  text_leading: 1.0
-  text_tracking: 0.0
-}
-nodes {
-  position {
-    x: -5.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  size {
-    x: 100.0
-    y: 30.0
-    z: 0.0
-    w: 1.0
-  }
-  color {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  type: TYPE_TEXT
-  blend_mode: BLEND_MODE_ALPHA
-  text: "Label:"
+  text: "100\n"
+  ""
   font: "eulerfont"
   id: "slider/label"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
-  pivot: PIVOT_E
+  pivot: PIVOT_W
   outline {
     x: 1.0
     y: 1.0
@@ -4513,7 +4547,7 @@ nodes {
   text: "99/100\n"
   ""
   font: "eulerfont"
-  id: "progress_bar/value"
+  id: "progress_bar/label"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_CENTER
@@ -4543,8 +4577,8 @@ nodes {
 }
 nodes {
   position {
-    x: -5.0
-    y: 0.0
+    x: 120.0
+    y: 185.0
     z: 0.0
     w: 1.0
   }
@@ -4562,7 +4596,7 @@ nodes {
   }
   size {
     x: 100.0
-    y: 30.0
+    y: 40.0
     z: 0.0
     w: 1.0
   }
@@ -4574,9 +4608,10 @@ nodes {
   }
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
-  text: "Label:"
+  text: "progress:\n"
+  ""
   font: "eulerfont"
-  id: "progress_bar/label"
+  id: "progress_label"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_E
@@ -4594,20 +4629,20 @@ nodes {
   }
   adjust_mode: ADJUST_MODE_FIT
   line_break: false
-  parent: "progress_bar/progress_bar"
+  parent: "euler_root"
   layer: ""
   inherit_alpha: true
   alpha: 1.0
   outline_alpha: 1.0
   shadow_alpha: 1.0
-  template_node_child: true
+  template_node_child: false
   text_leading: 1.0
   text_tracking: 0.0
 }
 nodes {
   position {
-    x: 767.508
-    y: 108.62
+    x: 120.0
+    y: 243.0
     z: 0.0
     w: 1.0
   }
@@ -4624,8 +4659,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 180.0
-    y: 180.0
+    x: 100.0
+    y: 40.0
     z: 0.0
     w: 1.0
   }
@@ -4635,28 +4670,38 @@ nodes {
     z: 1.0
     w: 1.0
   }
-  type: TYPE_BOX
+  type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
-  texture: "examples/defold"
-  id: "defold"
+  text: "slider:\n"
+  ""
+  font: "eulerfont"
+  id: "slider_label"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
-  pivot: PIVOT_CENTER
+  pivot: PIVOT_E
+  outline {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  shadow {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
   adjust_mode: ADJUST_MODE_FIT
+  line_break: false
+  parent: "euler_root"
   layer: ""
   inherit_alpha: true
-  slice9 {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 0.0
-  }
-  clipping_mode: CLIPPING_MODE_NONE
-  clipping_visible: true
-  clipping_inverted: false
   alpha: 1.0
+  outline_alpha: 1.0
+  shadow_alpha: 1.0
   template_node_child: false
-  size_mode: SIZE_MODE_AUTO
+  text_leading: 1.0
+  text_tracking: 0.0
 }
 nodes {
   position {
