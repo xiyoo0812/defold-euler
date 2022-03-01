@@ -10,6 +10,7 @@ prop:reader("label", nil)
 prop:reader("focus", false)
 prop:reader("hover", false)
 prop:reader("childrens", {})
+prop:accessor("input_enable", true)
 prop:accessor("focus_enable", false)
 prop:accessor("hover_enable", false)
 
@@ -65,14 +66,14 @@ function Widget:hit_test(action)
 end
 
 function Widget:on_input(action_id, action)
-	if not gui.is_enabled(self.root) then
-		return false
+	if not gui.is_enabled(self.root) or (not self.input_enable) then
+		return true
 	end
 	if not action_id then
 		if self.hover_enable then
 			return self:on_mouse_move(action)
 		end
-		return false
+		return true
 	end
 	if action_id == ActionID.TEXT then
 		if self.focus_enable then
@@ -91,13 +92,13 @@ function Widget:on_input(action_id, action)
 				return self:on_lbutton_down(action)
 			end
 		end
-		return false
+		return true
 	end
 	if action_id == ActionID.DWHEEL or action_id == ActionID.UWHEEL then
 		if self.focus_enable then
 			return self:on_mouse_wheel(action)
 		end
-		return false
+		return true
 	end
 	if action.pressed then
 		return self:on_key_down(action)
@@ -118,7 +119,7 @@ function Widget:on_mouse_move(action)
 			return self:on_mouse_enter(action)
 		end
 	end
-	return false
+	return true
 end
 
 function Widget:on_mouse_enter(action)

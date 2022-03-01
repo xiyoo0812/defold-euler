@@ -9,8 +9,8 @@ prop:accessor("value", nil)
 prop:accessor("checked", true, true)
 
 function Radio:__init(id, checked)
+	self.root = gui.get_node(id .. "/radio")
 	self.label = gui.get_node(id .. "/label")
-	self.root  = gui.get_node(id .. "/radio")
 	self.selected = gui.get_node(id .. "/selected")
 	self:set_checked(checked)
 end

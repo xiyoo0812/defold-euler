@@ -21,9 +21,11 @@ end
 
 function Button:set_disabled(disabled)
 	if disabled then
+		self.input_enable = false
 		self.status = UIStatus.DISABLED
 		self:show_child("disabled")
 	else
+		self.input_enable = true
 		self.status = UIStatus.NORMAL
 		self:show_child("normal")
 	end
