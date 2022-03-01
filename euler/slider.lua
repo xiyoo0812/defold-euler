@@ -10,6 +10,7 @@ prop:accessor("max", 100, true)
 prop:accessor("percent", 0, true)
 
 function Slider:__init(id, percent)
+	self.hover_enable = true
 	self.root  = gui.get_node(id .. "/slider")
 	self.label = gui.get_node(id .. "/label")
 	self.cursor = gui.get_node(id .. "/cursor")
@@ -36,12 +37,23 @@ function Slider:register_changed(func)
 	self.on_changed = func
 end
 
+function Slider:on_mouse_move(action)
+	if self.pressed then
+		self:calc_percent(action)
+	end
+	return false
+end
+
 function Slider:on_lbutton_up(action)
+	self:calc_percent(action)
+	return false
+end
+
+function Slider:calc_percent(action)
 	local size = gui.get_size(self.root)
 	local pos = gui.get_position(self.root)
 	local percent = utils.round(self.max * (action.x - pos.x) / size.x)
 	self:set_percent(percent)
-	return true
 end
 
 return Slider

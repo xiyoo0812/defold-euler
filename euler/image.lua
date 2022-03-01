@@ -28,7 +28,7 @@ function Image:on_lbutton_up(action)
 	if self.on_click then
 		self.on_click(self)
 	end
-	return true
+	return false
 end
 
 return Image

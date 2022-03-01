@@ -27,7 +27,7 @@ end
 
 function Checkbox:on_lbutton_up(action)
 	self:set_checked(not self.checked)
-	return true
+	return false
 end
 
 return Checkbox

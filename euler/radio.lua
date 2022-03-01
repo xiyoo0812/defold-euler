@@ -24,7 +24,7 @@ end
 
 function Radio:on_lbutton_up(action)
 	self:set_checked(true)
-	return true
+	return false
 end
 
 return Radio

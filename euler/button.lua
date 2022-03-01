@@ -39,30 +39,28 @@ function Button:on_mouse_enter(action)
 	if self.status == UIStatus.NORMAL then
 		self:show_child("hovered")
 	end
-	return true
 end
 
 function Button:on_mouse_leave(action)
 	if self.status == UIStatus.NORMAL then
 		self:show_child("normal")
 	end
-	return true
 end
 
 function Button:on_lbutton_down(action)
 	if self.status == UIStatus.DISABLED then
-		return
+		return false
 	end
 	self:show_child("pressed")
 	self:set_status(UIStatus.PRESSED)
 	gui.set_position(self.label, vmath.vector3(0.0, -2.0, 0.0))
 	gui.set_size(self.root, vmath.vector3(300.0, 60.0, 0.0))
-	return true
+	return false
 end
 
 function Button:on_lbutton_up(action)
 	if self.status == UIStatus.DISABLED then
-		return
+		return false
 	end
 	self:set_status(UIStatus.NORMAL)
 	self:show_child(self.hover and "hovered" or "normal")
@@ -70,7 +68,7 @@ function Button:on_lbutton_up(action)
 	if self.on_click then
 		self.on_click(self)
 	end
-	return true
+	return false
 end
 
 return Button

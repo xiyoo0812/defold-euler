@@ -9,6 +9,7 @@ prop:reader("root", nil)
 prop:reader("label", nil)
 prop:reader("focus", false)
 prop:reader("hover", false)
+prop:reader("pressed", false)
 prop:reader("childrens", {})
 prop:accessor("input_enable", true)
 prop:accessor("focus_enable", false)
@@ -71,7 +72,20 @@ function Widget:on_input(action_id, action)
 	end
 	if not action_id then
 		if self.hover_enable then
-			return self:on_mouse_move(action)
+			local hit = self:hit_test(action)
+			if hit then
+				if not self.hover then
+					self.hover = true
+					self:on_mouse_enter(action)
+				end
+				return self:on_mouse_move(action)
+			else
+				self.pressed = false
+				if self.hover then
+					self.hover = false
+					self:on_mouse_leave(action)
+				end
+			end
 		end
 		return true
 	end
@@ -87,8 +101,10 @@ function Widget:on_input(action_id, action)
 	if action_id == ActionID.LBUTTON then
 		if self:hit_test(action) then
 			if action.released then
+				self.pressed = false
 				return self:on_lbutton_up(action)
 			else
+				self.pressed = true
 				return self:on_lbutton_down(action)
 			end
 		end
@@ -106,27 +122,13 @@ function Widget:on_input(action_id, action)
 	return self:on_key_up(action)
 end
 
-function Widget:on_mouse_move(action)
-	local hit = self:hit_test(action)
-	if self.hover then
-		if not hit then
-			self.hover = false
-			return self:on_mouse_leave(action)
-		end
-	else
-		if hit then
-			self.hover = true
-			return self:on_mouse_enter(action)
-		end
-	end
-	return true
-end
-
 function Widget:on_mouse_enter(action)
-	return true
 end
 
 function Widget:on_mouse_leave(action)
+end
+
+function Widget:on_mouse_move(action)
 	return true
 end
 
