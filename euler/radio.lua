@@ -9,14 +9,16 @@ prop:accessor("value", nil)
 prop:accessor("checked", true, true)
 
 function Radio:__init(id, checked)
+	self.checked = checked
 	self.root = gui.get_node(id .. "/radio")
 	self.label = gui.get_node(id .. "/label")
 	self.selected = gui.get_node(id .. "/selected")
-	self:set_checked(checked)
+	self:on_prop_changed(checked)
 end
 
 function Radio:on_prop_changed(checked)
 	gui.set_enabled(self.selected, checked)
+	gui.set_alpha(self.root, checked and 0 or 1)
 	if checked and self.group then
 		self.group:changed(self)
 	end

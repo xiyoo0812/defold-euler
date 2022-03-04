@@ -10,18 +10,24 @@ prop:accessor("max", 100, true)
 prop:accessor("percent", 0, true)
 
 function Slider:__init(id, percent)
-	self.hover_enable = true
+	self.move_capture = true
 	self.root  = gui.get_node(id .. "/slider")
-	self.label = gui.get_node(id .. "/label")
 	self.cursor = gui.get_node(id .. "/cursor")
 	self:set_percent(percent)
+end
+
+function Slider:setup(euler)
+	local rotation = gui.get_rotation(self.root)
+	if rotation.z == 90 or rotation.z == -90 then
+		self.vertical = true
+	end
 end
 
 function Slider:on_prop_changed()
 	self.percent = utils.clamp(self.percent, 0, self.max)
 	self:update_progress()
 	if self.on_changed then
-		self.on_changed(self, percent)
+		self.on_changed(self, self.percent)
 	end
 end
 
@@ -38,22 +44,26 @@ function Slider:register_changed(func)
 end
 
 function Slider:on_mouse_move(action)
-	if self.pressed then
-		self:calc_percent(action)
+	if self.euler.pressed then
+		self:update_percent(action)
+		return false
 	end
-	return false
+	return true
 end
 
 function Slider:on_lbutton_up(action)
-	self:calc_percent(action)
+	self:update_percent(action)
 	return false
 end
 
-function Slider:calc_percent(action)
+function Slider:update_percent(action)
 	local size = gui.get_size(self.root)
 	local pos = gui.get_position(self.root)
-	local percent = utils.round(self.max * (action.x - pos.x) / size.x)
-	self:set_percent(percent)
+	if self.vertical then
+		self:set_percent(utils.round(self.max * (pos.y - action.y) / size.x))
+	else
+		self:set_percent(utils.round(self.max * (action.x - pos.x) / size.x))
+	end
 end
 
 return Slider

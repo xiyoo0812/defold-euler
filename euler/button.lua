@@ -9,7 +9,7 @@ prop:reader("on_click", nil)
 prop:accessor("status", UIStatus.NORMAL)
 
 function Button:__init(id)
-	self.hover_enable = true
+	self.move_capture = true
 	self.root = gui.get_node(id .. "/button")
 	self.label = gui.get_node(id .. "/label")
 	self:add_child("normal", gui.get_node(id .. "/normal"))
@@ -21,11 +21,11 @@ end
 
 function Button:set_disabled(disabled)
 	if disabled then
-		self.input_enable = false
+		self.input_capture = false
 		self.status = UIStatus.DISABLED
 		self:show_child("disabled")
 	else
-		self.input_enable = true
+		self.input_capture = true
 		self.status = UIStatus.NORMAL
 		self:show_child("normal")
 	end
@@ -55,6 +55,13 @@ function Button:on_lbutton_down(action)
 	self:set_status(UIStatus.PRESSED)
 	gui.set_position(self.label, vmath.vector3(0.0, -2.0, 0.0))
 	gui.set_size(self.root, vmath.vector3(300.0, 60.0, 0.0))
+	return false
+end
+
+function Button:on_lbutton_repeated(action)
+	if self.on_click then
+		self.on_click(self)
+	end
 	return false
 end
 

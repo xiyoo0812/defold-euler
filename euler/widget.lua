@@ -7,16 +7,20 @@ local prop = property(Widget)
 prop:reader("id", nil)
 prop:reader("root", nil)
 prop:reader("label", nil)
-prop:reader("focus", false)
 prop:reader("hover", false)
-prop:reader("pressed", false)
 prop:reader("childrens", {})
-prop:accessor("input_enable", true)
-prop:accessor("focus_enable", false)
-prop:accessor("hover_enable", false)
+prop:accessor("euler", nil)
+prop:accessor("focus", false)
+prop:accessor("text_capture", false)
+prop:accessor("move_capture", false)
+prop:accessor("input_capture", true)
+prop:accessor("repeated_capture", false)
 
 function Widget:__init(id)
 	self.id = id
+end
+
+function Widget:setup(euler)
 end
 
 function Widget:add_child(name, child)
@@ -67,11 +71,11 @@ function Widget:hit_test(action)
 end
 
 function Widget:on_input(action_id, action)
-	if not gui.is_enabled(self.root) or (not self.input_enable) then
+	if not gui.is_enabled(self.root) or (not self.input_capture) then
 		return true
 	end
 	if not action_id then
-		if self.hover_enable then
+		if self.move_capture then
 			local hit = self:hit_test(action)
 			if hit then
 				if not self.hover then
@@ -80,17 +84,19 @@ function Widget:on_input(action_id, action)
 				end
 				return self:on_mouse_move(action)
 			else
-				self.pressed = false
 				if self.hover then
 					self.hover = false
 					self:on_mouse_leave(action)
+				end
+				if self.focus then
+					return self:on_mouse_move(action)
 				end
 			end
 		end
 		return true
 	end
 	if action_id == ActionID.TEXT then
-		if self.focus_enable then
+		if self.text_capture then
 			return self:on_char(action)
 		end
 		return false
@@ -100,21 +106,36 @@ function Widget:on_input(action_id, action)
 	end
 	if action_id == ActionID.LBUTTON then
 		if self:hit_test(action) then
-			if action.released then
-				self.pressed = false
-				return self:on_lbutton_up(action)
-			else
-				self.pressed = true
+			if action.pressed then
+				self.euler:set_focus(self)
 				return self:on_lbutton_down(action)
+			end
+			if action.released and self.focus then
+				return self:on_lbutton_up(action)
+			end
+			if action.repeated and self.repeated_capture then
+				return self:on_lbutton_repeated(action)
 			end
 		end
 		return true
 	end
-	if action_id == ActionID.DWHEEL or action_id == ActionID.UWHEEL then
-		if self.focus_enable then
-			return self:on_mouse_wheel(action)
+	if action_id == ActionID.DWHEEL then
+		if action.value == 1 then
+			if self:hit_test(action) then
+				return self:on_mouse_wheel(action, 1)
+			end
+			return true
 		end
-		return true
+		return false
+	end
+	if action_id == ActionID.UWHEEL then
+		if action.value == 1 then
+			if self:hit_test(action) then
+				return self:on_mouse_wheel(action, -1)
+			end
+			return true
+		end
+		return false
 	end
 	if action.pressed then
 		return self:on_key_down(action)
@@ -132,7 +153,7 @@ function Widget:on_mouse_move(action)
 	return true
 end
 
-function Widget:on_mouse_wheel(action)
+function Widget:on_mouse_wheel(action, arrow)
 	return true
 end
 
@@ -141,6 +162,10 @@ function Widget:on_lbutton_down(action)
 end
 
 function Widget:on_lbutton_up(action)
+	return true
+end
+
+function Widget:on_lbutton_repeated(action)
 	return true
 end
 

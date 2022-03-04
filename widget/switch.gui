@@ -33,8 +33,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 84.0
-    y: 33.0
+    x: 71.0
+    y: 34.0
     z: 0.0
     w: 1.0
   }
@@ -46,7 +46,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "euler/switch_blue_off"
+  texture: "euler/switch_off"
   id: "switch"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -65,7 +65,7 @@ nodes {
   clipping_inverted: false
   alpha: 1.0
   template_node_child: false
-  size_mode: SIZE_MODE_MANUAL
+  size_mode: SIZE_MODE_AUTO
 }
 nodes {
   position {
@@ -87,8 +87,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 84.0
-    y: 33.0
+    x: 72.0
+    y: 34.0
     z: 0.0
     w: 1.0
   }
@@ -100,7 +100,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "euler/switch_blue_on"
+  texture: "euler/switch_on"
   id: "on"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -119,11 +119,11 @@ nodes {
   clipping_inverted: false
   alpha: 1.0
   template_node_child: false
-  size_mode: SIZE_MODE_MANUAL
+  size_mode: SIZE_MODE_AUTO
 }
 nodes {
   position {
-    x: 88.0
+    x: 75.0
     y: 0.0
     z: 0.0
     w: 1.0

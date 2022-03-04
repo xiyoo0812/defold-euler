@@ -7,7 +7,7 @@ prop:reader("on_click", nil)
 prop:reader("image", nil)
 
 function Image:__init(id, img)
-	self.input_enable = false
+	self.input_capture = false
 	self.root  = gui.get_node(id .. "/image")
 	if img then
 		self:set_image(img)
@@ -20,8 +20,15 @@ function Image:set_image(image)
 end
 
 function Image:register_click(func)
-	self.input_enable = true
+	self.input_capture = true
 	self.on_click = func
+end
+
+function Image:on_lbutton_repeated(action)
+	if self.on_click then
+		self.on_click(self)
+	end
+	return false
 end
 
 function Image:on_lbutton_up(action)

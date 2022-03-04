@@ -8,14 +8,16 @@ prop:reader("on_changed", nil)
 prop:accessor("checked", true, true)
 
 function Checkbox:__init(id, checked)
+	self.checked = checked
 	self.label = gui.get_node(id .. "/label")
 	self.root  = gui.get_node(id .. "/checkbox")
 	self.selected = gui.get_node(id .. "/selected")
-	self:set_checked(checked)
+	self:on_prop_changed(checked)
 end
 
 function Checkbox:on_prop_changed(checked)
 	gui.set_enabled(self.selected, checked)
+	gui.set_alpha(self.root, checked and 0 or 1)
 	if self.on_changed then
 		self.on_changed(self, checked)
 	end

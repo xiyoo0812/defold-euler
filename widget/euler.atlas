@@ -1,28 +1,4 @@
 images {
-  image: "/widget/atles/btn_blue_normal.png"
-  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-}
-images {
-  image: "/widget/atles/btn_blue_pressed.png"
-  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-}
-images {
-  image: "/widget/atles/btn_white_normal.png"
-  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-}
-images {
-  image: "/widget/atles/btn_white_pressed.png"
-  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-}
-images {
-  image: "/widget/atles/btn_yellow_normal.png"
-  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-}
-images {
-  image: "/widget/atles/btn_yellow_pressed.png"
-  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-}
-images {
   image: "/widget/atles/checkbox_normal.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
@@ -32,10 +8,6 @@ images {
 }
 images {
   image: "/widget/atles/progress_bar.png"
-  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-}
-images {
-  image: "/widget/atles/progress_bg.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
@@ -51,27 +23,63 @@ images {
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
+  image: "/widget/atles/alpha.png"
+  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+}
+images {
   image: "/widget/atles/slider.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
-  image: "/widget/atles/switch_blue_off.png"
+  image: "/widget/atles/switch_off.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
-  image: "/widget/atles/switch_blue_on.png"
+  image: "/widget/atles/switch_on.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
-  image: "/widget/atles/switch_yellow_off.png"
+  image: "/widget/atles/progress_bg.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
-  image: "/widget/atles/switch_yellow_on.png"
+  image: "/widget/atles/button.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
-  image: "/widget/atles/alpha.png"
+  image: "/widget/atles/divider.png"
+  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+}
+images {
+  image: "/widget/atles/hovered.png"
+  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+}
+images {
+  image: "/widget/atles/left.png"
+  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+}
+images {
+  image: "/widget/atles/pressed.png"
+  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+}
+images {
+  image: "/widget/atles/shifter_bar.png"
+  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+}
+images {
+  image: "/widget/atles/scroll_bar.png"
+  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+}
+images {
+  image: "/widget/atles/scroll_bg.png"
+  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+}
+images {
+  image: "/widget/atles/scroll_btn.png"
+  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+}
+images {
+  image: "/widget/atles/ground.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 margin: 0

@@ -7,11 +7,12 @@ prop:reader("on_image", nil)
 prop:reader("on_changed", nil)
 prop:accessor("checked", true, true)
 
-function Switch:__init(id, ison)
+function Switch:__init(id, checked)
+	self.checked = checked
 	self.root  = gui.get_node(id .. "/switch")
 	self.label = gui.get_node(id .. "/label")
 	self.on_image = gui.get_node(id .. "/on")
-	self:set_checked(ison)
+	self:on_prop_changed(checked)
 end
 
 function Switch:on()
@@ -24,6 +25,7 @@ end
 
 function Switch:on_prop_changed(checked)
 	gui.set_enabled(self.on_image, checked)
+	gui.set_alpha(self.root, checked and 0 or 1)
 	if self.on_changed then
 		self.on_changed(self, checked)
 	end

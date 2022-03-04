@@ -33,8 +33,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 30.0
-    y: 30.0
+    x: 33.0
+    y: 34.0
     z: 0.0
     w: 1.0
   }
@@ -65,11 +65,11 @@ nodes {
   clipping_inverted: false
   alpha: 1.0
   template_node_child: false
-  size_mode: SIZE_MODE_MANUAL
+  size_mode: SIZE_MODE_AUTO
 }
 nodes {
   position {
-    x: 1.0
+    x: 0.0
     y: 0.0
     z: 0.0
     w: 1.0
@@ -87,8 +87,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 28.0
-    y: 28.0
+    x: 33.0
+    y: 34.0
     z: 0.0
     w: 1.0
   }
@@ -119,11 +119,11 @@ nodes {
   clipping_inverted: false
   alpha: 1.0
   template_node_child: false
-  size_mode: SIZE_MODE_MANUAL
+  size_mode: SIZE_MODE_AUTO
 }
 nodes {
   position {
-    x: 30.0
+    x: 34.0
     y: 0.0
     z: 0.0
     w: 1.0
