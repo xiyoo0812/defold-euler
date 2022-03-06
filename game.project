@@ -19,7 +19,7 @@ height = 720
 shared_state = 1
 
 [library]
-include_dirs = euler
+include_dirs = euler widget luaoop utf8
 
 [ios]
 bundle_identifier = se.svenandersson.eulerui
