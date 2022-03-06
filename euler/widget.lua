@@ -23,6 +23,9 @@ end
 function Widget:setup(euler)
 end
 
+function Widget:update(dt)
+end
+
 function Widget:add_child(name, child)
 	gui.set_parent(child, self.root)
 	self.childrens[name] = child
@@ -53,16 +56,16 @@ function Widget:set_enabled(enabled)
 	return gui.set_enabled(self.root, enabled)
 end
 
-function Widget:get_text()
+function Widget:get_label()
 	if self.label then
 		return gui.get_text(self.label)
 	end
 end
 
-function Widget:set_text(text)
+function Widget:set_label(text)
 	if self.label then
 		gui.set_text(self.label, text)
-		self:on_text_changed(self.label, text)
+		self:on_label_changed(self.label, text)
 	end
 end
 
@@ -138,9 +141,15 @@ function Widget:on_input(action_id, action)
 		return false
 	end
 	if action.pressed then
-		return self:on_key_down(action)
+		return self:on_key_down(action_id, action)
 	end
-	return self:on_key_up(action)
+	if action.released then
+		return self:on_key_up(action_id, action)
+	end
+	if self.repeated_capture and action.repeated then
+		return self:on_key_repeated(action_id, action)
+	end
+	return false
 end
 
 function Widget:on_mouse_enter(action)
@@ -177,11 +186,15 @@ function Widget:on_key_up(action)
 	return true
 end
 
+function Widget:on_key_repeated(action)
+	return true
+end
+
 function Widget:on_char(action)
 	return true
 end
 
-function Widget:on_text_changed(label, text)
+function Widget:on_label_changed(label, text)
 end
 
 return Widget

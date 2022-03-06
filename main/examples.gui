@@ -198,7 +198,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/editbox"
+  texture: "euler/ground"
   id: "input_default/editbox"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -224,7 +224,7 @@ nodes {
 nodes {
   position {
     x: 5.0
-    y: 0.0
+    y: -1.0
     z: 0.0
     w: 1.0
   }
@@ -241,20 +241,20 @@ nodes {
     w: 1.0
   }
   size {
-    x: 0.0
-    y: 32.0
+    x: 190.0
+    y: 36.0
     z: 0.0
     w: 1.0
   }
   color {
-    x: 0.18431373
-    y: 0.18431373
-    z: 0.18431373
+    x: 1.0
+    y: 1.0
+    z: 1.0
     w: 1.0
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: ""
+  texture: "euler/editbox"
   id: "input_default/inner"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -264,67 +264,12 @@ nodes {
   layer: ""
   inherit_alpha: true
   slice9 {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 0.0
+    x: 9.0
+    y: 8.0
+    z: 9.0
+    w: 8.0
   }
   clipping_mode: CLIPPING_MODE_STENCIL
-  clipping_visible: true
-  clipping_inverted: false
-  alpha: 0.0
-  template_node_child: true
-  size_mode: SIZE_MODE_MANUAL
-}
-nodes {
-  position {
-    x: 5.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  size {
-    x: 0.0
-    y: 26.0
-    z: 0.0
-    w: 1.0
-  }
-  color {
-    x: 0.3254902
-    y: 0.6666667
-    z: 0.9960785
-    w: 1.0
-  }
-  type: TYPE_BOX
-  blend_mode: BLEND_MODE_ALPHA
-  texture: ""
-  id: "input_default/cursor"
-  xanchor: XANCHOR_NONE
-  yanchor: YANCHOR_NONE
-  pivot: PIVOT_W
-  adjust_mode: ADJUST_MODE_FIT
-  parent: "input_default/inner"
-  layer: ""
-  inherit_alpha: false
-  slice9 {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 0.0
-  }
-  clipping_mode: CLIPPING_MODE_NONE
   clipping_visible: true
   clipping_inverted: false
   alpha: 1.0
@@ -333,7 +278,7 @@ nodes {
 }
 nodes {
   position {
-    x: 4.0
+    x: 10.0
     y: 0.0
     z: 0.0
     w: 1.0
@@ -351,7 +296,7 @@ nodes {
     w: 1.0
   }
   size {
-    x: 185.0
+    x: 180.0
     y: 32.0
     z: 0.0
     w: 1.0
@@ -364,7 +309,7 @@ nodes {
   }
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
-  text: ""
+  text: "Empty"
   font: "eulerfont"
   id: "input_default/content"
   xanchor: XANCHOR_NONE
@@ -384,13 +329,12 @@ nodes {
   }
   adjust_mode: ADJUST_MODE_FIT
   line_break: false
-  parent: "input_default/inner"
+  parent: "input_default/editbox"
   layer: ""
   inherit_alpha: false
   alpha: 1.0
   outline_alpha: 1.0
   shadow_alpha: 1.0
-  overridden_fields: 8
   template_node_child: true
   text_leading: 1.0
   text_tracking: 0.0
@@ -468,7 +412,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/editbox"
+  texture: "euler/ground"
   id: "input_email/editbox"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -494,7 +438,7 @@ nodes {
 nodes {
   position {
     x: 5.0
-    y: 0.0
+    y: -1.0
     z: 0.0
     w: 1.0
   }
@@ -511,20 +455,20 @@ nodes {
     w: 1.0
   }
   size {
-    x: 0.0
-    y: 32.0
+    x: 190.0
+    y: 36.0
     z: 0.0
     w: 1.0
   }
   color {
-    x: 0.18431373
-    y: 0.18431373
-    z: 0.18431373
+    x: 1.0
+    y: 1.0
+    z: 1.0
     w: 1.0
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: ""
+  texture: "euler/editbox"
   id: "input_email/inner"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -534,67 +478,12 @@ nodes {
   layer: ""
   inherit_alpha: true
   slice9 {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 0.0
+    x: 9.0
+    y: 8.0
+    z: 9.0
+    w: 8.0
   }
   clipping_mode: CLIPPING_MODE_STENCIL
-  clipping_visible: true
-  clipping_inverted: false
-  alpha: 0.0
-  template_node_child: true
-  size_mode: SIZE_MODE_MANUAL
-}
-nodes {
-  position {
-    x: 5.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  size {
-    x: 0.0
-    y: 26.0
-    z: 0.0
-    w: 1.0
-  }
-  color {
-    x: 0.3254902
-    y: 0.6666667
-    z: 0.9960785
-    w: 1.0
-  }
-  type: TYPE_BOX
-  blend_mode: BLEND_MODE_ALPHA
-  texture: ""
-  id: "input_email/cursor"
-  xanchor: XANCHOR_NONE
-  yanchor: YANCHOR_NONE
-  pivot: PIVOT_W
-  adjust_mode: ADJUST_MODE_FIT
-  parent: "input_email/inner"
-  layer: ""
-  inherit_alpha: false
-  slice9 {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 0.0
-  }
-  clipping_mode: CLIPPING_MODE_NONE
   clipping_visible: true
   clipping_inverted: false
   alpha: 1.0
@@ -603,7 +492,7 @@ nodes {
 }
 nodes {
   position {
-    x: 4.0
+    x: 10.0
     y: 0.0
     z: 0.0
     w: 1.0
@@ -621,7 +510,7 @@ nodes {
     w: 1.0
   }
   size {
-    x: 185.0
+    x: 180.0
     y: 32.0
     z: 0.0
     w: 1.0
@@ -634,7 +523,7 @@ nodes {
   }
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
-  text: ""
+  text: "Empty"
   font: "eulerfont"
   id: "input_email/content"
   xanchor: XANCHOR_NONE
@@ -654,13 +543,12 @@ nodes {
   }
   adjust_mode: ADJUST_MODE_FIT
   line_break: false
-  parent: "input_email/inner"
+  parent: "input_email/editbox"
   layer: ""
   inherit_alpha: false
   alpha: 1.0
   outline_alpha: 1.0
   shadow_alpha: 1.0
-  overridden_fields: 8
   template_node_child: true
   text_leading: 1.0
   text_tracking: 0.0
@@ -668,7 +556,7 @@ nodes {
 nodes {
   position {
     x: 57.0
-    y: 531.6393
+    y: 560.0
     z: 0.0
     w: 1.0
   }
@@ -738,7 +626,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/editbox"
+  texture: "euler/ground"
   id: "input_number/editbox"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -764,7 +652,7 @@ nodes {
 nodes {
   position {
     x: 5.0
-    y: 0.0
+    y: -1.0
     z: 0.0
     w: 1.0
   }
@@ -781,20 +669,20 @@ nodes {
     w: 1.0
   }
   size {
-    x: 0.0
-    y: 32.0
+    x: 190.0
+    y: 36.0
     z: 0.0
     w: 1.0
   }
   color {
-    x: 0.18431373
-    y: 0.18431373
-    z: 0.18431373
+    x: 1.0
+    y: 1.0
+    z: 1.0
     w: 1.0
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: ""
+  texture: "euler/editbox"
   id: "input_number/inner"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -804,67 +692,12 @@ nodes {
   layer: ""
   inherit_alpha: true
   slice9 {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 0.0
+    x: 9.0
+    y: 8.0
+    z: 9.0
+    w: 8.0
   }
   clipping_mode: CLIPPING_MODE_STENCIL
-  clipping_visible: true
-  clipping_inverted: false
-  alpha: 0.0
-  template_node_child: true
-  size_mode: SIZE_MODE_MANUAL
-}
-nodes {
-  position {
-    x: 5.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  size {
-    x: 0.0
-    y: 26.0
-    z: 0.0
-    w: 1.0
-  }
-  color {
-    x: 0.3254902
-    y: 0.6666667
-    z: 0.9960785
-    w: 1.0
-  }
-  type: TYPE_BOX
-  blend_mode: BLEND_MODE_ALPHA
-  texture: ""
-  id: "input_number/cursor"
-  xanchor: XANCHOR_NONE
-  yanchor: YANCHOR_NONE
-  pivot: PIVOT_W
-  adjust_mode: ADJUST_MODE_FIT
-  parent: "input_number/inner"
-  layer: ""
-  inherit_alpha: false
-  slice9 {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 0.0
-  }
-  clipping_mode: CLIPPING_MODE_NONE
   clipping_visible: true
   clipping_inverted: false
   alpha: 1.0
@@ -873,7 +706,7 @@ nodes {
 }
 nodes {
   position {
-    x: 4.0
+    x: 10.0
     y: 0.0
     z: 0.0
     w: 1.0
@@ -891,7 +724,7 @@ nodes {
     w: 1.0
   }
   size {
-    x: 185.0
+    x: 180.0
     y: 32.0
     z: 0.0
     w: 1.0
@@ -904,7 +737,7 @@ nodes {
   }
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
-  text: "1234"
+  text: "Empty"
   font: "eulerfont"
   id: "input_number/content"
   xanchor: XANCHOR_NONE
@@ -924,21 +757,20 @@ nodes {
   }
   adjust_mode: ADJUST_MODE_FIT
   line_break: false
-  parent: "input_number/inner"
+  parent: "input_number/editbox"
   layer: ""
   inherit_alpha: false
   alpha: 1.0
   outline_alpha: 1.0
   shadow_alpha: 1.0
-  overridden_fields: 8
   template_node_child: true
   text_leading: 1.0
   text_tracking: 0.0
 }
 nodes {
   position {
-    x: 679.82
-    y: 540.0
+    x: 680.0
+    y: 560.0
     z: 0.0
     w: 1.0
   }
@@ -995,8 +827,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 200.0
-    y: 40.0
+    x: 300.0
+    y: 60.0
     z: 0.0
     w: 1.0
   }
@@ -1008,7 +840,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/editbox"
+  texture: "euler/ground"
   id: "input_password/editbox"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -1027,13 +859,14 @@ nodes {
   clipping_visible: true
   clipping_inverted: false
   alpha: 1.0
+  overridden_fields: 4
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
 }
 nodes {
   position {
     x: 5.0
-    y: 0.0
+    y: -1.0
     z: 0.0
     w: 1.0
   }
@@ -1050,20 +883,20 @@ nodes {
     w: 1.0
   }
   size {
-    x: 0.0
-    y: 32.0
+    x: 190.0
+    y: 36.0
     z: 0.0
     w: 1.0
   }
   color {
-    x: 0.18431373
-    y: 0.18431373
-    z: 0.18431373
+    x: 1.0
+    y: 1.0
+    z: 1.0
     w: 1.0
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: ""
+  texture: "euler/editbox"
   id: "input_password/inner"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -1073,67 +906,12 @@ nodes {
   layer: ""
   inherit_alpha: true
   slice9 {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 0.0
+    x: 9.0
+    y: 8.0
+    z: 9.0
+    w: 8.0
   }
   clipping_mode: CLIPPING_MODE_STENCIL
-  clipping_visible: true
-  clipping_inverted: false
-  alpha: 0.0
-  template_node_child: true
-  size_mode: SIZE_MODE_MANUAL
-}
-nodes {
-  position {
-    x: 5.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  size {
-    x: 0.0
-    y: 26.0
-    z: 0.0
-    w: 1.0
-  }
-  color {
-    x: 0.3254902
-    y: 0.6666667
-    z: 0.9960785
-    w: 1.0
-  }
-  type: TYPE_BOX
-  blend_mode: BLEND_MODE_ALPHA
-  texture: ""
-  id: "input_password/cursor"
-  xanchor: XANCHOR_NONE
-  yanchor: YANCHOR_NONE
-  pivot: PIVOT_W
-  adjust_mode: ADJUST_MODE_FIT
-  parent: "input_password/inner"
-  layer: ""
-  inherit_alpha: false
-  slice9 {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 0.0
-  }
-  clipping_mode: CLIPPING_MODE_NONE
   clipping_visible: true
   clipping_inverted: false
   alpha: 1.0
@@ -1142,7 +920,7 @@ nodes {
 }
 nodes {
   position {
-    x: 4.0
+    x: 10.0
     y: 0.0
     z: 0.0
     w: 1.0
@@ -1160,7 +938,7 @@ nodes {
     w: 1.0
   }
   size {
-    x: 185.0
+    x: 180.0
     y: 32.0
     z: 0.0
     w: 1.0
@@ -1193,7 +971,7 @@ nodes {
   }
   adjust_mode: ADJUST_MODE_FIT
   line_break: false
-  parent: "input_password/inner"
+  parent: "input_password/editbox"
   layer: ""
   inherit_alpha: false
   alpha: 1.0
@@ -1205,279 +983,8 @@ nodes {
 }
 nodes {
   position {
-    x: 61.0
-    y: 332.084
-    z: 0.0
-    w: 1.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale {
-    x: 0.5
-    y: 0.5
-    z: 1.0
-    w: 1.0
-  }
-  size {
     x: 200.0
-    y: 100.0
-    z: 0.0
-    w: 1.0
-  }
-  color {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  type: TYPE_TEMPLATE
-  id: "input_smaller"
-  parent: "euler_root"
-  layer: ""
-  inherit_alpha: true
-  alpha: 1.0
-  template: "/widget/editbox.gui"
-  template_node_child: false
-}
-nodes {
-  position {
-    x: -26.687881
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  size {
-    x: 800.0
-    y: 40.0
-    z: 0.0
-    w: 1.0
-  }
-  color {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  type: TYPE_BOX
-  blend_mode: BLEND_MODE_ALPHA
-  texture: "button/editbox"
-  id: "input_smaller/editbox"
-  xanchor: XANCHOR_NONE
-  yanchor: YANCHOR_NONE
-  pivot: PIVOT_W
-  adjust_mode: ADJUST_MODE_FIT
-  parent: "input_smaller"
-  layer: ""
-  inherit_alpha: true
-  slice9 {
-    x: 8.0
-    y: 8.0
-    z: 8.0
-    w: 8.0
-  }
-  clipping_mode: CLIPPING_MODE_NONE
-  clipping_visible: true
-  clipping_inverted: false
-  alpha: 1.0
-  overridden_fields: 1
-  overridden_fields: 4
-  template_node_child: true
-  size_mode: SIZE_MODE_MANUAL
-}
-nodes {
-  position {
-    x: 5.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  size {
-    x: 0.0
-    y: 32.0
-    z: 0.0
-    w: 1.0
-  }
-  color {
-    x: 0.18431373
-    y: 0.18431373
-    z: 0.18431373
-    w: 1.0
-  }
-  type: TYPE_BOX
-  blend_mode: BLEND_MODE_ALPHA
-  texture: ""
-  id: "input_smaller/inner"
-  xanchor: XANCHOR_NONE
-  yanchor: YANCHOR_NONE
-  pivot: PIVOT_W
-  adjust_mode: ADJUST_MODE_FIT
-  parent: "input_smaller/editbox"
-  layer: ""
-  inherit_alpha: true
-  slice9 {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 0.0
-  }
-  clipping_mode: CLIPPING_MODE_STENCIL
-  clipping_visible: true
-  clipping_inverted: false
-  alpha: 0.0
-  template_node_child: true
-  size_mode: SIZE_MODE_MANUAL
-}
-nodes {
-  position {
-    x: 5.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  size {
-    x: 0.0
-    y: 26.0
-    z: 0.0
-    w: 1.0
-  }
-  color {
-    x: 0.3254902
-    y: 0.6666667
-    z: 0.9960785
-    w: 1.0
-  }
-  type: TYPE_BOX
-  blend_mode: BLEND_MODE_ALPHA
-  texture: ""
-  id: "input_smaller/cursor"
-  xanchor: XANCHOR_NONE
-  yanchor: YANCHOR_NONE
-  pivot: PIVOT_W
-  adjust_mode: ADJUST_MODE_FIT
-  parent: "input_smaller/inner"
-  layer: ""
-  inherit_alpha: false
-  slice9 {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 0.0
-  }
-  clipping_mode: CLIPPING_MODE_NONE
-  clipping_visible: true
-  clipping_inverted: false
-  alpha: 1.0
-  template_node_child: true
-  size_mode: SIZE_MODE_MANUAL
-}
-nodes {
-  position {
-    x: 4.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  size {
-    x: 185.0
-    y: 32.0
-    z: 0.0
-    w: 1.0
-  }
-  color {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  type: TYPE_TEXT
-  blend_mode: BLEND_MODE_ALPHA
-  text: ""
-  font: "eulerfont"
-  id: "input_smaller/content"
-  xanchor: XANCHOR_NONE
-  yanchor: YANCHOR_NONE
-  pivot: PIVOT_W
-  outline {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  shadow {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  adjust_mode: ADJUST_MODE_FIT
-  line_break: false
-  parent: "input_smaller/inner"
-  layer: ""
-  inherit_alpha: false
-  alpha: 1.0
-  outline_alpha: 1.0
-  shadow_alpha: 1.0
-  overridden_fields: 8
-  template_node_child: true
-  text_leading: 1.0
-  text_tracking: 0.0
-}
-nodes {
-  position {
-    x: 202.74986
-    y: 429.49545
+    y: 460.0
     z: 0.0
     w: 1.0
   }
@@ -1590,8 +1097,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 300.0
-    y: 30.0
+    x: 200.0
+    y: 60.0
     z: 0.0
     w: 1.0
   }
@@ -1622,7 +1129,6 @@ nodes {
   clipping_visible: true
   clipping_inverted: false
   alpha: 1.0
-  overridden_fields: 4
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
 }
@@ -1646,7 +1152,7 @@ nodes {
     w: 1.0
   }
   size {
-    x: 300.0
+    x: 200.0
     y: 60.0
     z: 0.0
     w: 1.0
@@ -1678,7 +1184,6 @@ nodes {
   clipping_visible: true
   clipping_inverted: false
   alpha: 1.0
-  overridden_fields: 4
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
 }
@@ -1702,7 +1207,7 @@ nodes {
     w: 1.0
   }
   size {
-    x: 300.0
+    x: 200.0
     y: 60.0
     z: 0.0
     w: 1.0
@@ -1734,7 +1239,6 @@ nodes {
   clipping_visible: true
   clipping_inverted: false
   alpha: 1.0
-  overridden_fields: 4
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
 }
@@ -1758,7 +1262,7 @@ nodes {
     w: 1.0
   }
   size {
-    x: 300.0
+    x: 200.0
     y: 60.0
     z: 0.0
     w: 1.0
@@ -1790,8 +1294,6 @@ nodes {
   clipping_visible: true
   clipping_inverted: false
   alpha: 1.0
-  overridden_fields: 1
-  overridden_fields: 4
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
 }
@@ -1932,7 +1434,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "checkbox/checkbox_normal"
+  texture: "checkbox/alpha"
   id: "checkbox_a/checkbox"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -1952,7 +1454,62 @@ nodes {
   clipping_inverted: false
   alpha: 1.0
   template_node_child: true
-  size_mode: SIZE_MODE_AUTO
+  size_mode: SIZE_MODE_MANUAL
+}
+nodes {
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  size {
+    x: 33.0
+    y: 34.0
+    z: 0.0
+    w: 1.0
+  }
+  color {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  type: TYPE_BOX
+  blend_mode: BLEND_MODE_ALPHA
+  texture: "checkbox/checkbox_normal"
+  id: "checkbox_a/unchecked"
+  xanchor: XANCHOR_NONE
+  yanchor: YANCHOR_NONE
+  pivot: PIVOT_W
+  adjust_mode: ADJUST_MODE_FIT
+  parent: "checkbox_a/checkbox"
+  layer: ""
+  inherit_alpha: true
+  slice9 {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 0.0
+  }
+  clipping_mode: CLIPPING_MODE_NONE
+  clipping_visible: true
+  clipping_inverted: false
+  alpha: 1.0
+  template_node_child: true
+  size_mode: SIZE_MODE_MANUAL
 }
 nodes {
   position {
@@ -1988,12 +1545,12 @@ nodes {
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
   texture: "checkbox/checkbox_selected"
-  id: "checkbox_a/selected"
+  id: "checkbox_a/checked"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_W
   adjust_mode: ADJUST_MODE_FIT
-  parent: "checkbox_a"
+  parent: "checkbox_a/checkbox"
   layer: ""
   inherit_alpha: true
   slice9 {
@@ -2007,7 +1564,7 @@ nodes {
   clipping_inverted: false
   alpha: 1.0
   template_node_child: true
-  size_mode: SIZE_MODE_AUTO
+  size_mode: SIZE_MODE_MANUAL
 }
 nodes {
   position {
@@ -2062,7 +1619,7 @@ nodes {
   }
   adjust_mode: ADJUST_MODE_FIT
   line_break: false
-  parent: "checkbox_a"
+  parent: "checkbox_a/checkbox"
   layer: ""
   inherit_alpha: true
   alpha: 1.0
@@ -2145,7 +1702,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "checkbox/checkbox_normal"
+  texture: "checkbox/alpha"
   id: "checkbox_b/checkbox"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -2165,7 +1722,62 @@ nodes {
   clipping_inverted: false
   alpha: 1.0
   template_node_child: true
-  size_mode: SIZE_MODE_AUTO
+  size_mode: SIZE_MODE_MANUAL
+}
+nodes {
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  size {
+    x: 33.0
+    y: 34.0
+    z: 0.0
+    w: 1.0
+  }
+  color {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  type: TYPE_BOX
+  blend_mode: BLEND_MODE_ALPHA
+  texture: "checkbox/checkbox_normal"
+  id: "checkbox_b/unchecked"
+  xanchor: XANCHOR_NONE
+  yanchor: YANCHOR_NONE
+  pivot: PIVOT_W
+  adjust_mode: ADJUST_MODE_FIT
+  parent: "checkbox_b/checkbox"
+  layer: ""
+  inherit_alpha: true
+  slice9 {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 0.0
+  }
+  clipping_mode: CLIPPING_MODE_NONE
+  clipping_visible: true
+  clipping_inverted: false
+  alpha: 1.0
+  template_node_child: true
+  size_mode: SIZE_MODE_MANUAL
 }
 nodes {
   position {
@@ -2201,12 +1813,12 @@ nodes {
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
   texture: "checkbox/checkbox_selected"
-  id: "checkbox_b/selected"
+  id: "checkbox_b/checked"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_W
   adjust_mode: ADJUST_MODE_FIT
-  parent: "checkbox_b"
+  parent: "checkbox_b/checkbox"
   layer: ""
   inherit_alpha: true
   slice9 {
@@ -2220,7 +1832,7 @@ nodes {
   clipping_inverted: false
   alpha: 1.0
   template_node_child: true
-  size_mode: SIZE_MODE_AUTO
+  size_mode: SIZE_MODE_MANUAL
 }
 nodes {
   position {
@@ -2275,7 +1887,7 @@ nodes {
   }
   adjust_mode: ADJUST_MODE_FIT
   line_break: false
-  parent: "checkbox_b"
+  parent: "checkbox_b/checkbox"
   layer: ""
   inherit_alpha: true
   alpha: 1.0
@@ -2345,7 +1957,7 @@ nodes {
     w: 1.0
   }
   size {
-    x: 71.0
+    x: 72.0
     y: 34.0
     z: 0.0
     w: 1.0
@@ -2358,7 +1970,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "euler/switch_off"
+  texture: "euler/alpha"
   id: "switch_a/switch"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -2378,7 +1990,62 @@ nodes {
   clipping_inverted: false
   alpha: 1.0
   template_node_child: true
-  size_mode: SIZE_MODE_AUTO
+  size_mode: SIZE_MODE_MANUAL
+}
+nodes {
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  size {
+    x: 72.0
+    y: 34.0
+    z: 0.0
+    w: 1.0
+  }
+  color {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  type: TYPE_BOX
+  blend_mode: BLEND_MODE_ALPHA
+  texture: "euler/switch_off"
+  id: "switch_a/off"
+  xanchor: XANCHOR_NONE
+  yanchor: YANCHOR_NONE
+  pivot: PIVOT_W
+  adjust_mode: ADJUST_MODE_FIT
+  parent: "switch_a/switch"
+  layer: ""
+  inherit_alpha: true
+  slice9 {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 0.0
+  }
+  clipping_mode: CLIPPING_MODE_NONE
+  clipping_visible: true
+  clipping_inverted: false
+  alpha: 1.0
+  template_node_child: true
+  size_mode: SIZE_MODE_MANUAL
 }
 nodes {
   position {
@@ -2419,7 +2086,7 @@ nodes {
   yanchor: YANCHOR_NONE
   pivot: PIVOT_W
   adjust_mode: ADJUST_MODE_FIT
-  parent: "switch_a"
+  parent: "switch_a/switch"
   layer: ""
   inherit_alpha: true
   slice9 {
@@ -2433,7 +2100,7 @@ nodes {
   clipping_inverted: false
   alpha: 1.0
   template_node_child: true
-  size_mode: SIZE_MODE_AUTO
+  size_mode: SIZE_MODE_MANUAL
 }
 nodes {
   position {
@@ -2488,7 +2155,7 @@ nodes {
   }
   adjust_mode: ADJUST_MODE_FIT
   line_break: false
-  parent: "switch_a"
+  parent: "switch_a/switch"
   layer: ""
   inherit_alpha: true
   alpha: 1.0
@@ -2558,7 +2225,7 @@ nodes {
     w: 1.0
   }
   size {
-    x: 71.0
+    x: 72.0
     y: 34.0
     z: 0.0
     w: 1.0
@@ -2571,7 +2238,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "euler/switch_off"
+  texture: "euler/alpha"
   id: "switch_b/switch"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -2591,7 +2258,62 @@ nodes {
   clipping_inverted: false
   alpha: 1.0
   template_node_child: true
-  size_mode: SIZE_MODE_AUTO
+  size_mode: SIZE_MODE_MANUAL
+}
+nodes {
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  size {
+    x: 72.0
+    y: 34.0
+    z: 0.0
+    w: 1.0
+  }
+  color {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  type: TYPE_BOX
+  blend_mode: BLEND_MODE_ALPHA
+  texture: "euler/switch_off"
+  id: "switch_b/off"
+  xanchor: XANCHOR_NONE
+  yanchor: YANCHOR_NONE
+  pivot: PIVOT_W
+  adjust_mode: ADJUST_MODE_FIT
+  parent: "switch_b/switch"
+  layer: ""
+  inherit_alpha: true
+  slice9 {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 0.0
+  }
+  clipping_mode: CLIPPING_MODE_NONE
+  clipping_visible: true
+  clipping_inverted: false
+  alpha: 1.0
+  template_node_child: true
+  size_mode: SIZE_MODE_MANUAL
 }
 nodes {
   position {
@@ -2632,7 +2354,7 @@ nodes {
   yanchor: YANCHOR_NONE
   pivot: PIVOT_W
   adjust_mode: ADJUST_MODE_FIT
-  parent: "switch_b"
+  parent: "switch_b/switch"
   layer: ""
   inherit_alpha: true
   slice9 {
@@ -2646,7 +2368,7 @@ nodes {
   clipping_inverted: false
   alpha: 1.0
   template_node_child: true
-  size_mode: SIZE_MODE_AUTO
+  size_mode: SIZE_MODE_MANUAL
 }
 nodes {
   position {
@@ -2701,7 +2423,7 @@ nodes {
   }
   adjust_mode: ADJUST_MODE_FIT
   line_break: false
-  parent: "switch_b"
+  parent: "switch_b/switch"
   layer: ""
   inherit_alpha: true
   alpha: 1.0
@@ -2784,7 +2506,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "radio/radio_normal"
+  texture: "radio/alpha"
   id: "radio_a/radio"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -2804,7 +2526,62 @@ nodes {
   clipping_inverted: false
   alpha: 1.0
   template_node_child: true
-  size_mode: SIZE_MODE_AUTO
+  size_mode: SIZE_MODE_MANUAL
+}
+nodes {
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  size {
+    x: 33.0
+    y: 34.0
+    z: 0.0
+    w: 1.0
+  }
+  color {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  type: TYPE_BOX
+  blend_mode: BLEND_MODE_ALPHA
+  texture: "radio/radio_normal"
+  id: "radio_a/unchecked"
+  xanchor: XANCHOR_NONE
+  yanchor: YANCHOR_NONE
+  pivot: PIVOT_W
+  adjust_mode: ADJUST_MODE_FIT
+  parent: "radio_a/radio"
+  layer: ""
+  inherit_alpha: true
+  slice9 {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 0.0
+  }
+  clipping_mode: CLIPPING_MODE_NONE
+  clipping_visible: true
+  clipping_inverted: false
+  alpha: 1.0
+  template_node_child: true
+  size_mode: SIZE_MODE_MANUAL
 }
 nodes {
   position {
@@ -2840,12 +2617,12 @@ nodes {
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
   texture: "radio/radio_selected"
-  id: "radio_a/selected"
+  id: "radio_a/checked"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_W
   adjust_mode: ADJUST_MODE_FIT
-  parent: "radio_a"
+  parent: "radio_a/radio"
   layer: ""
   inherit_alpha: true
   slice9 {
@@ -2859,11 +2636,11 @@ nodes {
   clipping_inverted: false
   alpha: 1.0
   template_node_child: true
-  size_mode: SIZE_MODE_AUTO
+  size_mode: SIZE_MODE_MANUAL
 }
 nodes {
   position {
-    x: 35.0
+    x: 40.0
     y: 0.0
     z: 0.0
     w: 1.0
@@ -2914,7 +2691,7 @@ nodes {
   }
   adjust_mode: ADJUST_MODE_FIT
   line_break: false
-  parent: "radio_a"
+  parent: "radio_a/radio"
   layer: ""
   inherit_alpha: true
   alpha: 1.0
@@ -2997,7 +2774,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "radio/radio_normal"
+  texture: "radio/alpha"
   id: "radio_b/radio"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -3017,7 +2794,62 @@ nodes {
   clipping_inverted: false
   alpha: 1.0
   template_node_child: true
-  size_mode: SIZE_MODE_AUTO
+  size_mode: SIZE_MODE_MANUAL
+}
+nodes {
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  size {
+    x: 33.0
+    y: 34.0
+    z: 0.0
+    w: 1.0
+  }
+  color {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  type: TYPE_BOX
+  blend_mode: BLEND_MODE_ALPHA
+  texture: "radio/radio_normal"
+  id: "radio_b/unchecked"
+  xanchor: XANCHOR_NONE
+  yanchor: YANCHOR_NONE
+  pivot: PIVOT_W
+  adjust_mode: ADJUST_MODE_FIT
+  parent: "radio_b/radio"
+  layer: ""
+  inherit_alpha: true
+  slice9 {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 0.0
+  }
+  clipping_mode: CLIPPING_MODE_NONE
+  clipping_visible: true
+  clipping_inverted: false
+  alpha: 1.0
+  template_node_child: true
+  size_mode: SIZE_MODE_MANUAL
 }
 nodes {
   position {
@@ -3053,12 +2885,12 @@ nodes {
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
   texture: "radio/radio_selected"
-  id: "radio_b/selected"
+  id: "radio_b/checked"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_W
   adjust_mode: ADJUST_MODE_FIT
-  parent: "radio_b"
+  parent: "radio_b/radio"
   layer: ""
   inherit_alpha: true
   slice9 {
@@ -3072,11 +2904,11 @@ nodes {
   clipping_inverted: false
   alpha: 1.0
   template_node_child: true
-  size_mode: SIZE_MODE_AUTO
+  size_mode: SIZE_MODE_MANUAL
 }
 nodes {
   position {
-    x: 35.0
+    x: 40.0
     y: 0.0
     z: 0.0
     w: 1.0
@@ -3127,7 +2959,7 @@ nodes {
   }
   adjust_mode: ADJUST_MODE_FIT
   line_break: false
-  parent: "radio_b"
+  parent: "radio_b/radio"
   layer: ""
   inherit_alpha: true
   alpha: 1.0
@@ -3210,7 +3042,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "radio/radio_normal"
+  texture: "radio/alpha"
   id: "radio_c/radio"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -3230,7 +3062,62 @@ nodes {
   clipping_inverted: false
   alpha: 1.0
   template_node_child: true
-  size_mode: SIZE_MODE_AUTO
+  size_mode: SIZE_MODE_MANUAL
+}
+nodes {
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  size {
+    x: 33.0
+    y: 34.0
+    z: 0.0
+    w: 1.0
+  }
+  color {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  type: TYPE_BOX
+  blend_mode: BLEND_MODE_ALPHA
+  texture: "radio/radio_normal"
+  id: "radio_c/unchecked"
+  xanchor: XANCHOR_NONE
+  yanchor: YANCHOR_NONE
+  pivot: PIVOT_W
+  adjust_mode: ADJUST_MODE_FIT
+  parent: "radio_c/radio"
+  layer: ""
+  inherit_alpha: true
+  slice9 {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 0.0
+  }
+  clipping_mode: CLIPPING_MODE_NONE
+  clipping_visible: true
+  clipping_inverted: false
+  alpha: 1.0
+  template_node_child: true
+  size_mode: SIZE_MODE_MANUAL
 }
 nodes {
   position {
@@ -3266,12 +3153,12 @@ nodes {
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
   texture: "radio/radio_selected"
-  id: "radio_c/selected"
+  id: "radio_c/checked"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_W
   adjust_mode: ADJUST_MODE_FIT
-  parent: "radio_c"
+  parent: "radio_c/radio"
   layer: ""
   inherit_alpha: true
   slice9 {
@@ -3285,11 +3172,11 @@ nodes {
   clipping_inverted: false
   alpha: 1.0
   template_node_child: true
-  size_mode: SIZE_MODE_AUTO
+  size_mode: SIZE_MODE_MANUAL
 }
 nodes {
   position {
-    x: 35.0
+    x: 40.0
     y: 0.0
     z: 0.0
     w: 1.0
@@ -3340,7 +3227,7 @@ nodes {
   }
   adjust_mode: ADJUST_MODE_FIT
   line_break: false
-  parent: "radio_c"
+  parent: "radio_c/radio"
   layer: ""
   inherit_alpha: true
   alpha: 1.0
@@ -3652,8 +3539,8 @@ nodes {
 }
 nodes {
   position {
-    x: 537.0
-    y: 510.0
+    x: 541.0
+    y: 509.0
     z: 0.0
     w: 1.0
   }
@@ -3803,7 +3690,7 @@ nodes {
 }
 nodes {
   position {
-    x: 151.0
+    x: 150.0
     y: 0.0
     z: 0.0
     w: 1.0
@@ -3821,7 +3708,7 @@ nodes {
     w: 1.0
   }
   size {
-    x: 303.0
+    x: 300.0
     y: 20.0
     z: 0.0
     w: 1.0
@@ -4018,7 +3905,7 @@ nodes {
 }
 nodes {
   position {
-    x: 151.0
+    x: 150.0
     y: 0.0
     z: 0.0
     w: 1.0
@@ -4036,7 +3923,7 @@ nodes {
     w: 1.0
   }
   size {
-    x: 303.0
+    x: 300.0
     y: 20.0
     z: 0.0
     w: 1.0
@@ -5716,10 +5603,10 @@ nodes {
   clipping_visible: true
   clipping_inverted: false
   alpha: 1.0
+  overridden_fields: 4
   overridden_fields: 9
-  overridden_fields: 38
   template_node_child: true
-  size_mode: SIZE_MODE_AUTO
+  size_mode: SIZE_MODE_MANUAL
 }
 nodes {
   position {

@@ -19,6 +19,13 @@ function Button:__init(id)
 	self:show_child("normal")
 end
 
+function Button:setup(euler)
+	local size = gui.get_size(self.root)
+	for _, child in pairs(self.childrens) do
+		gui.set_size(child, size)
+	end
+end
+
 function Button:set_disabled(disabled)
 	if disabled then
 		self.input_capture = false

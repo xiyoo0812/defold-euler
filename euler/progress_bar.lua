@@ -19,6 +19,13 @@ function ProgressBar:__init(id, progress)
 	self:set_progress(progress)
 end
 
+function ProgressBar:setup(euler)
+	local size = gui.get_size(self.root)
+	local pos = gui.get_position(self.label)
+	pos.x = size.x / 2
+	gui.set_position(self.label, pos)
+end
+
 function ProgressBar:on_prop_changed()
 	self.progress = utils.clamp(self.progress, 0, self.max)
 	self.percent = self.progress / self.max

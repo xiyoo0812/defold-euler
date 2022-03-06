@@ -23,8 +23,9 @@ local ProgressBar  = require("euler.progress_bar")
 
 local Euler = class()
 local prop = property(Euler)
-prop:reader("widgets", {})
+prop:reader("frame", 0)
 prop:reader("focus", nil)
+prop:reader("widgets", {})
 prop:accessor("pressed", false)
 
 function Euler:setup_widget(widget)
@@ -32,14 +33,6 @@ function Euler:setup_widget(widget)
     widget:set_euler(self)
     widget:setup(self)
     return widget
-end
-
-function Euler:set_focus(widget)
-    if self.focus then
-        self.focus:set_focus(false)
-    end
-    widget:set_focus(true)
-    self.focus = widget
 end
 
 function Euler:init_image(id, img)
@@ -66,8 +59,20 @@ function Euler:init_slider(id, value)
     return self:setup_widget(Slider(id, value))
 end
 
-function Euler:init_editbox(id, placeholder, text)
-    return self:setup_widget(Editbox(id, placeholder, text))
+function Euler:init_editbox(id, text)
+    return self:setup_widget(Editbox(id, text))
+end
+
+function Euler:init_number_box(id, text)
+    local editbox = Editbox(id, text)
+    editbox:set_numbered(true)
+    return self:setup_widget(editbox)
+end
+
+function Euler:init_password_box(id, text)
+    local editbox = Editbox(id, text)
+    editbox:set_password(true)
+    return self:setup_widget(editbox)
 end
 
 function Euler:init_scroll_bar(id, position)
@@ -82,12 +87,28 @@ function Euler:init_radio_group()
     return RadioGroup()
 end
 
-function Euler:update()
+function Euler:set_focus(widget)
+    if self.focus then
+        self.focus:set_focus(false)
+        self.focus:update(0)
+    end
+    widget:set_focus(true)
+    self.focus = widget
+end
+
+function Euler:refresh()
     table.sort(self.widgets, function(a, b)
         local index_a = gui.get_index(a:get_root())
         local index_b = gui.get_index(a:get_root())
         return index_a > index_b
     end)
+end
+
+function Euler:update(dt)
+    self.frame = self.frame + 1
+    if self.focus then
+        self.focus:update(self.frame)
+    end
 end
 
 function Euler:on_input(action_id, action)
