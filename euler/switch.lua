@@ -8,8 +8,9 @@ prop:accessor("checked", true, true)
 
 function Switch:__init(id, checked)
 	self.checked = checked
-	self.root  = gui.get_node(id .. "/switch")
 	self.label = gui.get_node(id .. "/label")
+	self.root = gui.get_node(id .. "/switch")
+	self.capture = gui.get_node(id .. "/switch")
 	self:add_child("on", gui.get_node(id .. "/on"))
 	self:add_child("off", gui.get_node(id .. "/off"))
 	self:on_prop_changed(checked)

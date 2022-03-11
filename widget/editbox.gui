@@ -124,8 +124,8 @@ nodes {
 }
 nodes {
   position {
-    x: 10.0
-    y: 0.0
+    x: 5.0
+    y: 1.0
     z: 0.0
     w: 1.0
   }
@@ -175,7 +175,7 @@ nodes {
   }
   adjust_mode: ADJUST_MODE_FIT
   line_break: false
-  parent: "editbox"
+  parent: "inner"
   layer: ""
   inherit_alpha: false
   alpha: 1.0

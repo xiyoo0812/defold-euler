@@ -16,7 +16,8 @@ prop:accessor("percent", 0, true)
 
 function ScrollBar:__init(id, percent)
 	self.move_capture = true
-	self.root  = gui.get_node(id .. "/scroll")
+	self.root = gui.get_node(id .. "/scroll_bar")
+	self.capture = gui.get_node(id .. "/scroll")
 	self.cursor = gui.get_node(id .. "/cursor")
 	self:set_percent(percent)
 end
@@ -30,12 +31,21 @@ function ScrollBar:setup(euler)
 	end)
 	self.right:set_repeated_capture(true)
 	self.right:register_click(function()
-		self:scroll_step(1 * self.step)
+		self:scroll_step(self.step)
 	end)
 	local rotation = gui.get_rotation(self.root)
 	if rotation.z == 90 or rotation.z == -90 then
 		self.vertical = true
 	end
+	--更新子控件的尺寸
+	local size = gui.get_size(self.root)
+	local csize = gui.get_size(self.capture)
+	local rpos = self.right:get_position()
+	rpos.x = size.x
+	csize.x = size.x - 32
+	gui.set_size(self.capture, csize)
+	self.right:set_position(rpos)
+	--更新cursor的尺寸
 	self:update_cursor()
 end
 
@@ -54,14 +64,14 @@ function ScrollBar:update_cursor()
 	if self.page_size >= self.contont_size then
 		self.page_size = self.contont_size - 1
 	end
-	local size = gui.get_size(self.root)
+	local size = gui.get_size(self.capture)
 	local cur_size = gui.get_size(self.cursor)
 	cur_size.x = size.x * (self.page_size / self.contont_size)
 	gui.set_size(self.cursor, cur_size)
 end
 
 function ScrollBar:update_progress()
-	local size = gui.get_size(self.root)
+	local size = gui.get_size(self.capture)
 	local pos = gui.get_position(self.cursor)
 	local cur_size = gui.get_size(self.cursor)
 	pos.x = (size.x - cur_size.x) * (self.percent / 100)
@@ -95,7 +105,7 @@ function ScrollBar:on_mouse_wheel(action, arrow)
 end
 
 function ScrollBar:update_percent(action)
-	local size = gui.get_size(self.root)
+	local size = gui.get_size(self.capture)
 	local pos = gui.get_position(self.root)
 	if self.vertical then
 		self:set_percent(utils.round(100 * (pos.y - action.y) / size.x))

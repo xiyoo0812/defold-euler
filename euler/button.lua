@@ -12,6 +12,7 @@ function Button:__init(id)
 	self.move_capture = true
 	self.root = gui.get_node(id .. "/button")
 	self.label = gui.get_node(id .. "/label")
+	self.capture = gui.get_node(id .. "/button")
 	self:add_child("normal", gui.get_node(id .. "/normal"))
 	self:add_child("pressed", gui.get_node(id .. "/pressed"))
 	self:add_child("hovered", gui.get_node(id .. "/hovered"))

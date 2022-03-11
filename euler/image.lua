@@ -9,7 +9,8 @@ prop:accessor("pressed_factor", 0)
 
 function Image:__init(id, img)
 	self.input_capture = false
-	self.root  = gui.get_node(id .. "/image")
+	self.root = gui.get_node(id .. "/image")
+	self.capture = gui.get_node(id .. "/image")
 	if img then
 		self:set_image(img)
 	end

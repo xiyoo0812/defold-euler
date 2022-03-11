@@ -21,9 +21,10 @@ function Editbox:__init(id, text)
 	self.text_capture = true
 	self.move_capture = true
 	self.repeated_capture = true
-	self.root = gui.get_node(id .. "/editbox")
 	self.inner = gui.get_node(id .. "/inner")
+	self.root = gui.get_node(id .. "/editbox")
 	self.label = gui.get_node(id .. "/content")
+	self.capture = gui.get_node(id .. "/editbox")
 	self:set_text(text or "")
 end
 
@@ -59,6 +60,19 @@ function Editbox:update_text()
 	local input = (self.focus and self.show_cursor) and "|" or " "
 	local new_text = utf8.insert(text, self.cursor, input)
 	self:set_label(new_text)
+	--根据光标调整label位置
+	local size = gui.get_size(self.label)
+	local pos = gui.get_position(self.label)
+	local metrics = utils.get_text_metrics(self.label, self.text .. "|")
+	if self.cursor < len then
+		local front = utf8.sub(new_text, 1, self.cursor)
+		local front_metrics = utils.get_text_metrics(self.label, front .. "|")
+		pos.x = (front_metrics.width > size.x) and  size.x - front_metrics.width - 5 or 5
+		gui.set_position(self.label, pos)
+	else
+		pos.x = (metrics.width > size.x) and  size.x - metrics.width - 5 or 5
+		gui.set_position(self.label, pos)
+	end
 end
 
 function Editbox:on_prop_changed(value, name)

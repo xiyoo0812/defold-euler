@@ -11,8 +11,9 @@ prop:accessor("percent", 0, true)
 
 function Slider:__init(id, percent)
 	self.move_capture = true
-	self.root  = gui.get_node(id .. "/slider")
+	self.root = gui.get_node(id .. "/slider")
 	self.cursor = gui.get_node(id .. "/cursor")
+	self.capture = gui.get_node(id .. "/slider")
 	self:set_percent(percent)
 end
 

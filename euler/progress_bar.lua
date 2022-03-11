@@ -15,6 +15,7 @@ function ProgressBar:__init(id, progress)
 	self.input_capture = false
 	self.label = gui.get_node(id .. "/label")
 	self.root = gui.get_node(id .. "/progress_bar")
+	self.capture = gui.get_node(id .. "/progress_bar")
 	self.progress_bar = gui.get_node(id .. "/progress")
 	self:set_progress(progress)
 end

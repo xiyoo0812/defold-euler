@@ -1,9 +1,9 @@
 --euler.lua
 
-require("luaoop.enum")
-require("luaoop.class")
-require("luaoop.mixin")
-require("luaoop.property")
+require("euler.luaoop.enum")
+require("euler.luaoop.class")
+require("euler.luaoop.mixin")
+require("euler.luaoop.property")
 
 --euler utils
 require("euler.const")
@@ -18,6 +18,7 @@ local Slider  = require("euler.slider")
 local Editbox  = require("euler.editbox")
 local Checkbox  = require("euler.checkbox")
 local ScrollBar = require("euler.scroll_bar")
+local ScrollView = require("euler.scroll_view")
 local RadioGroup  = require("euler.radio_group")
 local ProgressBar  = require("euler.progress_bar")
 
@@ -75,8 +76,12 @@ function Euler:init_password_box(id, text)
     return self:setup_widget(editbox)
 end
 
-function Euler:init_scroll_bar(id, position)
-    return self:setup_widget(ScrollBar(id, position))
+function Euler:init_scroll_bar(id, percent)
+    return self:setup_widget(ScrollBar(id, percent))
+end
+
+function Euler:init_scroll_view(id)
+    return self:setup_widget(ScrollView(id))
 end
 
 function Euler:init_progress_bar(id, progress)

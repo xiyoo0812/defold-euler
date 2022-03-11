@@ -7,6 +7,7 @@ local prop = property(Widget)
 prop:reader("id", nil)
 prop:reader("root", nil)
 prop:reader("label", nil)
+prop:reader("capture", nil)
 prop:reader("hover", false)
 prop:reader("childrens", {})
 prop:accessor("euler", nil)
@@ -48,7 +49,7 @@ function Widget:set_image(name, image)
 	end
 end
 
-function Widget:is_enable(func)
+function Widget:is_enabled()
 	return gui.is_enabled(self.root)
 end
 
@@ -69,12 +70,29 @@ function Widget:set_label(text)
 	end
 end
 
+function Widget:get_size()
+	return gui.get_size(self.root)
+end
+
+function Widget:set_size(size)
+	gui.set_size(self.root, size)
+	self:setup(self.euler)
+end
+
+function Widget:get_position()
+	return gui.get_position(self.root)
+end
+
+function Widget:set_position(pos)
+	gui.set_position(self.root, pos)
+end
+
 function Widget:hit_test(action)
-	return gui.pick_node(self.root, action.x, action.y)
+	return gui.pick_node(self.capture, action.x, action.y)
 end
 
 function Widget:on_input(action_id, action)
-	if not gui.is_enabled(self.root) or (not self.input_capture) then
+	if not self:is_enabled() or (not self.input_capture) then
 		return true
 	end
 	if not action_id then

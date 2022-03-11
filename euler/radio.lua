@@ -11,6 +11,7 @@ function Radio:__init(id, checked)
 	self.checked = checked
 	self.root = gui.get_node(id .. "/radio")
 	self.label = gui.get_node(id .. "/label")
+	self.capture = gui.get_node(id .. "/radio")
 	self:add_child("checked", gui.get_node(id .. "/checked"))
 	self:add_child("unchecked", gui.get_node(id .. "/unchecked"))
 	self:on_prop_changed(checked)
