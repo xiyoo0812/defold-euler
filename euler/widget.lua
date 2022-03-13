@@ -88,7 +88,10 @@ function Widget:set_position(pos)
 end
 
 function Widget:hit_test(action)
-	return gui.pick_node(self.capture, action.x, action.y)
+	if self.capture then
+		return gui.pick_node(self.capture, action.x, action.y)
+	end
+	return false
 end
 
 function Widget:on_input(action_id, action)

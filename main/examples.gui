@@ -1,7 +1,7 @@
 script: "/main/examples.gui_script"
 fonts {
   name: "eulerfont"
-  font: "/widget/eulerfont.font"
+  font: "/widget/fonts/shsms-24.font"
 }
 textures {
   name: "euler"
@@ -310,7 +310,7 @@ nodes {
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
   text: "Empty"
-  font: "eulerfont"
+  font: "shsms-24"
   id: "input_default/content"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -524,7 +524,7 @@ nodes {
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
   text: "Empty"
-  font: "eulerfont"
+  font: "shsms-24"
   id: "input_email/content"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -556,7 +556,7 @@ nodes {
 nodes {
   position {
     x: 57.0
-    y: 560.0
+    y: 564.0
     z: 0.0
     w: 1.0
   }
@@ -738,7 +738,7 @@ nodes {
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
   text: "Empty"
-  font: "eulerfont"
+  font: "shsms-24"
   id: "input_number/content"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -952,7 +952,7 @@ nodes {
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
   text: "Empty"
-  font: "eulerfont"
+  font: "shsms-24"
   id: "input_password/content"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -983,8 +983,8 @@ nodes {
 }
 nodes {
   position {
-    x: 200.0
-    y: 460.0
+    x: 1105.0
+    y: 357.0
     z: 0.0
     w: 1.0
   }
@@ -1331,7 +1331,7 @@ nodes {
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
   text: "Euler Print"
-  font: "eulerfont"
+  font: "shsms-24"
   id: "button_print/label"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -1600,7 +1600,7 @@ nodes {
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
   text: "Label"
-  font: "eulerfont"
+  font: "shsms-24"
   id: "checkbox_a/label"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -1868,7 +1868,7 @@ nodes {
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
   text: "Label"
-  font: "eulerfont"
+  font: "shsms-24"
   id: "checkbox_b/label"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -2136,7 +2136,7 @@ nodes {
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
   text: "Label"
-  font: "eulerfont"
+  font: "shsms-24"
   id: "switch_a/label"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -2404,7 +2404,7 @@ nodes {
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
   text: "Label"
-  font: "eulerfont"
+  font: "shsms-24"
   id: "switch_b/label"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -2672,7 +2672,7 @@ nodes {
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
   text: "Label"
-  font: "eulerfont"
+  font: "shsms-24"
   id: "radio_a/label"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -2940,7 +2940,7 @@ nodes {
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
   text: "Label"
-  font: "eulerfont"
+  font: "shsms-24"
   id: "radio_b/label"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -3208,7 +3208,7 @@ nodes {
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
   text: "Label"
-  font: "eulerfont"
+  font: "shsms-24"
   id: "radio_c/label"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -3239,8 +3239,8 @@ nodes {
 }
 nodes {
   position {
-    x: 472.0
-    y: 509.0
+    x: 573.0
+    y: 410.0
     z: 0.0
     w: 1.0
   }
@@ -3390,7 +3390,7 @@ nodes {
 nodes {
   position {
     x: 45.0
-    y: 244.0
+    y: 196.0
     z: 0.0
     w: 1.0
   }
@@ -3539,8 +3539,8 @@ nodes {
 }
 nodes {
   position {
-    x: 541.0
-    y: 509.0
+    x: 613.0
+    y: 410.0
     z: 0.0
     w: 1.0
   }
@@ -3723,7 +3723,7 @@ nodes {
   blend_mode: BLEND_MODE_ALPHA
   text: "99/100\n"
   ""
-  font: "eulerfont"
+  font: "shsms-24"
   id: "progress_bar1/label"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -3755,7 +3755,7 @@ nodes {
 nodes {
   position {
     x: 45.0
-    y: 184.0
+    y: 155.0
     z: 0.0
     w: 1.0
   }
@@ -3938,7 +3938,7 @@ nodes {
   blend_mode: BLEND_MODE_ALPHA
   text: "99/100\n"
   ""
-  font: "eulerfont"
+  font: "shsms-24"
   id: "progress_bar2/label"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -4365,8 +4365,8 @@ nodes {
 }
 nodes {
   position {
-    x: 609.0
-    y: 505.0
+    x: 652.0
+    y: 410.0
     z: 0.0
     w: 1.0
   }
@@ -4761,7 +4761,1118 @@ nodes {
 }
 nodes {
   position {
-    x: 156.0
+    x: 58.0
+    y: 506.0
+    z: 0.0
+    w: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  size {
+    x: 200.0
+    y: 100.0
+    z: 0.0
+    w: 1.0
+  }
+  color {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  type: TYPE_TEMPLATE
+  id: "text"
+  parent: "euler_root"
+  layer: ""
+  inherit_alpha: true
+  alpha: 1.0
+  template: "/widget/text.gui"
+  template_node_child: false
+}
+nodes {
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  size {
+    x: 322.0
+    y: 250.0
+    z: 0.0
+    w: 1.0
+  }
+  color {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  type: TYPE_BOX
+  blend_mode: BLEND_MODE_ALPHA
+  texture: "euler/ground"
+  id: "text/text"
+  xanchor: XANCHOR_NONE
+  yanchor: YANCHOR_NONE
+  pivot: PIVOT_NW
+  adjust_mode: ADJUST_MODE_FIT
+  parent: "text"
+  layer: ""
+  inherit_alpha: true
+  slice9 {
+    x: 8.0
+    y: 8.0
+    z: 8.0
+    w: 8.0
+  }
+  clipping_mode: CLIPPING_MODE_NONE
+  clipping_visible: false
+  clipping_inverted: false
+  alpha: 1.0
+  overridden_fields: 4
+  template_node_child: true
+  size_mode: SIZE_MODE_MANUAL
+}
+nodes {
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  size {
+    x: 200.0
+    y: 100.0
+    z: 0.0
+    w: 1.0
+  }
+  color {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  type: TYPE_TEMPLATE
+  id: "text/scroll_view"
+  parent: "text/text"
+  layer: ""
+  inherit_alpha: true
+  alpha: 1.0
+  template: "/widget/scroll_view.gui"
+  template_node_child: true
+}
+nodes {
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  size {
+    x: 222.0
+    y: 200.0
+    z: 0.0
+    w: 1.0
+  }
+  color {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  type: TYPE_BOX
+  blend_mode: BLEND_MODE_ALPHA
+  texture: "euler/alpha"
+  id: "text/scroll_view/scroll_view"
+  xanchor: XANCHOR_NONE
+  yanchor: YANCHOR_NONE
+  pivot: PIVOT_NW
+  adjust_mode: ADJUST_MODE_FIT
+  parent: "text/scroll_view"
+  layer: ""
+  inherit_alpha: true
+  slice9 {
+    x: 8.0
+    y: 8.0
+    z: 8.0
+    w: 8.0
+  }
+  clipping_mode: CLIPPING_MODE_NONE
+  clipping_visible: true
+  clipping_inverted: false
+  alpha: 1.0
+  template_node_child: true
+  size_mode: SIZE_MODE_MANUAL
+}
+nodes {
+  position {
+    x: 0.0
+    y: -189.0
+    z: 0.0
+    w: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  size {
+    x: 200.0
+    y: 100.0
+    z: 0.0
+    w: 1.0
+  }
+  color {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  type: TYPE_TEMPLATE
+  id: "text/scroll_view/horizontal"
+  parent: "text/scroll_view/scroll_view"
+  layer: ""
+  inherit_alpha: true
+  alpha: 1.0
+  template: "/widget/scroll_bar.gui"
+  template_node_child: true
+}
+nodes {
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  size {
+    x: 200.0
+    y: 22.0
+    z: 0.0
+    w: 1.0
+  }
+  color {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  type: TYPE_BOX
+  blend_mode: BLEND_MODE_ALPHA
+  texture: "euler/ground"
+  id: "text/scroll_view/horizontal/scroll_bar"
+  xanchor: XANCHOR_NONE
+  yanchor: YANCHOR_NONE
+  pivot: PIVOT_W
+  adjust_mode: ADJUST_MODE_FIT
+  parent: "text/scroll_view/horizontal"
+  layer: ""
+  inherit_alpha: true
+  slice9 {
+    x: 8.0
+    y: 5.0
+    z: 8.0
+    w: 5.0
+  }
+  clipping_mode: CLIPPING_MODE_NONE
+  clipping_visible: true
+  clipping_inverted: false
+  alpha: 1.0
+  template_node_child: true
+  size_mode: SIZE_MODE_MANUAL
+}
+nodes {
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  size {
+    x: 200.0
+    y: 100.0
+    z: 0.0
+    w: 1.0
+  }
+  color {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  type: TYPE_TEMPLATE
+  id: "text/scroll_view/horizontal/left"
+  parent: "text/scroll_view/horizontal/scroll_bar"
+  layer: ""
+  inherit_alpha: true
+  alpha: 1.0
+  template: "/widget/image.gui"
+  template_node_child: true
+}
+nodes {
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale {
+    x: -1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  size {
+    x: 23.0
+    y: 18.0
+    z: 0.0
+    w: 1.0
+  }
+  color {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  type: TYPE_BOX
+  blend_mode: BLEND_MODE_ALPHA
+  texture: "euler/scroll_btn"
+  id: "text/scroll_view/horizontal/left/image"
+  xanchor: XANCHOR_NONE
+  yanchor: YANCHOR_NONE
+  pivot: PIVOT_E
+  adjust_mode: ADJUST_MODE_FIT
+  parent: "text/scroll_view/horizontal/left"
+  layer: ""
+  inherit_alpha: true
+  slice9 {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 0.0
+  }
+  clipping_mode: CLIPPING_MODE_NONE
+  clipping_visible: true
+  clipping_inverted: false
+  alpha: 1.0
+  template_node_child: true
+  size_mode: SIZE_MODE_MANUAL
+}
+nodes {
+  position {
+    x: 200.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  size {
+    x: 200.0
+    y: 100.0
+    z: 0.0
+    w: 1.0
+  }
+  color {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  type: TYPE_TEMPLATE
+  id: "text/scroll_view/horizontal/right"
+  parent: "text/scroll_view/horizontal/scroll_bar"
+  layer: ""
+  inherit_alpha: true
+  alpha: 1.0
+  template: "/widget/image.gui"
+  template_node_child: true
+}
+nodes {
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  size {
+    x: 23.0
+    y: 18.0
+    z: 0.0
+    w: 1.0
+  }
+  color {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  type: TYPE_BOX
+  blend_mode: BLEND_MODE_ALPHA
+  texture: "euler/scroll_btn"
+  id: "text/scroll_view/horizontal/right/image"
+  xanchor: XANCHOR_NONE
+  yanchor: YANCHOR_NONE
+  pivot: PIVOT_E
+  adjust_mode: ADJUST_MODE_FIT
+  parent: "text/scroll_view/horizontal/right"
+  layer: ""
+  inherit_alpha: true
+  slice9 {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 0.0
+  }
+  clipping_mode: CLIPPING_MODE_NONE
+  clipping_visible: true
+  clipping_inverted: false
+  alpha: 1.0
+  template_node_child: true
+  size_mode: SIZE_MODE_MANUAL
+}
+nodes {
+  position {
+    x: 16.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  size {
+    x: 168.0
+    y: 18.0
+    z: 0.0
+    w: 1.0
+  }
+  color {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  type: TYPE_BOX
+  blend_mode: BLEND_MODE_ALPHA
+  texture: "euler/scroll_bg"
+  id: "text/scroll_view/horizontal/scroll"
+  xanchor: XANCHOR_LEFT
+  yanchor: YANCHOR_NONE
+  pivot: PIVOT_W
+  adjust_mode: ADJUST_MODE_FIT
+  parent: "text/scroll_view/horizontal/scroll_bar"
+  layer: ""
+  inherit_alpha: true
+  slice9 {
+    x: 9.0
+    y: 7.0
+    z: 9.0
+    w: 7.0
+  }
+  clipping_mode: CLIPPING_MODE_NONE
+  clipping_visible: true
+  clipping_inverted: false
+  alpha: 1.0
+  template_node_child: true
+  size_mode: SIZE_MODE_MANUAL
+}
+nodes {
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  size {
+    x: 33.0
+    y: 16.0
+    z: 0.0
+    w: 1.0
+  }
+  color {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  type: TYPE_BOX
+  blend_mode: BLEND_MODE_ALPHA
+  texture: "euler/scroll_bar"
+  id: "text/scroll_view/horizontal/cursor"
+  xanchor: XANCHOR_NONE
+  yanchor: YANCHOR_NONE
+  pivot: PIVOT_W
+  adjust_mode: ADJUST_MODE_FIT
+  parent: "text/scroll_view/horizontal/scroll"
+  layer: ""
+  inherit_alpha: true
+  slice9 {
+    x: 8.0
+    y: 1.0
+    z: 8.0
+    w: 1.0
+  }
+  clipping_mode: CLIPPING_MODE_NONE
+  clipping_visible: true
+  clipping_inverted: false
+  alpha: 1.0
+  template_node_child: true
+  size_mode: SIZE_MODE_MANUAL
+}
+nodes {
+  position {
+    x: 211.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: -90.0
+    w: 1.0
+  }
+  scale {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  size {
+    x: 200.0
+    y: 100.0
+    z: 0.0
+    w: 1.0
+  }
+  color {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  type: TYPE_TEMPLATE
+  id: "text/scroll_view/vertical"
+  parent: "text/scroll_view/scroll_view"
+  layer: ""
+  inherit_alpha: true
+  alpha: 1.0
+  template: "/widget/scroll_bar.gui"
+  template_node_child: true
+}
+nodes {
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  size {
+    x: 200.0
+    y: 22.0
+    z: 0.0
+    w: 1.0
+  }
+  color {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  type: TYPE_BOX
+  blend_mode: BLEND_MODE_ALPHA
+  texture: "euler/ground"
+  id: "text/scroll_view/vertical/scroll_bar"
+  xanchor: XANCHOR_NONE
+  yanchor: YANCHOR_NONE
+  pivot: PIVOT_W
+  adjust_mode: ADJUST_MODE_FIT
+  parent: "text/scroll_view/vertical"
+  layer: ""
+  inherit_alpha: true
+  slice9 {
+    x: 8.0
+    y: 5.0
+    z: 8.0
+    w: 5.0
+  }
+  clipping_mode: CLIPPING_MODE_NONE
+  clipping_visible: true
+  clipping_inverted: false
+  alpha: 1.0
+  template_node_child: true
+  size_mode: SIZE_MODE_MANUAL
+}
+nodes {
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  size {
+    x: 200.0
+    y: 100.0
+    z: 0.0
+    w: 1.0
+  }
+  color {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  type: TYPE_TEMPLATE
+  id: "text/scroll_view/vertical/left"
+  parent: "text/scroll_view/vertical/scroll_bar"
+  layer: ""
+  inherit_alpha: true
+  alpha: 1.0
+  template: "/widget/image.gui"
+  template_node_child: true
+}
+nodes {
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale {
+    x: -1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  size {
+    x: 23.0
+    y: 18.0
+    z: 0.0
+    w: 1.0
+  }
+  color {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  type: TYPE_BOX
+  blend_mode: BLEND_MODE_ALPHA
+  texture: "euler/scroll_btn"
+  id: "text/scroll_view/vertical/left/image"
+  xanchor: XANCHOR_NONE
+  yanchor: YANCHOR_NONE
+  pivot: PIVOT_E
+  adjust_mode: ADJUST_MODE_FIT
+  parent: "text/scroll_view/vertical/left"
+  layer: ""
+  inherit_alpha: true
+  slice9 {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 0.0
+  }
+  clipping_mode: CLIPPING_MODE_NONE
+  clipping_visible: true
+  clipping_inverted: false
+  alpha: 1.0
+  template_node_child: true
+  size_mode: SIZE_MODE_MANUAL
+}
+nodes {
+  position {
+    x: 200.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  size {
+    x: 200.0
+    y: 100.0
+    z: 0.0
+    w: 1.0
+  }
+  color {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  type: TYPE_TEMPLATE
+  id: "text/scroll_view/vertical/right"
+  parent: "text/scroll_view/vertical/scroll_bar"
+  layer: ""
+  inherit_alpha: true
+  alpha: 1.0
+  template: "/widget/image.gui"
+  template_node_child: true
+}
+nodes {
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  size {
+    x: 23.0
+    y: 18.0
+    z: 0.0
+    w: 1.0
+  }
+  color {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  type: TYPE_BOX
+  blend_mode: BLEND_MODE_ALPHA
+  texture: "euler/scroll_btn"
+  id: "text/scroll_view/vertical/right/image"
+  xanchor: XANCHOR_NONE
+  yanchor: YANCHOR_NONE
+  pivot: PIVOT_E
+  adjust_mode: ADJUST_MODE_FIT
+  parent: "text/scroll_view/vertical/right"
+  layer: ""
+  inherit_alpha: true
+  slice9 {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 0.0
+  }
+  clipping_mode: CLIPPING_MODE_NONE
+  clipping_visible: true
+  clipping_inverted: false
+  alpha: 1.0
+  template_node_child: true
+  size_mode: SIZE_MODE_MANUAL
+}
+nodes {
+  position {
+    x: 16.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  size {
+    x: 168.0
+    y: 18.0
+    z: 0.0
+    w: 1.0
+  }
+  color {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  type: TYPE_BOX
+  blend_mode: BLEND_MODE_ALPHA
+  texture: "euler/scroll_bg"
+  id: "text/scroll_view/vertical/scroll"
+  xanchor: XANCHOR_LEFT
+  yanchor: YANCHOR_NONE
+  pivot: PIVOT_W
+  adjust_mode: ADJUST_MODE_FIT
+  parent: "text/scroll_view/vertical/scroll_bar"
+  layer: ""
+  inherit_alpha: true
+  slice9 {
+    x: 9.0
+    y: 7.0
+    z: 9.0
+    w: 7.0
+  }
+  clipping_mode: CLIPPING_MODE_NONE
+  clipping_visible: true
+  clipping_inverted: false
+  alpha: 1.0
+  template_node_child: true
+  size_mode: SIZE_MODE_MANUAL
+}
+nodes {
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  size {
+    x: 33.0
+    y: 16.0
+    z: 0.0
+    w: 1.0
+  }
+  color {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  type: TYPE_BOX
+  blend_mode: BLEND_MODE_ALPHA
+  texture: "euler/scroll_bar"
+  id: "text/scroll_view/vertical/cursor"
+  xanchor: XANCHOR_NONE
+  yanchor: YANCHOR_NONE
+  pivot: PIVOT_W
+  adjust_mode: ADJUST_MODE_FIT
+  parent: "text/scroll_view/vertical/scroll"
+  layer: ""
+  inherit_alpha: true
+  slice9 {
+    x: 8.0
+    y: 1.0
+    z: 8.0
+    w: 1.0
+  }
+  clipping_mode: CLIPPING_MODE_NONE
+  clipping_visible: true
+  clipping_inverted: false
+  alpha: 1.0
+  template_node_child: true
+  size_mode: SIZE_MODE_MANUAL
+}
+nodes {
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  size {
+    x: 222.0
+    y: 200.0
+    z: 0.0
+    w: 1.0
+  }
+  color {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  type: TYPE_BOX
+  blend_mode: BLEND_MODE_ALPHA
+  texture: "euler/alpha"
+  id: "text/content"
+  xanchor: XANCHOR_LEFT
+  yanchor: YANCHOR_TOP
+  pivot: PIVOT_NW
+  adjust_mode: ADJUST_MODE_FIT
+  parent: "text/text"
+  layer: ""
+  inherit_alpha: true
+  slice9 {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 0.0
+  }
+  clipping_mode: CLIPPING_MODE_STENCIL
+  clipping_visible: true
+  clipping_inverted: false
+  alpha: 1.0
+  template_node_child: true
+  size_mode: SIZE_MODE_MANUAL
+}
+nodes {
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  size {
+    x: 222.0
+    y: 200.0
+    z: 0.0
+    w: 1.0
+  }
+  color {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  type: TYPE_TEXT
+  blend_mode: BLEND_MODE_ALPHA
+  text: "<text><text><text><text><text><text><text>\n"
+  "\344\270\255\345\233\275\344\272\272\n"
+  "<text>\n"
+  "<text>\n"
+  "<text>\n"
+  "<text>\n"
+  "<text>\n"
+  "<text>\n"
+  "<text>\n"
+  "<\344\270\255\345\233\275\347\232\204>\n"
+  "<text>\n"
+  "<text>\n"
+  ""
+  font: "shsms-24"
+  id: "text/label"
+  xanchor: XANCHOR_NONE
+  yanchor: YANCHOR_NONE
+  pivot: PIVOT_NW
+  outline {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  shadow {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  adjust_mode: ADJUST_MODE_FIT
+  line_break: false
+  parent: "text/content"
+  layer: ""
+  inherit_alpha: true
+  alpha: 1.0
+  outline_alpha: 1.0
+  shadow_alpha: 1.0
+  template_node_child: true
+  text_leading: 1.0
+  text_tracking: 0.0
+}
+nodes {
+  position {
+    x: 143.0
     y: 60.0
     z: 0.0
     w: 1.0
@@ -5107,7 +6218,7 @@ nodes {
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
   text: "Hide Euler"
-  font: "eulerfont"
+  font: "shsms-24"
   id: "button_toggle_euler/label"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -5139,7 +6250,7 @@ nodes {
 }
 nodes {
   position {
-    x: 449.0
+    x: 366.0
     y: 60.0
     z: 0.0
     w: 1.0
@@ -5485,7 +6596,7 @@ nodes {
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
   text: "Euler UI"
-  font: "eulerfont"
+  font: "shsms-24"
   id: "button_euler/label"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -6122,7 +7233,7 @@ nodes {
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
   text: "Euler UI"
-  font: "eulerfont"
+  font: "shsms-24"
   id: "scrollarea_button/label"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -6500,7 +7611,7 @@ nodes {
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
   text: "Euler UI"
-  font: "eulerfont"
+  font: "shsms-24"
   id: "scrollarea_button1/label"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -6878,7 +7989,7 @@ nodes {
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
   text: "Euler UI"
-  font: "eulerfont"
+  font: "shsms-24"
   id: "scrollarea_button2/label"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -7256,7 +8367,7 @@ nodes {
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
   text: "Euler UI"
-  font: "eulerfont"
+  font: "shsms-24"
   id: "scrollarea_button3/label"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -7634,7 +8745,7 @@ nodes {
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
   text: "Euler UI"
-  font: "eulerfont"
+  font: "shsms-24"
   id: "scrollarea_button4/label"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -8012,7 +9123,7 @@ nodes {
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
   text: "Euler UI"
-  font: "eulerfont"
+  font: "shsms-24"
   id: "scrollarea_button5/label"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -8390,7 +9501,7 @@ nodes {
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
   text: "Euler UI"
-  font: "eulerfont"
+  font: "shsms-24"
   id: "scrollarea_button6/label"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -8768,7 +9879,7 @@ nodes {
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
   text: "Euler UI"
-  font: "eulerfont"
+  font: "shsms-24"
   id: "scrollarea_button7/label"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -9146,7 +10257,7 @@ nodes {
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
   text: "Euler UI"
-  font: "eulerfont"
+  font: "shsms-24"
   id: "scrollarea_button8/label"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -9524,7 +10635,7 @@ nodes {
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
   text: "Euler UI"
-  font: "eulerfont"
+  font: "shsms-24"
   id: "scrollarea_button9/label"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE

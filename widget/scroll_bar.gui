@@ -1,8 +1,4 @@
 script: ""
-fonts {
-  name: "eulerfont"
-  font: "/widget/eulerfont.font"
-}
 textures {
   name: "euler"
   texture: "/widget/euler.atlas"

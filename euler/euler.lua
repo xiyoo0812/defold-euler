@@ -10,6 +10,7 @@ require("euler.const")
 
 local ActionID	= enum("ActionID")
 
+local Text = require("euler.text")
 local Image = require("euler.image")
 local Radio  = require("euler.radio")
 local Button = require("euler.button")
@@ -34,6 +35,10 @@ function Euler:setup_widget(widget)
     widget:set_euler(self)
     widget:setup(self)
     return widget
+end
+
+function Euler:init_text(id, txt)
+    return self:setup_widget(Text(id, txt))
 end
 
 function Euler:init_image(id, img)
@@ -80,8 +85,8 @@ function Euler:init_scroll_bar(id, percent)
     return self:setup_widget(ScrollBar(id, percent))
 end
 
-function Euler:init_scroll_view(id)
-    return self:setup_widget(ScrollView(id))
+function Euler:init_scroll_view(id, capture)
+    return self:setup_widget(ScrollView(id, capture))
 end
 
 function Euler:init_progress_bar(id, progress)

@@ -14,7 +14,7 @@ function Slider:__init(id, percent)
 	self.root = gui.get_node(id .. "/slider")
 	self.cursor = gui.get_node(id .. "/cursor")
 	self.capture = gui.get_node(id .. "/slider")
-	self:set_percent(percent)
+	self:set_percent(percent or 0)
 end
 
 function Slider:setup(euler)

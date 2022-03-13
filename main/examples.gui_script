@@ -70,6 +70,8 @@ function init(self)
     self.checkbox_b:register_changed(function(box)
         print("click checkbox: " .. box.id)
     end)
+    
+    self.text = euler:init_text("text")
 
     self.input_email = euler:init_editbox("input_email")
     self.input_default = euler:init_editbox("input_default")

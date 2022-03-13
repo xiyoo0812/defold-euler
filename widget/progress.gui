@@ -1,7 +1,7 @@
 script: ""
 fonts {
-  name: "eulerfont"
-  font: "/widget/eulerfont.font"
+  name: "shsms-24"
+  font: "/widget/fonts/shsms-24.font"
 }
 textures {
   name: "euler"
@@ -157,7 +157,7 @@ nodes {
   blend_mode: BLEND_MODE_ALPHA
   text: "99/100\n"
   ""
-  font: "eulerfont"
+  font: "shsms-24"
   id: "label"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE

@@ -17,7 +17,7 @@ function ProgressBar:__init(id, progress)
 	self.root = gui.get_node(id .. "/progress_bar")
 	self.capture = gui.get_node(id .. "/progress_bar")
 	self.progress_bar = gui.get_node(id .. "/progress")
-	self:set_progress(progress)
+	self:set_progress(progress or 0)
 end
 
 function ProgressBar:setup(euler)
