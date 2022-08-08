@@ -21,6 +21,7 @@ local Checkbox  = require("euler.checkbox")
 local ScrollBar = require("euler.scroll_bar")
 local ScrollView = require("euler.scroll_view")
 local RadioGroup  = require("euler.radio_group")
+local ImageButton = require("euler.image_button")
 local ProgressBar  = require("euler.progress_bar")
 
 local Euler = class()
@@ -59,6 +60,10 @@ end
 
 function Euler:init_button(id)
     return self:setup_widget(Button(id))
+end
+
+function Euler:init_image_button(id)
+    return self:setup_widget(ImageButton(id))
 end
 
 function Euler:init_slider(id, value)

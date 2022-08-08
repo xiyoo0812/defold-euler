@@ -70,6 +70,7 @@ nodes {
   alpha: 1.0
   template_node_child: false
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -124,6 +125,7 @@ nodes {
   alpha: 1.0
   template_node_child: false
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -164,6 +166,7 @@ nodes {
   alpha: 1.0
   template: "/widget/editbox.gui"
   template_node_child: false
+  custom_type: 0
 }
 nodes {
   position {
@@ -198,7 +201,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "euler/ground"
+  texture: "euler/back_gray"
   id: "input_default/editbox"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -220,11 +223,12 @@ nodes {
   overridden_fields: 4
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
     x: 5.0
-    y: -1.0
+    y: 1.0
     z: 0.0
     w: 1.0
   }
@@ -242,61 +246,6 @@ nodes {
   }
   size {
     x: 190.0
-    y: 36.0
-    z: 0.0
-    w: 1.0
-  }
-  color {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  type: TYPE_BOX
-  blend_mode: BLEND_MODE_ALPHA
-  texture: "euler/editbox"
-  id: "input_default/inner"
-  xanchor: XANCHOR_NONE
-  yanchor: YANCHOR_NONE
-  pivot: PIVOT_W
-  adjust_mode: ADJUST_MODE_FIT
-  parent: "input_default/editbox"
-  layer: ""
-  inherit_alpha: true
-  slice9 {
-    x: 9.0
-    y: 8.0
-    z: 9.0
-    w: 8.0
-  }
-  clipping_mode: CLIPPING_MODE_STENCIL
-  clipping_visible: true
-  clipping_inverted: false
-  alpha: 1.0
-  template_node_child: true
-  size_mode: SIZE_MODE_MANUAL
-}
-nodes {
-  position {
-    x: 5.0
-    y: 1.0
-    z: 0.0
-    w: 1.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  size {
-    x: 180.0
     y: 32.0
     z: 0.0
     w: 1.0
@@ -329,7 +278,7 @@ nodes {
   }
   adjust_mode: ADJUST_MODE_FIT
   line_break: false
-  parent: "input_default/inner"
+  parent: "input_default/editbox"
   layer: ""
   inherit_alpha: false
   alpha: 1.0
@@ -338,6 +287,7 @@ nodes {
   template_node_child: true
   text_leading: 1.0
   text_tracking: 0.0
+  custom_type: 0
 }
 nodes {
   position {
@@ -378,6 +328,7 @@ nodes {
   alpha: 1.0
   template: "/widget/editbox.gui"
   template_node_child: false
+  custom_type: 0
 }
 nodes {
   position {
@@ -412,7 +363,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "euler/ground"
+  texture: "euler/back_gray"
   id: "input_email/editbox"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -434,11 +385,12 @@ nodes {
   overridden_fields: 4
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
     x: 5.0
-    y: -1.0
+    y: 1.0
     z: 0.0
     w: 1.0
   }
@@ -456,61 +408,6 @@ nodes {
   }
   size {
     x: 190.0
-    y: 36.0
-    z: 0.0
-    w: 1.0
-  }
-  color {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  type: TYPE_BOX
-  blend_mode: BLEND_MODE_ALPHA
-  texture: "euler/editbox"
-  id: "input_email/inner"
-  xanchor: XANCHOR_NONE
-  yanchor: YANCHOR_NONE
-  pivot: PIVOT_W
-  adjust_mode: ADJUST_MODE_FIT
-  parent: "input_email/editbox"
-  layer: ""
-  inherit_alpha: true
-  slice9 {
-    x: 9.0
-    y: 8.0
-    z: 9.0
-    w: 8.0
-  }
-  clipping_mode: CLIPPING_MODE_STENCIL
-  clipping_visible: true
-  clipping_inverted: false
-  alpha: 1.0
-  template_node_child: true
-  size_mode: SIZE_MODE_MANUAL
-}
-nodes {
-  position {
-    x: 5.0
-    y: 1.0
-    z: 0.0
-    w: 1.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  size {
-    x: 180.0
     y: 32.0
     z: 0.0
     w: 1.0
@@ -543,7 +440,7 @@ nodes {
   }
   adjust_mode: ADJUST_MODE_FIT
   line_break: false
-  parent: "input_email/inner"
+  parent: "input_email/editbox"
   layer: ""
   inherit_alpha: false
   alpha: 1.0
@@ -552,6 +449,7 @@ nodes {
   template_node_child: true
   text_leading: 1.0
   text_tracking: 0.0
+  custom_type: 0
 }
 nodes {
   position {
@@ -592,6 +490,7 @@ nodes {
   alpha: 1.0
   template: "/widget/editbox.gui"
   template_node_child: false
+  custom_type: 0
 }
 nodes {
   position {
@@ -626,7 +525,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "euler/ground"
+  texture: "euler/back_gray"
   id: "input_number/editbox"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -648,11 +547,12 @@ nodes {
   overridden_fields: 4
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
     x: 5.0
-    y: -1.0
+    y: 1.0
     z: 0.0
     w: 1.0
   }
@@ -670,61 +570,6 @@ nodes {
   }
   size {
     x: 190.0
-    y: 36.0
-    z: 0.0
-    w: 1.0
-  }
-  color {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  type: TYPE_BOX
-  blend_mode: BLEND_MODE_ALPHA
-  texture: "euler/editbox"
-  id: "input_number/inner"
-  xanchor: XANCHOR_NONE
-  yanchor: YANCHOR_NONE
-  pivot: PIVOT_W
-  adjust_mode: ADJUST_MODE_FIT
-  parent: "input_number/editbox"
-  layer: ""
-  inherit_alpha: true
-  slice9 {
-    x: 9.0
-    y: 8.0
-    z: 9.0
-    w: 8.0
-  }
-  clipping_mode: CLIPPING_MODE_STENCIL
-  clipping_visible: true
-  clipping_inverted: false
-  alpha: 1.0
-  template_node_child: true
-  size_mode: SIZE_MODE_MANUAL
-}
-nodes {
-  position {
-    x: 5.0
-    y: 1.0
-    z: 0.0
-    w: 1.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  size {
-    x: 180.0
     y: 32.0
     z: 0.0
     w: 1.0
@@ -757,7 +602,7 @@ nodes {
   }
   adjust_mode: ADJUST_MODE_FIT
   line_break: false
-  parent: "input_number/inner"
+  parent: "input_number/editbox"
   layer: ""
   inherit_alpha: false
   alpha: 1.0
@@ -766,6 +611,7 @@ nodes {
   template_node_child: true
   text_leading: 1.0
   text_tracking: 0.0
+  custom_type: 0
 }
 nodes {
   position {
@@ -806,6 +652,7 @@ nodes {
   alpha: 1.0
   template: "/widget/editbox.gui"
   template_node_child: false
+  custom_type: 0
 }
 nodes {
   position {
@@ -840,7 +687,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "euler/ground"
+  texture: "euler/back_gray"
   id: "input_password/editbox"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -862,11 +709,12 @@ nodes {
   overridden_fields: 4
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
     x: 5.0
-    y: -1.0
+    y: 1.0
     z: 0.0
     w: 1.0
   }
@@ -884,61 +732,6 @@ nodes {
   }
   size {
     x: 190.0
-    y: 36.0
-    z: 0.0
-    w: 1.0
-  }
-  color {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  type: TYPE_BOX
-  blend_mode: BLEND_MODE_ALPHA
-  texture: "euler/editbox"
-  id: "input_password/inner"
-  xanchor: XANCHOR_NONE
-  yanchor: YANCHOR_NONE
-  pivot: PIVOT_W
-  adjust_mode: ADJUST_MODE_FIT
-  parent: "input_password/editbox"
-  layer: ""
-  inherit_alpha: true
-  slice9 {
-    x: 9.0
-    y: 8.0
-    z: 9.0
-    w: 8.0
-  }
-  clipping_mode: CLIPPING_MODE_STENCIL
-  clipping_visible: true
-  clipping_inverted: false
-  alpha: 1.0
-  template_node_child: true
-  size_mode: SIZE_MODE_MANUAL
-}
-nodes {
-  position {
-    x: 5.0
-    y: 1.0
-    z: 0.0
-    w: 1.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  size {
-    x: 180.0
     y: 32.0
     z: 0.0
     w: 1.0
@@ -971,7 +764,7 @@ nodes {
   }
   adjust_mode: ADJUST_MODE_FIT
   line_break: false
-  parent: "input_password/inner"
+  parent: "input_password/editbox"
   layer: ""
   inherit_alpha: false
   alpha: 1.0
@@ -980,6 +773,7 @@ nodes {
   template_node_child: true
   text_leading: 1.0
   text_tracking: 0.0
+  custom_type: 0
 }
 nodes {
   position {
@@ -1020,6 +814,7 @@ nodes {
   alpha: 1.0
   template: "/widget/button.gui"
   template_node_child: false
+  custom_type: 0
 }
 nodes {
   position {
@@ -1041,7 +836,7 @@ nodes {
     w: 1.0
   }
   size {
-    x: 300.0
+    x: 200.0
     y: 60.0
     z: 0.0
     w: 1.0
@@ -1073,9 +868,9 @@ nodes {
   clipping_visible: true
   clipping_inverted: false
   alpha: 1.0
-  overridden_fields: 4
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -1110,7 +905,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/button"
+  texture: "button/button_blue"
   id: "button_print/disabled"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -1131,6 +926,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -1165,7 +961,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/button"
+  texture: "button/button_yellow"
   id: "button_print/pressed"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -1186,6 +982,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -1220,7 +1017,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/button"
+  texture: "button/button_yellow"
   id: "button_print/hovered"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -1241,6 +1038,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -1275,7 +1073,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/button"
+  texture: "button/button_blue"
   id: "button_print/normal"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -1296,6 +1094,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -1330,7 +1129,7 @@ nodes {
   }
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
-  text: "Euler Print"
+  text: "Euler UI"
   font: "shsms-24"
   id: "button_print/label"
   xanchor: XANCHOR_NONE
@@ -1356,10 +1155,10 @@ nodes {
   alpha: 1.0
   outline_alpha: 1.0
   shadow_alpha: 1.0
-  overridden_fields: 8
   template_node_child: true
   text_leading: 1.0
   text_tracking: 0.0
+  custom_type: 0
 }
 nodes {
   position {
@@ -1400,6 +1199,7 @@ nodes {
   alpha: 1.0
   template: "/widget/checkbox.gui"
   template_node_child: false
+  custom_type: 0
 }
 nodes {
   position {
@@ -1421,8 +1221,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 33.0
-    y: 34.0
+    x: 38.0
+    y: 36.0
     z: 0.0
     w: 1.0
   }
@@ -1434,7 +1234,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "checkbox/alpha"
+  texture: "checkbox/check_back_square"
   id: "checkbox_a/checkbox"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -1455,10 +1255,11 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
-    x: 0.0
+    x: 9.0
     y: 0.0
     z: 0.0
     w: 1.0
@@ -1476,8 +1277,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 33.0
-    y: 34.0
+    x: 21.0
+    y: 20.0
     z: 0.0
     w: 1.0
   }
@@ -1489,62 +1290,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "checkbox/checkbox_normal"
-  id: "checkbox_a/unchecked"
-  xanchor: XANCHOR_NONE
-  yanchor: YANCHOR_NONE
-  pivot: PIVOT_W
-  adjust_mode: ADJUST_MODE_FIT
-  parent: "checkbox_a/checkbox"
-  layer: ""
-  inherit_alpha: true
-  slice9 {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 0.0
-  }
-  clipping_mode: CLIPPING_MODE_NONE
-  clipping_visible: true
-  clipping_inverted: false
-  alpha: 1.0
-  template_node_child: true
-  size_mode: SIZE_MODE_MANUAL
-}
-nodes {
-  position {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  size {
-    x: 33.0
-    y: 34.0
-    z: 0.0
-    w: 1.0
-  }
-  color {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  type: TYPE_BOX
-  blend_mode: BLEND_MODE_ALPHA
-  texture: "checkbox/checkbox_selected"
+  texture: "checkbox/checkmark"
   id: "checkbox_a/checked"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -1564,11 +1310,12 @@ nodes {
   clipping_inverted: false
   alpha: 1.0
   template_node_child: true
-  size_mode: SIZE_MODE_MANUAL
+  size_mode: SIZE_MODE_AUTO
+  custom_type: 0
 }
 nodes {
   position {
-    x: 34.0
+    x: 38.0
     y: 0.0
     z: 0.0
     w: 1.0
@@ -1628,6 +1375,7 @@ nodes {
   template_node_child: true
   text_leading: 1.0
   text_tracking: 0.0
+  custom_type: 0
 }
 nodes {
   position {
@@ -1668,6 +1416,7 @@ nodes {
   alpha: 1.0
   template: "/widget/checkbox.gui"
   template_node_child: false
+  custom_type: 0
 }
 nodes {
   position {
@@ -1689,8 +1438,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 33.0
-    y: 34.0
+    x: 38.0
+    y: 36.0
     z: 0.0
     w: 1.0
   }
@@ -1702,7 +1451,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "checkbox/alpha"
+  texture: "checkbox/check_back_square"
   id: "checkbox_b/checkbox"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -1723,10 +1472,11 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
-    x: 0.0
+    x: 9.0
     y: 0.0
     z: 0.0
     w: 1.0
@@ -1744,8 +1494,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 33.0
-    y: 34.0
+    x: 21.0
+    y: 20.0
     z: 0.0
     w: 1.0
   }
@@ -1757,62 +1507,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "checkbox/checkbox_normal"
-  id: "checkbox_b/unchecked"
-  xanchor: XANCHOR_NONE
-  yanchor: YANCHOR_NONE
-  pivot: PIVOT_W
-  adjust_mode: ADJUST_MODE_FIT
-  parent: "checkbox_b/checkbox"
-  layer: ""
-  inherit_alpha: true
-  slice9 {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 0.0
-  }
-  clipping_mode: CLIPPING_MODE_NONE
-  clipping_visible: true
-  clipping_inverted: false
-  alpha: 1.0
-  template_node_child: true
-  size_mode: SIZE_MODE_MANUAL
-}
-nodes {
-  position {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  size {
-    x: 33.0
-    y: 34.0
-    z: 0.0
-    w: 1.0
-  }
-  color {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  type: TYPE_BOX
-  blend_mode: BLEND_MODE_ALPHA
-  texture: "checkbox/checkbox_selected"
+  texture: "checkbox/checkmark"
   id: "checkbox_b/checked"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -1832,11 +1527,12 @@ nodes {
   clipping_inverted: false
   alpha: 1.0
   template_node_child: true
-  size_mode: SIZE_MODE_MANUAL
+  size_mode: SIZE_MODE_AUTO
+  custom_type: 0
 }
 nodes {
   position {
-    x: 34.0
+    x: 38.0
     y: 0.0
     z: 0.0
     w: 1.0
@@ -1896,6 +1592,7 @@ nodes {
   template_node_child: true
   text_leading: 1.0
   text_tracking: 0.0
+  custom_type: 0
 }
 nodes {
   position {
@@ -1936,6 +1633,7 @@ nodes {
   alpha: 1.0
   template: "/widget/switch.gui"
   template_node_child: false
+  custom_type: 0
 }
 nodes {
   position {
@@ -1957,8 +1655,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 72.0
-    y: 34.0
+    x: 84.0
+    y: 33.0
     z: 0.0
     w: 1.0
   }
@@ -1991,6 +1689,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -2012,8 +1711,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 72.0
-    y: 34.0
+    x: 84.0
+    y: 33.0
     z: 0.0
     w: 1.0
   }
@@ -2025,7 +1724,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "euler/switch_off"
+  texture: "euler/switch_b_off"
   id: "switch_a/off"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -2045,7 +1744,8 @@ nodes {
   clipping_inverted: false
   alpha: 1.0
   template_node_child: true
-  size_mode: SIZE_MODE_MANUAL
+  size_mode: SIZE_MODE_AUTO
+  custom_type: 0
 }
 nodes {
   position {
@@ -2067,8 +1767,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 72.0
-    y: 34.0
+    x: 84.0
+    y: 33.0
     z: 0.0
     w: 1.0
   }
@@ -2080,7 +1780,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "euler/switch_on"
+  texture: "euler/switch_b_on"
   id: "switch_a/on"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -2100,11 +1800,12 @@ nodes {
   clipping_inverted: false
   alpha: 1.0
   template_node_child: true
-  size_mode: SIZE_MODE_MANUAL
+  size_mode: SIZE_MODE_AUTO
+  custom_type: 0
 }
 nodes {
   position {
-    x: 75.0
+    x: 85.0
     y: 0.0
     z: 0.0
     w: 1.0
@@ -2164,6 +1865,7 @@ nodes {
   template_node_child: true
   text_leading: 1.0
   text_tracking: 0.0
+  custom_type: 0
 }
 nodes {
   position {
@@ -2204,6 +1906,7 @@ nodes {
   alpha: 1.0
   template: "/widget/switch.gui"
   template_node_child: false
+  custom_type: 0
 }
 nodes {
   position {
@@ -2225,8 +1928,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 72.0
-    y: 34.0
+    x: 84.0
+    y: 33.0
     z: 0.0
     w: 1.0
   }
@@ -2259,6 +1962,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -2280,8 +1984,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 72.0
-    y: 34.0
+    x: 84.0
+    y: 33.0
     z: 0.0
     w: 1.0
   }
@@ -2293,7 +1997,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "euler/switch_off"
+  texture: "euler/switch_b_off"
   id: "switch_b/off"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -2313,7 +2017,8 @@ nodes {
   clipping_inverted: false
   alpha: 1.0
   template_node_child: true
-  size_mode: SIZE_MODE_MANUAL
+  size_mode: SIZE_MODE_AUTO
+  custom_type: 0
 }
 nodes {
   position {
@@ -2335,8 +2040,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 72.0
-    y: 34.0
+    x: 84.0
+    y: 33.0
     z: 0.0
     w: 1.0
   }
@@ -2348,7 +2053,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "euler/switch_on"
+  texture: "euler/switch_b_on"
   id: "switch_b/on"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -2368,11 +2073,12 @@ nodes {
   clipping_inverted: false
   alpha: 1.0
   template_node_child: true
-  size_mode: SIZE_MODE_MANUAL
+  size_mode: SIZE_MODE_AUTO
+  custom_type: 0
 }
 nodes {
   position {
-    x: 75.0
+    x: 85.0
     y: 0.0
     z: 0.0
     w: 1.0
@@ -2432,6 +2138,7 @@ nodes {
   template_node_child: true
   text_leading: 1.0
   text_tracking: 0.0
+  custom_type: 0
 }
 nodes {
   position {
@@ -2472,6 +2179,7 @@ nodes {
   alpha: 1.0
   template: "/widget/radio.gui"
   template_node_child: false
+  custom_type: 0
 }
 nodes {
   position {
@@ -2493,8 +2201,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 33.0
-    y: 34.0
+    x: 36.0
+    y: 36.0
     z: 0.0
     w: 1.0
   }
@@ -2506,7 +2214,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "radio/alpha"
+  texture: "radio/check_back_circle"
   id: "radio_a/radio"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -2527,10 +2235,11 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
-    x: 0.0
+    x: 9.0
     y: 0.0
     z: 0.0
     w: 1.0
@@ -2548,8 +2257,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 33.0
-    y: 34.0
+    x: 17.0
+    y: 17.0
     z: 0.0
     w: 1.0
   }
@@ -2561,62 +2270,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "radio/radio_normal"
-  id: "radio_a/unchecked"
-  xanchor: XANCHOR_NONE
-  yanchor: YANCHOR_NONE
-  pivot: PIVOT_W
-  adjust_mode: ADJUST_MODE_FIT
-  parent: "radio_a/radio"
-  layer: ""
-  inherit_alpha: true
-  slice9 {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 0.0
-  }
-  clipping_mode: CLIPPING_MODE_NONE
-  clipping_visible: true
-  clipping_inverted: false
-  alpha: 1.0
-  template_node_child: true
-  size_mode: SIZE_MODE_MANUAL
-}
-nodes {
-  position {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  size {
-    x: 33.0
-    y: 34.0
-    z: 0.0
-    w: 1.0
-  }
-  color {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  type: TYPE_BOX
-  blend_mode: BLEND_MODE_ALPHA
-  texture: "radio/radio_selected"
+  texture: "radio/tick"
   id: "radio_a/checked"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -2636,11 +2290,12 @@ nodes {
   clipping_inverted: false
   alpha: 1.0
   template_node_child: true
-  size_mode: SIZE_MODE_MANUAL
+  size_mode: SIZE_MODE_AUTO
+  custom_type: 0
 }
 nodes {
   position {
-    x: 40.0
+    x: 38.0
     y: 0.0
     z: 0.0
     w: 1.0
@@ -2700,6 +2355,7 @@ nodes {
   template_node_child: true
   text_leading: 1.0
   text_tracking: 0.0
+  custom_type: 0
 }
 nodes {
   position {
@@ -2740,6 +2396,7 @@ nodes {
   alpha: 1.0
   template: "/widget/radio.gui"
   template_node_child: false
+  custom_type: 0
 }
 nodes {
   position {
@@ -2761,8 +2418,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 33.0
-    y: 34.0
+    x: 36.0
+    y: 36.0
     z: 0.0
     w: 1.0
   }
@@ -2774,7 +2431,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "radio/alpha"
+  texture: "radio/check_back_circle"
   id: "radio_b/radio"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -2795,10 +2452,11 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
-    x: 0.0
+    x: 9.0
     y: 0.0
     z: 0.0
     w: 1.0
@@ -2816,8 +2474,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 33.0
-    y: 34.0
+    x: 17.0
+    y: 17.0
     z: 0.0
     w: 1.0
   }
@@ -2829,62 +2487,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "radio/radio_normal"
-  id: "radio_b/unchecked"
-  xanchor: XANCHOR_NONE
-  yanchor: YANCHOR_NONE
-  pivot: PIVOT_W
-  adjust_mode: ADJUST_MODE_FIT
-  parent: "radio_b/radio"
-  layer: ""
-  inherit_alpha: true
-  slice9 {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 0.0
-  }
-  clipping_mode: CLIPPING_MODE_NONE
-  clipping_visible: true
-  clipping_inverted: false
-  alpha: 1.0
-  template_node_child: true
-  size_mode: SIZE_MODE_MANUAL
-}
-nodes {
-  position {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  size {
-    x: 33.0
-    y: 34.0
-    z: 0.0
-    w: 1.0
-  }
-  color {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  type: TYPE_BOX
-  blend_mode: BLEND_MODE_ALPHA
-  texture: "radio/radio_selected"
+  texture: "radio/tick"
   id: "radio_b/checked"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -2904,11 +2507,12 @@ nodes {
   clipping_inverted: false
   alpha: 1.0
   template_node_child: true
-  size_mode: SIZE_MODE_MANUAL
+  size_mode: SIZE_MODE_AUTO
+  custom_type: 0
 }
 nodes {
   position {
-    x: 40.0
+    x: 38.0
     y: 0.0
     z: 0.0
     w: 1.0
@@ -2968,6 +2572,7 @@ nodes {
   template_node_child: true
   text_leading: 1.0
   text_tracking: 0.0
+  custom_type: 0
 }
 nodes {
   position {
@@ -3008,6 +2613,7 @@ nodes {
   alpha: 1.0
   template: "/widget/radio.gui"
   template_node_child: false
+  custom_type: 0
 }
 nodes {
   position {
@@ -3029,8 +2635,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 33.0
-    y: 34.0
+    x: 36.0
+    y: 36.0
     z: 0.0
     w: 1.0
   }
@@ -3042,7 +2648,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "radio/alpha"
+  texture: "radio/check_back_circle"
   id: "radio_c/radio"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -3063,10 +2669,11 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
-    x: 0.0
+    x: 9.0
     y: 0.0
     z: 0.0
     w: 1.0
@@ -3084,8 +2691,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 33.0
-    y: 34.0
+    x: 17.0
+    y: 17.0
     z: 0.0
     w: 1.0
   }
@@ -3097,62 +2704,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "radio/radio_normal"
-  id: "radio_c/unchecked"
-  xanchor: XANCHOR_NONE
-  yanchor: YANCHOR_NONE
-  pivot: PIVOT_W
-  adjust_mode: ADJUST_MODE_FIT
-  parent: "radio_c/radio"
-  layer: ""
-  inherit_alpha: true
-  slice9 {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 0.0
-  }
-  clipping_mode: CLIPPING_MODE_NONE
-  clipping_visible: true
-  clipping_inverted: false
-  alpha: 1.0
-  template_node_child: true
-  size_mode: SIZE_MODE_MANUAL
-}
-nodes {
-  position {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  size {
-    x: 33.0
-    y: 34.0
-    z: 0.0
-    w: 1.0
-  }
-  color {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  type: TYPE_BOX
-  blend_mode: BLEND_MODE_ALPHA
-  texture: "radio/radio_selected"
+  texture: "radio/tick"
   id: "radio_c/checked"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -3172,11 +2724,12 @@ nodes {
   clipping_inverted: false
   alpha: 1.0
   template_node_child: true
-  size_mode: SIZE_MODE_MANUAL
+  size_mode: SIZE_MODE_AUTO
+  custom_type: 0
 }
 nodes {
   position {
-    x: 40.0
+    x: 38.0
     y: 0.0
     z: 0.0
     w: 1.0
@@ -3236,6 +2789,7 @@ nodes {
   template_node_child: true
   text_leading: 1.0
   text_tracking: 0.0
+  custom_type: 0
 }
 nodes {
   position {
@@ -3276,6 +2830,7 @@ nodes {
   alpha: 1.0
   template: "/widget/slider.gui"
   template_node_child: false
+  custom_type: 0
 }
 nodes {
   position {
@@ -3298,7 +2853,7 @@ nodes {
   }
   size {
     x: 400.0
-    y: 26.0
+    y: 4.0
     z: 0.0
     w: 1.0
   }
@@ -3310,7 +2865,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "euler/progress_bg"
+  texture: "euler/slider_back"
   id: "slider1/slider"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -3320,10 +2875,10 @@ nodes {
   layer: ""
   inherit_alpha: true
   slice9 {
-    x: 12.0
-    y: 8.0
-    z: 12.0
-    w: 8.0
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 0.0
   }
   clipping_mode: CLIPPING_MODE_NONE
   clipping_visible: true
@@ -3331,6 +2886,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -3352,8 +2908,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 40.0
-    y: 40.0
+    x: 36.0
+    y: 36.0
     z: 0.0
     w: 1.0
   }
@@ -3365,7 +2921,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "euler/slider"
+  texture: "euler/slider_move"
   id: "slider1/cursor"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -3385,7 +2941,8 @@ nodes {
   clipping_inverted: false
   alpha: 1.0
   template_node_child: true
-  size_mode: SIZE_MODE_MANUAL
+  size_mode: SIZE_MODE_AUTO
+  custom_type: 0
 }
 nodes {
   position {
@@ -3426,6 +2983,7 @@ nodes {
   alpha: 1.0
   template: "/widget/slider.gui"
   template_node_child: false
+  custom_type: 0
 }
 nodes {
   position {
@@ -3448,7 +3006,7 @@ nodes {
   }
   size {
     x: 400.0
-    y: 26.0
+    y: 4.0
     z: 0.0
     w: 1.0
   }
@@ -3460,7 +3018,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "euler/progress_bg"
+  texture: "euler/slider_back"
   id: "slider2/slider"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -3470,10 +3028,10 @@ nodes {
   layer: ""
   inherit_alpha: true
   slice9 {
-    x: 12.0
-    y: 8.0
-    z: 12.0
-    w: 8.0
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 0.0
   }
   clipping_mode: CLIPPING_MODE_NONE
   clipping_visible: true
@@ -3481,6 +3039,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -3502,8 +3061,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 40.0
-    y: 40.0
+    x: 36.0
+    y: 36.0
     z: 0.0
     w: 1.0
   }
@@ -3515,7 +3074,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "euler/slider"
+  texture: "euler/slider_move"
   id: "slider2/cursor"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -3535,7 +3094,8 @@ nodes {
   clipping_inverted: false
   alpha: 1.0
   template_node_child: true
-  size_mode: SIZE_MODE_MANUAL
+  size_mode: SIZE_MODE_AUTO
+  custom_type: 0
 }
 nodes {
   position {
@@ -3576,6 +3136,7 @@ nodes {
   alpha: 1.0
   template: "/widget/progress.gui"
   template_node_child: false
+  custom_type: 0
 }
 nodes {
   position {
@@ -3610,7 +3171,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "euler/progress_bg"
+  texture: "euler/progress_back"
   id: "progress_bar1/progress_bar"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -3620,9 +3181,9 @@ nodes {
   layer: ""
   inherit_alpha: true
   slice9 {
-    x: 12.0
+    x: 8.0
     y: 8.0
-    z: 12.0
+    z: 8.0
     w: 8.0
   }
   clipping_mode: CLIPPING_MODE_NONE
@@ -3632,10 +3193,11 @@ nodes {
   overridden_fields: 4
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
-    x: 3.0
+    x: 1.0
     y: 0.0
     z: 0.0
     w: 1.0
@@ -3654,7 +3216,7 @@ nodes {
   }
   size {
     x: 200.0
-    y: 15.0
+    y: 24.0
     z: 0.0
     w: 1.0
   }
@@ -3666,7 +3228,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "euler/progress_bar"
+  texture: "euler/progress_fill_yellow"
   id: "progress_bar1/progress"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -3687,6 +3249,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -3751,6 +3314,7 @@ nodes {
   template_node_child: true
   text_leading: 1.0
   text_tracking: 0.0
+  custom_type: 0
 }
 nodes {
   position {
@@ -3791,6 +3355,7 @@ nodes {
   alpha: 1.0
   template: "/widget/progress.gui"
   template_node_child: false
+  custom_type: 0
 }
 nodes {
   position {
@@ -3825,7 +3390,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "euler/progress_bg"
+  texture: "euler/progress_back"
   id: "progress_bar2/progress_bar"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -3835,9 +3400,9 @@ nodes {
   layer: ""
   inherit_alpha: true
   slice9 {
-    x: 12.0
+    x: 8.0
     y: 8.0
-    z: 12.0
+    z: 8.0
     w: 8.0
   }
   clipping_mode: CLIPPING_MODE_NONE
@@ -3847,10 +3412,11 @@ nodes {
   overridden_fields: 4
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
-    x: 3.0
+    x: 1.0
     y: 0.0
     z: 0.0
     w: 1.0
@@ -3869,7 +3435,7 @@ nodes {
   }
   size {
     x: 200.0
-    y: 15.0
+    y: 24.0
     z: 0.0
     w: 1.0
   }
@@ -3881,7 +3447,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "euler/progress_bar"
+  texture: "euler/progress_fill_yellow"
   id: "progress_bar2/progress"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -3902,6 +3468,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -3966,6 +3533,7 @@ nodes {
   template_node_child: true
   text_leading: 1.0
   text_tracking: 0.0
+  custom_type: 0
 }
 nodes {
   position {
@@ -4006,6 +3574,7 @@ nodes {
   alpha: 1.0
   template: "/widget/scroll_bar.gui"
   template_node_child: false
+  custom_type: 0
 }
 nodes {
   position {
@@ -4040,7 +3609,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "euler/ground"
+  texture: "euler/alpha"
   id: "scroll_bar2/scroll_bar"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -4050,10 +3619,10 @@ nodes {
   layer: ""
   inherit_alpha: true
   slice9 {
-    x: 8.0
-    y: 5.0
-    z: 8.0
-    w: 5.0
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 0.0
   }
   clipping_mode: CLIPPING_MODE_NONE
   clipping_visible: true
@@ -4062,6 +3631,7 @@ nodes {
   overridden_fields: 4
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -4084,47 +3654,7 @@ nodes {
   }
   size {
     x: 200.0
-    y: 100.0
-    z: 0.0
-    w: 1.0
-  }
-  color {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  type: TYPE_TEMPLATE
-  id: "scroll_bar2/left"
-  parent: "scroll_bar2/scroll_bar"
-  layer: ""
-  inherit_alpha: true
-  alpha: 1.0
-  template: "/widget/image.gui"
-  template_node_child: true
-}
-nodes {
-  position {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale {
-    x: -1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  size {
-    x: 23.0
-    y: 18.0
+    y: 6.0
     z: 0.0
     w: 1.0
   }
@@ -4136,157 +3666,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "euler/scroll_btn"
-  id: "scroll_bar2/left/image"
-  xanchor: XANCHOR_NONE
-  yanchor: YANCHOR_NONE
-  pivot: PIVOT_E
-  adjust_mode: ADJUST_MODE_FIT
-  parent: "scroll_bar2/left"
-  layer: ""
-  inherit_alpha: true
-  slice9 {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 0.0
-  }
-  clipping_mode: CLIPPING_MODE_NONE
-  clipping_visible: true
-  clipping_inverted: false
-  alpha: 1.0
-  template_node_child: true
-  size_mode: SIZE_MODE_MANUAL
-}
-nodes {
-  position {
-    x: 200.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  size {
-    x: 200.0
-    y: 100.0
-    z: 0.0
-    w: 1.0
-  }
-  color {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  type: TYPE_TEMPLATE
-  id: "scroll_bar2/right"
-  parent: "scroll_bar2/scroll_bar"
-  layer: ""
-  inherit_alpha: true
-  alpha: 1.0
-  template: "/widget/image.gui"
-  template_node_child: true
-}
-nodes {
-  position {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  size {
-    x: 23.0
-    y: 18.0
-    z: 0.0
-    w: 1.0
-  }
-  color {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  type: TYPE_BOX
-  blend_mode: BLEND_MODE_ALPHA
-  texture: "euler/scroll_btn"
-  id: "scroll_bar2/right/image"
-  xanchor: XANCHOR_NONE
-  yanchor: YANCHOR_NONE
-  pivot: PIVOT_E
-  adjust_mode: ADJUST_MODE_FIT
-  parent: "scroll_bar2/right"
-  layer: ""
-  inherit_alpha: true
-  slice9 {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 0.0
-  }
-  clipping_mode: CLIPPING_MODE_NONE
-  clipping_visible: true
-  clipping_inverted: false
-  alpha: 1.0
-  template_node_child: true
-  size_mode: SIZE_MODE_MANUAL
-}
-nodes {
-  position {
-    x: 16.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  size {
-    x: 168.0
-    y: 18.0
-    z: 0.0
-    w: 1.0
-  }
-  color {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  type: TYPE_BOX
-  blend_mode: BLEND_MODE_ALPHA
-  texture: "euler/scroll_bg"
+  texture: "euler/slider_back"
   id: "scroll_bar2/scroll"
   xanchor: XANCHOR_LEFT
   yanchor: YANCHOR_NONE
@@ -4296,10 +3676,10 @@ nodes {
   layer: ""
   inherit_alpha: true
   slice9 {
-    x: 9.0
-    y: 7.0
-    z: 9.0
-    w: 7.0
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 0.0
   }
   clipping_mode: CLIPPING_MODE_NONE
   clipping_visible: true
@@ -4307,6 +3687,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -4328,8 +3709,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 33.0
-    y: 16.0
+    x: 28.0
+    y: 15.0
     z: 0.0
     w: 1.0
   }
@@ -4341,7 +3722,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "euler/scroll_bar"
+  texture: "euler/progress_bar"
   id: "scroll_bar2/cursor"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -4351,17 +3732,18 @@ nodes {
   layer: ""
   inherit_alpha: true
   slice9 {
-    x: 8.0
-    y: 1.0
-    z: 8.0
-    w: 1.0
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 0.0
   }
   clipping_mode: CLIPPING_MODE_NONE
   clipping_visible: true
   clipping_inverted: false
   alpha: 1.0
   template_node_child: true
-  size_mode: SIZE_MODE_MANUAL
+  size_mode: SIZE_MODE_AUTO
+  custom_type: 0
 }
 nodes {
   position {
@@ -4402,6 +3784,7 @@ nodes {
   alpha: 1.0
   template: "/widget/scroll_bar.gui"
   template_node_child: false
+  custom_type: 0
 }
 nodes {
   position {
@@ -4436,7 +3819,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "euler/ground"
+  texture: "euler/alpha"
   id: "scroll_bar1/scroll_bar"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -4446,10 +3829,10 @@ nodes {
   layer: ""
   inherit_alpha: true
   slice9 {
-    x: 8.0
-    y: 5.0
-    z: 8.0
-    w: 5.0
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 0.0
   }
   clipping_mode: CLIPPING_MODE_NONE
   clipping_visible: true
@@ -4458,6 +3841,7 @@ nodes {
   overridden_fields: 4
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -4480,47 +3864,7 @@ nodes {
   }
   size {
     x: 200.0
-    y: 100.0
-    z: 0.0
-    w: 1.0
-  }
-  color {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  type: TYPE_TEMPLATE
-  id: "scroll_bar1/left"
-  parent: "scroll_bar1/scroll_bar"
-  layer: ""
-  inherit_alpha: true
-  alpha: 1.0
-  template: "/widget/image.gui"
-  template_node_child: true
-}
-nodes {
-  position {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale {
-    x: -1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  size {
-    x: 23.0
-    y: 18.0
+    y: 6.0
     z: 0.0
     w: 1.0
   }
@@ -4532,157 +3876,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "euler/scroll_btn"
-  id: "scroll_bar1/left/image"
-  xanchor: XANCHOR_NONE
-  yanchor: YANCHOR_NONE
-  pivot: PIVOT_E
-  adjust_mode: ADJUST_MODE_FIT
-  parent: "scroll_bar1/left"
-  layer: ""
-  inherit_alpha: true
-  slice9 {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 0.0
-  }
-  clipping_mode: CLIPPING_MODE_NONE
-  clipping_visible: true
-  clipping_inverted: false
-  alpha: 1.0
-  template_node_child: true
-  size_mode: SIZE_MODE_MANUAL
-}
-nodes {
-  position {
-    x: 200.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  size {
-    x: 200.0
-    y: 100.0
-    z: 0.0
-    w: 1.0
-  }
-  color {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  type: TYPE_TEMPLATE
-  id: "scroll_bar1/right"
-  parent: "scroll_bar1/scroll_bar"
-  layer: ""
-  inherit_alpha: true
-  alpha: 1.0
-  template: "/widget/image.gui"
-  template_node_child: true
-}
-nodes {
-  position {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  size {
-    x: 23.0
-    y: 18.0
-    z: 0.0
-    w: 1.0
-  }
-  color {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  type: TYPE_BOX
-  blend_mode: BLEND_MODE_ALPHA
-  texture: "euler/scroll_btn"
-  id: "scroll_bar1/right/image"
-  xanchor: XANCHOR_NONE
-  yanchor: YANCHOR_NONE
-  pivot: PIVOT_E
-  adjust_mode: ADJUST_MODE_FIT
-  parent: "scroll_bar1/right"
-  layer: ""
-  inherit_alpha: true
-  slice9 {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 0.0
-  }
-  clipping_mode: CLIPPING_MODE_NONE
-  clipping_visible: true
-  clipping_inverted: false
-  alpha: 1.0
-  template_node_child: true
-  size_mode: SIZE_MODE_MANUAL
-}
-nodes {
-  position {
-    x: 16.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  size {
-    x: 168.0
-    y: 18.0
-    z: 0.0
-    w: 1.0
-  }
-  color {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  type: TYPE_BOX
-  blend_mode: BLEND_MODE_ALPHA
-  texture: "euler/scroll_bg"
+  texture: "euler/slider_back"
   id: "scroll_bar1/scroll"
   xanchor: XANCHOR_LEFT
   yanchor: YANCHOR_NONE
@@ -4692,10 +3886,10 @@ nodes {
   layer: ""
   inherit_alpha: true
   slice9 {
-    x: 9.0
-    y: 7.0
-    z: 9.0
-    w: 7.0
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 0.0
   }
   clipping_mode: CLIPPING_MODE_NONE
   clipping_visible: true
@@ -4703,6 +3897,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -4724,8 +3919,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 33.0
-    y: 16.0
+    x: 28.0
+    y: 15.0
     z: 0.0
     w: 1.0
   }
@@ -4737,7 +3932,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "euler/scroll_bar"
+  texture: "euler/progress_bar"
   id: "scroll_bar1/cursor"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -4747,17 +3942,18 @@ nodes {
   layer: ""
   inherit_alpha: true
   slice9 {
-    x: 8.0
-    y: 1.0
-    z: 8.0
-    w: 1.0
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 0.0
   }
   clipping_mode: CLIPPING_MODE_NONE
   clipping_visible: true
   clipping_inverted: false
   alpha: 1.0
   template_node_child: true
-  size_mode: SIZE_MODE_MANUAL
+  size_mode: SIZE_MODE_AUTO
+  custom_type: 0
 }
 nodes {
   position {
@@ -4798,6 +3994,7 @@ nodes {
   alpha: 1.0
   template: "/widget/text.gui"
   template_node_child: false
+  custom_type: 0
 }
 nodes {
   position {
@@ -4832,7 +4029,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "euler/ground"
+  texture: "euler/back_gray"
   id: "text/text"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -4854,6 +4051,7 @@ nodes {
   overridden_fields: 4
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -4894,6 +4092,7 @@ nodes {
   alpha: 1.0
   template: "/widget/scroll_view.gui"
   template_node_child: true
+  custom_type: 0
 }
 nodes {
   position {
@@ -4949,6 +4148,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -4989,6 +4189,7 @@ nodes {
   alpha: 1.0
   template: "/widget/scroll_bar.gui"
   template_node_child: true
+  custom_type: 0
 }
 nodes {
   position {
@@ -5010,7 +4211,7 @@ nodes {
     w: 1.0
   }
   size {
-    x: 200.0
+    x: 222.0
     y: 22.0
     z: 0.0
     w: 1.0
@@ -5023,7 +4224,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "euler/ground"
+  texture: "euler/alpha"
   id: "text/scroll_view/horizontal/scroll_bar"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -5033,101 +4234,6 @@ nodes {
   layer: ""
   inherit_alpha: true
   slice9 {
-    x: 8.0
-    y: 5.0
-    z: 8.0
-    w: 5.0
-  }
-  clipping_mode: CLIPPING_MODE_NONE
-  clipping_visible: true
-  clipping_inverted: false
-  alpha: 1.0
-  template_node_child: true
-  size_mode: SIZE_MODE_MANUAL
-}
-nodes {
-  position {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  size {
-    x: 200.0
-    y: 100.0
-    z: 0.0
-    w: 1.0
-  }
-  color {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  type: TYPE_TEMPLATE
-  id: "text/scroll_view/horizontal/left"
-  parent: "text/scroll_view/horizontal/scroll_bar"
-  layer: ""
-  inherit_alpha: true
-  alpha: 1.0
-  template: "/widget/image.gui"
-  template_node_child: true
-}
-nodes {
-  position {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale {
-    x: -1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  size {
-    x: 23.0
-    y: 18.0
-    z: 0.0
-    w: 1.0
-  }
-  color {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  type: TYPE_BOX
-  blend_mode: BLEND_MODE_ALPHA
-  texture: "euler/scroll_btn"
-  id: "text/scroll_view/horizontal/left/image"
-  xanchor: XANCHOR_NONE
-  yanchor: YANCHOR_NONE
-  pivot: PIVOT_E
-  adjust_mode: ADJUST_MODE_FIT
-  parent: "text/scroll_view/horizontal/left"
-  layer: ""
-  inherit_alpha: true
-  slice9 {
     x: 0.0
     y: 0.0
     z: 0.0
@@ -5139,46 +4245,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
-}
-nodes {
-  position {
-    x: 200.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  size {
-    x: 200.0
-    y: 100.0
-    z: 0.0
-    w: 1.0
-  }
-  color {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  type: TYPE_TEMPLATE
-  id: "text/scroll_view/horizontal/right"
-  parent: "text/scroll_view/horizontal/scroll_bar"
-  layer: ""
-  inherit_alpha: true
-  alpha: 1.0
-  template: "/widget/image.gui"
-  template_node_child: true
+  custom_type: 0
 }
 nodes {
   position {
@@ -5200,8 +4267,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 23.0
-    y: 18.0
+    x: 200.0
+    y: 6.0
     z: 0.0
     w: 1.0
   }
@@ -5213,62 +4280,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "euler/scroll_btn"
-  id: "text/scroll_view/horizontal/right/image"
-  xanchor: XANCHOR_NONE
-  yanchor: YANCHOR_NONE
-  pivot: PIVOT_E
-  adjust_mode: ADJUST_MODE_FIT
-  parent: "text/scroll_view/horizontal/right"
-  layer: ""
-  inherit_alpha: true
-  slice9 {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 0.0
-  }
-  clipping_mode: CLIPPING_MODE_NONE
-  clipping_visible: true
-  clipping_inverted: false
-  alpha: 1.0
-  template_node_child: true
-  size_mode: SIZE_MODE_MANUAL
-}
-nodes {
-  position {
-    x: 16.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  size {
-    x: 168.0
-    y: 18.0
-    z: 0.0
-    w: 1.0
-  }
-  color {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  type: TYPE_BOX
-  blend_mode: BLEND_MODE_ALPHA
-  texture: "euler/scroll_bg"
+  texture: "euler/slider_back"
   id: "text/scroll_view/horizontal/scroll"
   xanchor: XANCHOR_LEFT
   yanchor: YANCHOR_NONE
@@ -5278,10 +4290,10 @@ nodes {
   layer: ""
   inherit_alpha: true
   slice9 {
-    x: 9.0
-    y: 7.0
-    z: 9.0
-    w: 7.0
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 0.0
   }
   clipping_mode: CLIPPING_MODE_NONE
   clipping_visible: true
@@ -5289,6 +4301,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -5310,8 +4323,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 33.0
-    y: 16.0
+    x: 28.0
+    y: 15.0
     z: 0.0
     w: 1.0
   }
@@ -5323,7 +4336,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "euler/scroll_bar"
+  texture: "euler/progress_bar"
   id: "text/scroll_view/horizontal/cursor"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -5333,17 +4346,18 @@ nodes {
   layer: ""
   inherit_alpha: true
   slice9 {
-    x: 8.0
-    y: 1.0
-    z: 8.0
-    w: 1.0
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 0.0
   }
   clipping_mode: CLIPPING_MODE_NONE
   clipping_visible: true
   clipping_inverted: false
   alpha: 1.0
   template_node_child: true
-  size_mode: SIZE_MODE_MANUAL
+  size_mode: SIZE_MODE_AUTO
+  custom_type: 0
 }
 nodes {
   position {
@@ -5384,6 +4398,7 @@ nodes {
   alpha: 1.0
   template: "/widget/scroll_bar.gui"
   template_node_child: true
+  custom_type: 0
 }
 nodes {
   position {
@@ -5418,7 +4433,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "euler/ground"
+  texture: "euler/alpha"
   id: "text/scroll_view/vertical/scroll_bar"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -5428,101 +4443,6 @@ nodes {
   layer: ""
   inherit_alpha: true
   slice9 {
-    x: 8.0
-    y: 5.0
-    z: 8.0
-    w: 5.0
-  }
-  clipping_mode: CLIPPING_MODE_NONE
-  clipping_visible: true
-  clipping_inverted: false
-  alpha: 1.0
-  template_node_child: true
-  size_mode: SIZE_MODE_MANUAL
-}
-nodes {
-  position {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  size {
-    x: 200.0
-    y: 100.0
-    z: 0.0
-    w: 1.0
-  }
-  color {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  type: TYPE_TEMPLATE
-  id: "text/scroll_view/vertical/left"
-  parent: "text/scroll_view/vertical/scroll_bar"
-  layer: ""
-  inherit_alpha: true
-  alpha: 1.0
-  template: "/widget/image.gui"
-  template_node_child: true
-}
-nodes {
-  position {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale {
-    x: -1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  size {
-    x: 23.0
-    y: 18.0
-    z: 0.0
-    w: 1.0
-  }
-  color {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  type: TYPE_BOX
-  blend_mode: BLEND_MODE_ALPHA
-  texture: "euler/scroll_btn"
-  id: "text/scroll_view/vertical/left/image"
-  xanchor: XANCHOR_NONE
-  yanchor: YANCHOR_NONE
-  pivot: PIVOT_E
-  adjust_mode: ADJUST_MODE_FIT
-  parent: "text/scroll_view/vertical/left"
-  layer: ""
-  inherit_alpha: true
-  slice9 {
     x: 0.0
     y: 0.0
     z: 0.0
@@ -5534,46 +4454,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
-}
-nodes {
-  position {
-    x: 200.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  size {
-    x: 200.0
-    y: 100.0
-    z: 0.0
-    w: 1.0
-  }
-  color {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  type: TYPE_TEMPLATE
-  id: "text/scroll_view/vertical/right"
-  parent: "text/scroll_view/vertical/scroll_bar"
-  layer: ""
-  inherit_alpha: true
-  alpha: 1.0
-  template: "/widget/image.gui"
-  template_node_child: true
+  custom_type: 0
 }
 nodes {
   position {
@@ -5595,8 +4476,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 23.0
-    y: 18.0
+    x: 200.0
+    y: 6.0
     z: 0.0
     w: 1.0
   }
@@ -5608,62 +4489,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "euler/scroll_btn"
-  id: "text/scroll_view/vertical/right/image"
-  xanchor: XANCHOR_NONE
-  yanchor: YANCHOR_NONE
-  pivot: PIVOT_E
-  adjust_mode: ADJUST_MODE_FIT
-  parent: "text/scroll_view/vertical/right"
-  layer: ""
-  inherit_alpha: true
-  slice9 {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 0.0
-  }
-  clipping_mode: CLIPPING_MODE_NONE
-  clipping_visible: true
-  clipping_inverted: false
-  alpha: 1.0
-  template_node_child: true
-  size_mode: SIZE_MODE_MANUAL
-}
-nodes {
-  position {
-    x: 16.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  size {
-    x: 168.0
-    y: 18.0
-    z: 0.0
-    w: 1.0
-  }
-  color {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  type: TYPE_BOX
-  blend_mode: BLEND_MODE_ALPHA
-  texture: "euler/scroll_bg"
+  texture: "euler/slider_back"
   id: "text/scroll_view/vertical/scroll"
   xanchor: XANCHOR_LEFT
   yanchor: YANCHOR_NONE
@@ -5673,10 +4499,10 @@ nodes {
   layer: ""
   inherit_alpha: true
   slice9 {
-    x: 9.0
-    y: 7.0
-    z: 9.0
-    w: 7.0
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 0.0
   }
   clipping_mode: CLIPPING_MODE_NONE
   clipping_visible: true
@@ -5684,6 +4510,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -5705,8 +4532,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 33.0
-    y: 16.0
+    x: 28.0
+    y: 15.0
     z: 0.0
     w: 1.0
   }
@@ -5718,7 +4545,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "euler/scroll_bar"
+  texture: "euler/progress_bar"
   id: "text/scroll_view/vertical/cursor"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -5728,17 +4555,18 @@ nodes {
   layer: ""
   inherit_alpha: true
   slice9 {
-    x: 8.0
-    y: 1.0
-    z: 8.0
-    w: 1.0
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 0.0
   }
   clipping_mode: CLIPPING_MODE_NONE
   clipping_visible: true
   clipping_inverted: false
   alpha: 1.0
   template_node_child: true
-  size_mode: SIZE_MODE_MANUAL
+  size_mode: SIZE_MODE_AUTO
+  custom_type: 0
 }
 nodes {
   position {
@@ -5794,6 +4622,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -5869,6 +4698,7 @@ nodes {
   template_node_child: true
   text_leading: 1.0
   text_tracking: 0.0
+  custom_type: 0
 }
 nodes {
   position {
@@ -5908,6 +4738,7 @@ nodes {
   alpha: 1.0
   template: "/widget/button.gui"
   template_node_child: false
+  custom_type: 0
 }
 nodes {
   position {
@@ -5963,6 +4794,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -5997,7 +4829,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/button"
+  texture: "button/button_blue"
   id: "button_toggle_euler/disabled"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -6018,6 +4850,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -6052,7 +4885,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/button"
+  texture: "button/button_yellow"
   id: "button_toggle_euler/pressed"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -6073,6 +4906,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -6107,7 +4941,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/button"
+  texture: "button/button_yellow"
   id: "button_toggle_euler/hovered"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -6128,6 +4962,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -6162,7 +4997,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/button"
+  texture: "button/button_blue"
   id: "button_toggle_euler/normal"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -6183,6 +5018,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -6217,7 +5053,7 @@ nodes {
   }
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
-  text: "Hide Euler"
+  text: "Euler UI"
   font: "shsms-24"
   id: "button_toggle_euler/label"
   xanchor: XANCHOR_NONE
@@ -6243,10 +5079,10 @@ nodes {
   alpha: 1.0
   outline_alpha: 1.0
   shadow_alpha: 1.0
-  overridden_fields: 8
   template_node_child: true
   text_leading: 1.0
   text_tracking: 0.0
+  custom_type: 0
 }
 nodes {
   position {
@@ -6286,6 +5122,7 @@ nodes {
   alpha: 1.0
   template: "/widget/button.gui"
   template_node_child: false
+  custom_type: 0
 }
 nodes {
   position {
@@ -6341,6 +5178,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -6375,7 +5213,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/button"
+  texture: "button/button_blue"
   id: "button_euler/disabled"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -6396,6 +5234,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -6430,7 +5269,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/button"
+  texture: "button/button_yellow"
   id: "button_euler/pressed"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -6451,6 +5290,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -6485,7 +5325,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/button"
+  texture: "button/button_yellow"
   id: "button_euler/hovered"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -6506,6 +5346,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -6540,7 +5381,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/button"
+  texture: "button/button_blue"
   id: "button_euler/normal"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -6561,6 +5402,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -6624,6 +5466,7 @@ nodes {
   template_node_child: true
   text_leading: 1.0
   text_tracking: 0.0
+  custom_type: 0
 }
 nodes {
   position {
@@ -6663,6 +5506,7 @@ nodes {
   alpha: 1.0
   template: "/widget/image.gui"
   template_node_child: false
+  custom_type: 0
 }
 nodes {
   position {
@@ -6720,6 +5564,7 @@ nodes {
   overridden_fields: 9
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -6754,7 +5599,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "euler/editbox"
+  texture: "euler/back_blue"
   id: "box"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -6774,6 +5619,7 @@ nodes {
   alpha: 1.0
   template_node_child: false
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -6828,6 +5674,7 @@ nodes {
   alpha: 1.0
   template_node_child: false
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -6883,6 +5730,7 @@ nodes {
   alpha: 0.0
   template_node_child: false
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -6923,6 +5771,7 @@ nodes {
   alpha: 1.0
   template: "/widget/button.gui"
   template_node_child: false
+  custom_type: 0
 }
 nodes {
   position {
@@ -6978,6 +5827,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -7012,7 +5862,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/button"
+  texture: "button/button_blue"
   id: "scrollarea_button/disabled"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -7033,6 +5883,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -7067,7 +5918,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/button"
+  texture: "button/button_yellow"
   id: "scrollarea_button/pressed"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -7088,6 +5939,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -7122,7 +5974,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/button"
+  texture: "button/button_yellow"
   id: "scrollarea_button/hovered"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -7143,6 +5995,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -7177,7 +6030,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/button"
+  texture: "button/button_blue"
   id: "scrollarea_button/normal"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -7198,6 +6051,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -7261,6 +6115,7 @@ nodes {
   template_node_child: true
   text_leading: 1.0
   text_tracking: 0.0
+  custom_type: 0
 }
 nodes {
   position {
@@ -7301,6 +6156,7 @@ nodes {
   alpha: 1.0
   template: "/widget/button.gui"
   template_node_child: false
+  custom_type: 0
 }
 nodes {
   position {
@@ -7356,6 +6212,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -7390,7 +6247,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/button"
+  texture: "button/button_blue"
   id: "scrollarea_button1/disabled"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -7411,6 +6268,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -7445,7 +6303,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/button"
+  texture: "button/button_yellow"
   id: "scrollarea_button1/pressed"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -7466,6 +6324,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -7500,7 +6359,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/button"
+  texture: "button/button_yellow"
   id: "scrollarea_button1/hovered"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -7521,6 +6380,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -7555,7 +6415,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/button"
+  texture: "button/button_blue"
   id: "scrollarea_button1/normal"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -7576,6 +6436,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -7639,6 +6500,7 @@ nodes {
   template_node_child: true
   text_leading: 1.0
   text_tracking: 0.0
+  custom_type: 0
 }
 nodes {
   position {
@@ -7679,6 +6541,7 @@ nodes {
   alpha: 1.0
   template: "/widget/button.gui"
   template_node_child: false
+  custom_type: 0
 }
 nodes {
   position {
@@ -7734,6 +6597,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -7768,7 +6632,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/button"
+  texture: "button/button_blue"
   id: "scrollarea_button2/disabled"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -7789,6 +6653,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -7823,7 +6688,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/button"
+  texture: "button/button_yellow"
   id: "scrollarea_button2/pressed"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -7844,6 +6709,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -7878,7 +6744,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/button"
+  texture: "button/button_yellow"
   id: "scrollarea_button2/hovered"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -7899,6 +6765,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -7933,7 +6800,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/button"
+  texture: "button/button_blue"
   id: "scrollarea_button2/normal"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -7954,6 +6821,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -8017,6 +6885,7 @@ nodes {
   template_node_child: true
   text_leading: 1.0
   text_tracking: 0.0
+  custom_type: 0
 }
 nodes {
   position {
@@ -8057,6 +6926,7 @@ nodes {
   alpha: 1.0
   template: "/widget/button.gui"
   template_node_child: false
+  custom_type: 0
 }
 nodes {
   position {
@@ -8112,6 +6982,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -8146,7 +7017,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/button"
+  texture: "button/button_blue"
   id: "scrollarea_button3/disabled"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -8167,6 +7038,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -8201,7 +7073,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/button"
+  texture: "button/button_yellow"
   id: "scrollarea_button3/pressed"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -8222,6 +7094,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -8256,7 +7129,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/button"
+  texture: "button/button_yellow"
   id: "scrollarea_button3/hovered"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -8277,6 +7150,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -8311,7 +7185,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/button"
+  texture: "button/button_blue"
   id: "scrollarea_button3/normal"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -8332,6 +7206,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -8395,6 +7270,7 @@ nodes {
   template_node_child: true
   text_leading: 1.0
   text_tracking: 0.0
+  custom_type: 0
 }
 nodes {
   position {
@@ -8435,6 +7311,7 @@ nodes {
   alpha: 1.0
   template: "/widget/button.gui"
   template_node_child: false
+  custom_type: 0
 }
 nodes {
   position {
@@ -8490,6 +7367,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -8524,7 +7402,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/button"
+  texture: "button/button_blue"
   id: "scrollarea_button4/disabled"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -8545,6 +7423,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -8579,7 +7458,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/button"
+  texture: "button/button_yellow"
   id: "scrollarea_button4/pressed"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -8600,6 +7479,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -8634,7 +7514,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/button"
+  texture: "button/button_yellow"
   id: "scrollarea_button4/hovered"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -8655,6 +7535,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -8689,7 +7570,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/button"
+  texture: "button/button_blue"
   id: "scrollarea_button4/normal"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -8710,6 +7591,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -8773,6 +7655,7 @@ nodes {
   template_node_child: true
   text_leading: 1.0
   text_tracking: 0.0
+  custom_type: 0
 }
 nodes {
   position {
@@ -8813,6 +7696,7 @@ nodes {
   alpha: 1.0
   template: "/widget/button.gui"
   template_node_child: false
+  custom_type: 0
 }
 nodes {
   position {
@@ -8868,6 +7752,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -8902,7 +7787,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/button"
+  texture: "button/button_blue"
   id: "scrollarea_button5/disabled"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -8923,6 +7808,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -8957,7 +7843,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/button"
+  texture: "button/button_yellow"
   id: "scrollarea_button5/pressed"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -8978,6 +7864,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -9012,7 +7899,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/button"
+  texture: "button/button_yellow"
   id: "scrollarea_button5/hovered"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -9033,6 +7920,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -9067,7 +7955,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/button"
+  texture: "button/button_blue"
   id: "scrollarea_button5/normal"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -9088,6 +7976,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -9151,6 +8040,7 @@ nodes {
   template_node_child: true
   text_leading: 1.0
   text_tracking: 0.0
+  custom_type: 0
 }
 nodes {
   position {
@@ -9191,6 +8081,7 @@ nodes {
   alpha: 1.0
   template: "/widget/button.gui"
   template_node_child: false
+  custom_type: 0
 }
 nodes {
   position {
@@ -9246,6 +8137,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -9280,7 +8172,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/button"
+  texture: "button/button_blue"
   id: "scrollarea_button6/disabled"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -9301,6 +8193,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -9335,7 +8228,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/button"
+  texture: "button/button_yellow"
   id: "scrollarea_button6/pressed"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -9356,6 +8249,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -9390,7 +8284,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/button"
+  texture: "button/button_yellow"
   id: "scrollarea_button6/hovered"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -9411,6 +8305,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -9445,7 +8340,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/button"
+  texture: "button/button_blue"
   id: "scrollarea_button6/normal"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -9466,6 +8361,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -9529,6 +8425,7 @@ nodes {
   template_node_child: true
   text_leading: 1.0
   text_tracking: 0.0
+  custom_type: 0
 }
 nodes {
   position {
@@ -9569,6 +8466,7 @@ nodes {
   alpha: 1.0
   template: "/widget/button.gui"
   template_node_child: false
+  custom_type: 0
 }
 nodes {
   position {
@@ -9624,6 +8522,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -9658,7 +8557,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/button"
+  texture: "button/button_blue"
   id: "scrollarea_button7/disabled"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -9679,6 +8578,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -9713,7 +8613,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/button"
+  texture: "button/button_yellow"
   id: "scrollarea_button7/pressed"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -9734,6 +8634,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -9768,7 +8669,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/button"
+  texture: "button/button_yellow"
   id: "scrollarea_button7/hovered"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -9789,6 +8690,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -9823,7 +8725,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/button"
+  texture: "button/button_blue"
   id: "scrollarea_button7/normal"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -9844,6 +8746,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -9907,6 +8810,7 @@ nodes {
   template_node_child: true
   text_leading: 1.0
   text_tracking: 0.0
+  custom_type: 0
 }
 nodes {
   position {
@@ -9947,6 +8851,7 @@ nodes {
   alpha: 1.0
   template: "/widget/button.gui"
   template_node_child: false
+  custom_type: 0
 }
 nodes {
   position {
@@ -10002,6 +8907,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -10036,7 +8942,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/button"
+  texture: "button/button_blue"
   id: "scrollarea_button8/disabled"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -10057,6 +8963,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -10091,7 +8998,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/button"
+  texture: "button/button_yellow"
   id: "scrollarea_button8/pressed"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -10112,6 +9019,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -10146,7 +9054,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/button"
+  texture: "button/button_yellow"
   id: "scrollarea_button8/hovered"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -10167,6 +9075,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -10201,7 +9110,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/button"
+  texture: "button/button_blue"
   id: "scrollarea_button8/normal"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -10222,6 +9131,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -10285,6 +9195,7 @@ nodes {
   template_node_child: true
   text_leading: 1.0
   text_tracking: 0.0
+  custom_type: 0
 }
 nodes {
   position {
@@ -10325,6 +9236,7 @@ nodes {
   alpha: 1.0
   template: "/widget/button.gui"
   template_node_child: false
+  custom_type: 0
 }
 nodes {
   position {
@@ -10380,6 +9292,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -10414,7 +9327,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/button"
+  texture: "button/button_blue"
   id: "scrollarea_button9/disabled"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -10435,6 +9348,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -10469,7 +9383,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/button"
+  texture: "button/button_yellow"
   id: "scrollarea_button9/pressed"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -10490,6 +9404,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -10524,7 +9439,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/button"
+  texture: "button/button_yellow"
   id: "scrollarea_button9/hovered"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -10545,6 +9460,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -10579,7 +9495,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/button"
+  texture: "button/button_blue"
   id: "scrollarea_button9/normal"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -10600,6 +9516,7 @@ nodes {
   alpha: 1.0
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 nodes {
   position {
@@ -10663,6 +9580,7 @@ nodes {
   template_node_child: true
   text_leading: 1.0
   text_tracking: 0.0
+  custom_type: 0
 }
 nodes {
   position {
@@ -10718,6 +9636,7 @@ nodes {
   alpha: 1.0
   template_node_child: false
   size_mode: SIZE_MODE_MANUAL
+  custom_type: 0
 }
 material: "/widget/euler.material"
 adjust_reference: ADJUST_REFERENCE_PARENT

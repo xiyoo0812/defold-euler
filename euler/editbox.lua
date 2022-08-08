@@ -21,7 +21,6 @@ function Editbox:__init(id, text)
 	self.text_capture = true
 	self.move_capture = true
 	self.repeated_capture = true
-	self.inner = gui.get_node(id .. "/inner")
 	self.root = gui.get_node(id .. "/editbox")
 	self.label = gui.get_node(id .. "/content")
 	self.capture = gui.get_node(id .. "/editbox")
@@ -30,10 +29,7 @@ end
 
 function Editbox:setup(euler)
 	local size = gui.get_size(self.root)
-	size.x = size.x - 8
-	size.y = size.y - 6
-	gui.set_size(self.inner, size)
-	size.x = size.x - 2
+	size.x = size.x - 4
 	gui.set_size(self.label, size)
 	self:update_text()
 end

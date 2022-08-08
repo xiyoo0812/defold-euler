@@ -23,16 +23,6 @@ function ScrollBar:__init(id, percent)
 end
 
 function ScrollBar:setup(euler)
-	self.left = euler:init_image(self.id .. "/left")
-	self.right = euler:init_image(self.id .. "/right")
-	self.left:set_repeated_capture(true)
-	self.left:register_click(function()
-		self:scroll_step(-1 * self.step)
-	end)
-	self.right:set_repeated_capture(true)
-	self.right:register_click(function()
-		self:scroll_step(self.step)
-	end)
 	local rotation = gui.get_rotation(self.root)
 	if rotation.z == 90 or rotation.z == -90 then
 		self.vertical = true
@@ -40,34 +30,16 @@ function ScrollBar:setup(euler)
 	--更新子控件的尺寸
 	local size = gui.get_size(self.root)
 	local csize = gui.get_size(self.capture)
-	local rpos = self.right:get_position()
-	rpos.x = size.x
-	csize.x = size.x - 32
+	csize.x = size.x - 6
 	gui.set_size(self.capture, csize)
-	self.right:set_position(rpos)
-	--更新cursor的尺寸
-	self:update_cursor()
 end
 
 function ScrollBar:on_prop_changed(value, name)
-	if name ~= "percent" then
-		return self:update_cursor()
-	end
 	self.percent = utils.clamp(self.percent, 0, 100)
 	self:update_progress()
 	if self.on_changed then
 		self.on_changed(self, self.percent)
 	end
-end
-
-function ScrollBar:update_cursor()
-	if self.page_size >= self.contont_size then
-		self.page_size = self.contont_size - 1
-	end
-	local size = gui.get_size(self.capture)
-	local cur_size = gui.get_size(self.cursor)
-	cur_size.x = size.x * (self.page_size / self.contont_size)
-	gui.set_size(self.cursor, cur_size)
 end
 
 function ScrollBar:update_progress()

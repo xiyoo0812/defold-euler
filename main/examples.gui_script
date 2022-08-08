@@ -97,7 +97,7 @@ function init(self)
     self.button_toggle_euler:register_click(function(btn)
         local enabled = not gui.is_enabled(gui.get_node("euler_root"))
         gui.set_enabled(gui.get_node("euler_root"), enabled)
-        btn:set_text(enabled and "Hide Euler" or "Show Euler")
+        btn:set_label(enabled and "Hide Euler" or "Show Euler")
     end)
 
     self.button_euler = euler:init_button("button_euler")
