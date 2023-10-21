@@ -15,7 +15,7 @@ prop:accessor("numbered", false)
 prop:accessor("length", false)
 prop:accessor("text", "", true)
 prop:accessor("cursor", 1, true)
-prop:accessor("placeholder", "Empty", true)
+prop:accessor("placeholder", "empty", true)
 
 function Editbox:__init(id, text)
 	self.text_capture = true
@@ -31,6 +31,7 @@ function Editbox:setup(euler)
 	local size = gui.get_size(self.root)
 	size.x = size.x - 4
 	gui.set_size(self.label, size)
+	self.text_color = gui.get_color(self.label)
 	self:update_text()
 end
 
@@ -52,7 +53,7 @@ function Editbox:update_text()
 	if self.password then
 		text = string.gsub(text, "(.)", "*")
 	end
-	gui.set_color(self.label, vmath.vector4(1,1,1,1))
+	gui.set_color(self.label, self.text_color)
 	local input = (self.focus and self.show_cursor) and "|" or " "
 	local new_text = utf8.insert(text, self.cursor, input)
 	self:set_label(new_text)
@@ -125,19 +126,19 @@ function Editbox:on_char(action)
 	if self.numbered then
 		local byte = utf8.byte(text)
 		if byte < 48 or byte > 57 then
-			return
-		end 
+			return false
+		end
 	end
 	if self.password then
 		local byte = utf8.byte(text)
 		if byte < 33 or byte > 127 then
-			return
-		end 
+			return false
+		end
 	end
 	self.text = utf8.insert(self.text, self.cursor, text)
 	self.cursor = self.cursor + utf8.len(text)
 	self:update_text()
-	return true
+	return false
 end
 
 return Editbox
