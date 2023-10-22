@@ -1,103 +1,105 @@
 images {
-  image: "/widget/atles/back_blue.png"
+  image: "/euler/widget/atles/back_blue.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
-  image: "/widget/atles/back_gray.png"
+  image: "/euler/widget/atles/back_gray.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
-  image: "/widget/atles/back_green.png"
+  image: "/euler/widget/atles/back_green.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
-  image: "/widget/atles/back_red.png"
+  image: "/euler/widget/atles/back_red.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
-  image: "/widget/atles/button_blue.png"
+  image: "/euler/widget/atles/button_blue.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
-  image: "/widget/atles/button_green.png"
+  image: "/euler/widget/atles/button_green.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
-  image: "/widget/atles/button_red.png"
+  image: "/euler/widget/atles/button_red.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
-  image: "/widget/atles/button_yellow.png"
+  image: "/euler/widget/atles/button_yellow.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
-  image: "/widget/atles/check_back_circle.png"
+  image: "/euler/widget/atles/check_back_circle.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
-  image: "/widget/atles/check_back_square.png"
+  image: "/euler/widget/atles/check_back_square.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
-  image: "/widget/atles/checkmark.png"
+  image: "/euler/widget/atles/checkmark.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
-  image: "/widget/atles/progress_back.png"
+  image: "/euler/widget/atles/progress_back.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
-  image: "/widget/atles/progress_fill_green.png"
+  image: "/euler/widget/atles/progress_fill_green.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
-  image: "/widget/atles/progress_fill_red.png"
+  image: "/euler/widget/atles/progress_fill_red.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
-  image: "/widget/atles/progress_fill_yellow.png"
+  image: "/euler/widget/atles/progress_fill_yellow.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
-  image: "/widget/atles/slider_move.png"
+  image: "/euler/widget/atles/slider_move.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
-  image: "/widget/atles/switch_b_off.png"
+  image: "/euler/widget/atles/switch_b_off.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
-  image: "/widget/atles/switch_b_on.png"
+  image: "/euler/widget/atles/switch_b_on.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
-  image: "/widget/atles/switch_y_off.png"
+  image: "/euler/widget/atles/switch_y_off.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
-  image: "/widget/atles/switch_y_on.png"
+  image: "/euler/widget/atles/switch_y_on.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
-  image: "/widget/atles/slider_back.png"
+  image: "/euler/widget/atles/slider_back.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
-  image: "/widget/atles/alpha.png"
+  image: "/euler/widget/atles/alpha.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
-  image: "/widget/atles/tick.png"
+  image: "/euler/widget/atles/tick.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
-  image: "/widget/atles/progress_bar.png"
+  image: "/euler/widget/atles/progress_bar.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
-  image: "/widget/atles/reddot.png"
+  image: "/euler/widget/atles/reddot.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 margin: 0
 extrude_borders: 8
 inner_padding: 0
+max_page_width: 0
+max_page_height: 0

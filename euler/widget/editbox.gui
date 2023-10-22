@@ -1,11 +1,11 @@
 script: ""
 fonts {
   name: "shsms-24"
-  font: "/widget/fonts/shsms-24.font"
+  font: "/euler/widget/fonts/shsms-24.font"
 }
 textures {
-  name: "button"
-  texture: "/widget/euler.atlas"
+  name: "euler"
+  texture: "/euler/widget/euler.atlas"
 }
 background_color {
   x: 0.0
@@ -34,7 +34,7 @@ nodes {
   }
   size {
     x: 200.0
-    y: 60.0
+    y: 40.0
     z: 0.0
     w: 1.0
   }
@@ -46,19 +46,19 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "button/button_blue"
-  id: "button"
+  texture: "euler/back_gray"
+  id: "editbox"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
-  pivot: PIVOT_CENTER
+  pivot: PIVOT_W
   adjust_mode: ADJUST_MODE_FIT
   layer: ""
   inherit_alpha: true
   slice9 {
-    x: 10.0
-    y: 10.0
-    z: 10.0
-    w: 10.0
+    x: 8.0
+    y: 8.0
+    z: 8.0
+    w: 8.0
   }
   clipping_mode: CLIPPING_MODE_NONE
   clipping_visible: true
@@ -67,11 +67,14 @@ nodes {
   template_node_child: false
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
-    x: 0.0
-    y: 0.0
+    x: 5.0
+    y: 1.0
     z: 0.0
     w: 1.0
   }
@@ -88,8 +91,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 100.0
-    y: 40.0
+    x: 190.0
+    y: 32.0
     z: 0.0
     w: 1.0
   }
@@ -101,16 +104,16 @@ nodes {
   }
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
-  text: "Euler UI"
+  text: "Empty"
   font: "shsms-24"
-  id: "label"
+  id: "content"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
-  pivot: PIVOT_CENTER
+  pivot: PIVOT_W
   outline {
-    x: 0.0
-    y: 0.0
-    z: 0.0
+    x: 1.0
+    y: 1.0
+    z: 1.0
     w: 1.0
   }
   shadow {
@@ -121,9 +124,9 @@ nodes {
   }
   adjust_mode: ADJUST_MODE_FIT
   line_break: false
-  parent: "button"
+  parent: "editbox"
   layer: ""
-  inherit_alpha: true
+  inherit_alpha: false
   alpha: 1.0
   outline_alpha: 1.0
   shadow_alpha: 1.0
@@ -131,7 +134,10 @@ nodes {
   text_leading: 1.0
   text_tracking: 0.0
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 material: "/builtins/materials/gui.material"
-adjust_reference: ADJUST_REFERENCE_DISABLED
+adjust_reference: ADJUST_REFERENCE_PARENT
 max_nodes: 512

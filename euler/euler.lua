@@ -1,9 +1,6 @@
 --euler.lua
 
-require("euler.luaoop.enum")
-require("euler.luaoop.class")
-require("euler.luaoop.mixin")
-require("euler.luaoop.property")
+require("luaoop.init")
 
 --euler utils
 require("euler.const")

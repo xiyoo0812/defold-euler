@@ -1,11 +1,11 @@
 script: ""
 fonts {
   name: "shsms-24"
-  font: "/widget/fonts/shsms-24.font"
+  font: "/euler/widget/fonts/shsms-24.font"
 }
 textures {
   name: "euler"
-  texture: "/widget/euler.atlas"
+  texture: "/euler/widget/euler.atlas"
 }
 background_color {
   x: 0.0
@@ -67,6 +67,9 @@ nodes {
   template_node_child: false
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -105,9 +108,10 @@ nodes {
   layer: ""
   inherit_alpha: true
   alpha: 1.0
-  template: "/widget/scroll_view.gui"
+  template: "/euler/widget/scroll_view.gui"
   template_node_child: false
   custom_type: 0
+  enabled: true
 }
 nodes {
   position {
@@ -164,6 +168,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -202,9 +209,10 @@ nodes {
   layer: ""
   inherit_alpha: true
   alpha: 1.0
-  template: "/widget/scroll_bar.gui"
+  template: "/euler/widget/scroll_bar.gui"
   template_node_child: true
   custom_type: 0
+  enabled: true
 }
 nodes {
   position {
@@ -261,6 +269,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -317,6 +328,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -338,8 +352,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 28.0
-    y: 15.0
+    x: 200.0
+    y: 100.0
     z: 0.0
     w: 1.0
   }
@@ -373,6 +387,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_AUTO
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -411,9 +428,10 @@ nodes {
   layer: ""
   inherit_alpha: true
   alpha: 1.0
-  template: "/widget/scroll_bar.gui"
+  template: "/euler/widget/scroll_bar.gui"
   template_node_child: true
   custom_type: 0
+  enabled: true
 }
 nodes {
   position {
@@ -470,6 +488,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -526,6 +547,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -547,8 +571,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 28.0
-    y: 15.0
+    x: 200.0
+    y: 100.0
     z: 0.0
     w: 1.0
   }
@@ -582,6 +606,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_AUTO
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -638,6 +665,9 @@ nodes {
   template_node_child: false
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -714,6 +744,9 @@ nodes {
   text_leading: 1.0
   text_tracking: 0.0
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 material: "/builtins/materials/gui.material"
 adjust_reference: ADJUST_REFERENCE_PARENT

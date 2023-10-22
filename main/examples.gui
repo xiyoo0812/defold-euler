@@ -1,11 +1,11 @@
 script: "/main/examples.gui_script"
 fonts {
   name: "eulerfont"
-  font: "/widget/fonts/shsms-24.font"
+  font: "/euler/widget/fonts/shsms-24.font"
 }
 textures {
   name: "euler"
-  texture: "/widget/euler.atlas"
+  texture: "/euler/widget/euler.atlas"
 }
 textures {
   name: "examples"
@@ -71,6 +71,9 @@ nodes {
   template_node_child: false
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -126,6 +129,9 @@ nodes {
   template_node_child: false
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -164,9 +170,10 @@ nodes {
   layer: ""
   inherit_alpha: true
   alpha: 1.0
-  template: "/widget/editbox.gui"
+  template: "/euler/widget/editbox.gui"
   template_node_child: false
   custom_type: 0
+  enabled: true
 }
 nodes {
   position {
@@ -224,6 +231,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -288,6 +298,9 @@ nodes {
   text_leading: 1.0
   text_tracking: 0.0
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -326,9 +339,10 @@ nodes {
   layer: ""
   inherit_alpha: true
   alpha: 1.0
-  template: "/widget/editbox.gui"
+  template: "/euler/widget/editbox.gui"
   template_node_child: false
   custom_type: 0
+  enabled: true
 }
 nodes {
   position {
@@ -386,6 +400,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -450,6 +467,9 @@ nodes {
   text_leading: 1.0
   text_tracking: 0.0
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -488,9 +508,10 @@ nodes {
   layer: ""
   inherit_alpha: true
   alpha: 1.0
-  template: "/widget/editbox.gui"
+  template: "/euler/widget/editbox.gui"
   template_node_child: false
   custom_type: 0
+  enabled: true
 }
 nodes {
   position {
@@ -548,6 +569,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -612,6 +636,9 @@ nodes {
   text_leading: 1.0
   text_tracking: 0.0
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -650,9 +677,10 @@ nodes {
   layer: ""
   inherit_alpha: true
   alpha: 1.0
-  template: "/widget/editbox.gui"
+  template: "/euler/widget/editbox.gui"
   template_node_child: false
   custom_type: 0
+  enabled: true
 }
 nodes {
   position {
@@ -710,6 +738,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -774,6 +805,9 @@ nodes {
   text_leading: 1.0
   text_tracking: 0.0
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -812,9 +846,10 @@ nodes {
   layer: ""
   inherit_alpha: true
   alpha: 1.0
-  template: "/widget/button.gui"
+  template: "/euler/widget/button.gui"
   template_node_child: false
   custom_type: 0
+  enabled: true
 }
 nodes {
   position {
@@ -871,6 +906,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -927,6 +965,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -983,6 +1024,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -1039,6 +1083,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -1095,6 +1142,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -1159,6 +1209,9 @@ nodes {
   text_leading: 1.0
   text_tracking: 0.0
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -1197,9 +1250,10 @@ nodes {
   layer: ""
   inherit_alpha: true
   alpha: 1.0
-  template: "/widget/checkbox.gui"
+  template: "/euler/widget/checkbox.gui"
   template_node_child: false
   custom_type: 0
+  enabled: true
 }
 nodes {
   position {
@@ -1256,6 +1310,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -1277,8 +1334,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 21.0
-    y: 20.0
+    x: 200.0
+    y: 100.0
     z: 0.0
     w: 1.0
   }
@@ -1312,6 +1369,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_AUTO
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -1376,6 +1436,9 @@ nodes {
   text_leading: 1.0
   text_tracking: 0.0
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -1414,9 +1477,10 @@ nodes {
   layer: ""
   inherit_alpha: true
   alpha: 1.0
-  template: "/widget/checkbox.gui"
+  template: "/euler/widget/checkbox.gui"
   template_node_child: false
   custom_type: 0
+  enabled: true
 }
 nodes {
   position {
@@ -1473,6 +1537,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -1494,8 +1561,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 21.0
-    y: 20.0
+    x: 200.0
+    y: 100.0
     z: 0.0
     w: 1.0
   }
@@ -1529,6 +1596,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_AUTO
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -1593,6 +1663,9 @@ nodes {
   text_leading: 1.0
   text_tracking: 0.0
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -1631,9 +1704,10 @@ nodes {
   layer: ""
   inherit_alpha: true
   alpha: 1.0
-  template: "/widget/switch.gui"
+  template: "/euler/widget/switch.gui"
   template_node_child: false
   custom_type: 0
+  enabled: true
 }
 nodes {
   position {
@@ -1690,6 +1764,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -1711,8 +1788,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 84.0
-    y: 33.0
+    x: 200.0
+    y: 100.0
     z: 0.0
     w: 1.0
   }
@@ -1746,6 +1823,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_AUTO
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -1767,8 +1847,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 84.0
-    y: 33.0
+    x: 200.0
+    y: 100.0
     z: 0.0
     w: 1.0
   }
@@ -1802,6 +1882,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_AUTO
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -1866,6 +1949,9 @@ nodes {
   text_leading: 1.0
   text_tracking: 0.0
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -1904,9 +1990,10 @@ nodes {
   layer: ""
   inherit_alpha: true
   alpha: 1.0
-  template: "/widget/switch.gui"
+  template: "/euler/widget/switch.gui"
   template_node_child: false
   custom_type: 0
+  enabled: true
 }
 nodes {
   position {
@@ -1963,6 +2050,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -1984,8 +2074,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 84.0
-    y: 33.0
+    x: 200.0
+    y: 100.0
     z: 0.0
     w: 1.0
   }
@@ -2019,6 +2109,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_AUTO
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -2040,8 +2133,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 84.0
-    y: 33.0
+    x: 200.0
+    y: 100.0
     z: 0.0
     w: 1.0
   }
@@ -2075,6 +2168,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_AUTO
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -2139,6 +2235,9 @@ nodes {
   text_leading: 1.0
   text_tracking: 0.0
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -2177,9 +2276,10 @@ nodes {
   layer: ""
   inherit_alpha: true
   alpha: 1.0
-  template: "/widget/radio.gui"
+  template: "/euler/widget/radio.gui"
   template_node_child: false
   custom_type: 0
+  enabled: true
 }
 nodes {
   position {
@@ -2236,6 +2336,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -2257,8 +2360,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 17.0
-    y: 17.0
+    x: 200.0
+    y: 100.0
     z: 0.0
     w: 1.0
   }
@@ -2292,6 +2395,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_AUTO
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -2356,6 +2462,9 @@ nodes {
   text_leading: 1.0
   text_tracking: 0.0
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -2394,9 +2503,10 @@ nodes {
   layer: ""
   inherit_alpha: true
   alpha: 1.0
-  template: "/widget/radio.gui"
+  template: "/euler/widget/radio.gui"
   template_node_child: false
   custom_type: 0
+  enabled: true
 }
 nodes {
   position {
@@ -2453,6 +2563,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -2474,8 +2587,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 17.0
-    y: 17.0
+    x: 200.0
+    y: 100.0
     z: 0.0
     w: 1.0
   }
@@ -2509,6 +2622,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_AUTO
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -2573,6 +2689,9 @@ nodes {
   text_leading: 1.0
   text_tracking: 0.0
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -2611,9 +2730,10 @@ nodes {
   layer: ""
   inherit_alpha: true
   alpha: 1.0
-  template: "/widget/radio.gui"
+  template: "/euler/widget/radio.gui"
   template_node_child: false
   custom_type: 0
+  enabled: true
 }
 nodes {
   position {
@@ -2670,6 +2790,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -2691,8 +2814,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 17.0
-    y: 17.0
+    x: 200.0
+    y: 100.0
     z: 0.0
     w: 1.0
   }
@@ -2726,6 +2849,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_AUTO
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -2790,6 +2916,9 @@ nodes {
   text_leading: 1.0
   text_tracking: 0.0
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -2828,9 +2957,10 @@ nodes {
   layer: ""
   inherit_alpha: true
   alpha: 1.0
-  template: "/widget/slider.gui"
+  template: "/euler/widget/slider.gui"
   template_node_child: false
   custom_type: 0
+  enabled: true
 }
 nodes {
   position {
@@ -2887,6 +3017,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -2908,8 +3041,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 36.0
-    y: 36.0
+    x: 200.0
+    y: 100.0
     z: 0.0
     w: 1.0
   }
@@ -2943,6 +3076,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_AUTO
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -2981,9 +3117,10 @@ nodes {
   layer: ""
   inherit_alpha: true
   alpha: 1.0
-  template: "/widget/slider.gui"
+  template: "/euler/widget/slider.gui"
   template_node_child: false
   custom_type: 0
+  enabled: true
 }
 nodes {
   position {
@@ -3040,6 +3177,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -3061,8 +3201,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 36.0
-    y: 36.0
+    x: 200.0
+    y: 100.0
     z: 0.0
     w: 1.0
   }
@@ -3096,6 +3236,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_AUTO
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -3134,9 +3277,10 @@ nodes {
   layer: ""
   inherit_alpha: true
   alpha: 1.0
-  template: "/widget/progress.gui"
+  template: "/euler/widget/progress.gui"
   template_node_child: false
   custom_type: 0
+  enabled: true
 }
 nodes {
   position {
@@ -3194,6 +3338,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -3250,6 +3397,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -3315,6 +3465,9 @@ nodes {
   text_leading: 1.0
   text_tracking: 0.0
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -3353,9 +3506,10 @@ nodes {
   layer: ""
   inherit_alpha: true
   alpha: 1.0
-  template: "/widget/progress.gui"
+  template: "/euler/widget/progress.gui"
   template_node_child: false
   custom_type: 0
+  enabled: true
 }
 nodes {
   position {
@@ -3413,6 +3567,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -3469,6 +3626,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -3534,6 +3694,9 @@ nodes {
   text_leading: 1.0
   text_tracking: 0.0
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -3572,9 +3735,10 @@ nodes {
   layer: ""
   inherit_alpha: true
   alpha: 1.0
-  template: "/widget/scroll_bar.gui"
+  template: "/euler/widget/scroll_bar.gui"
   template_node_child: false
   custom_type: 0
+  enabled: true
 }
 nodes {
   position {
@@ -3632,6 +3796,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -3688,6 +3855,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -3709,8 +3879,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 28.0
-    y: 15.0
+    x: 200.0
+    y: 100.0
     z: 0.0
     w: 1.0
   }
@@ -3744,6 +3914,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_AUTO
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -3782,9 +3955,10 @@ nodes {
   layer: ""
   inherit_alpha: true
   alpha: 1.0
-  template: "/widget/scroll_bar.gui"
+  template: "/euler/widget/scroll_bar.gui"
   template_node_child: false
   custom_type: 0
+  enabled: true
 }
 nodes {
   position {
@@ -3842,6 +4016,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -3898,6 +4075,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -3919,8 +4099,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 28.0
-    y: 15.0
+    x: 200.0
+    y: 100.0
     z: 0.0
     w: 1.0
   }
@@ -3954,6 +4134,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_AUTO
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -3992,9 +4175,10 @@ nodes {
   layer: ""
   inherit_alpha: true
   alpha: 1.0
-  template: "/widget/text.gui"
+  template: "/euler/widget/text.gui"
   template_node_child: false
   custom_type: 0
+  enabled: true
 }
 nodes {
   position {
@@ -4052,6 +4236,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -4090,9 +4277,10 @@ nodes {
   layer: ""
   inherit_alpha: true
   alpha: 1.0
-  template: "/widget/scroll_view.gui"
+  template: "/euler/widget/scroll_view.gui"
   template_node_child: true
   custom_type: 0
+  enabled: true
 }
 nodes {
   position {
@@ -4149,6 +4337,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -4187,9 +4378,10 @@ nodes {
   layer: ""
   inherit_alpha: true
   alpha: 1.0
-  template: "/widget/scroll_bar.gui"
+  template: "/euler/widget/scroll_bar.gui"
   template_node_child: true
   custom_type: 0
+  enabled: true
 }
 nodes {
   position {
@@ -4246,6 +4438,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -4302,6 +4497,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -4323,8 +4521,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 28.0
-    y: 15.0
+    x: 200.0
+    y: 100.0
     z: 0.0
     w: 1.0
   }
@@ -4358,6 +4556,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_AUTO
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -4396,9 +4597,10 @@ nodes {
   layer: ""
   inherit_alpha: true
   alpha: 1.0
-  template: "/widget/scroll_bar.gui"
+  template: "/euler/widget/scroll_bar.gui"
   template_node_child: true
   custom_type: 0
+  enabled: true
 }
 nodes {
   position {
@@ -4455,6 +4657,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -4511,6 +4716,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -4532,8 +4740,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 28.0
-    y: 15.0
+    x: 200.0
+    y: 100.0
     z: 0.0
     w: 1.0
   }
@@ -4567,6 +4775,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_AUTO
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -4623,6 +4834,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -4699,6 +4913,9 @@ nodes {
   text_leading: 1.0
   text_tracking: 0.0
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -4736,9 +4953,10 @@ nodes {
   layer: ""
   inherit_alpha: true
   alpha: 1.0
-  template: "/widget/button.gui"
+  template: "/euler/widget/button.gui"
   template_node_child: false
   custom_type: 0
+  enabled: true
 }
 nodes {
   position {
@@ -4795,6 +5013,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -4851,6 +5072,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -4907,6 +5131,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -4963,6 +5190,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -5019,6 +5249,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -5083,6 +5316,9 @@ nodes {
   text_leading: 1.0
   text_tracking: 0.0
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -5120,9 +5356,10 @@ nodes {
   layer: ""
   inherit_alpha: true
   alpha: 1.0
-  template: "/widget/button.gui"
+  template: "/euler/widget/button.gui"
   template_node_child: false
   custom_type: 0
+  enabled: true
 }
 nodes {
   position {
@@ -5179,6 +5416,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -5235,6 +5475,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -5291,6 +5534,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -5347,6 +5593,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -5403,6 +5652,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -5467,6 +5719,9 @@ nodes {
   text_leading: 1.0
   text_tracking: 0.0
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -5504,9 +5759,10 @@ nodes {
   layer: ""
   inherit_alpha: true
   alpha: 1.0
-  template: "/widget/image.gui"
+  template: "/euler/widget/image.gui"
   template_node_child: false
   custom_type: 0
+  enabled: true
 }
 nodes {
   position {
@@ -5565,6 +5821,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -5620,6 +5879,9 @@ nodes {
   template_node_child: false
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -5675,6 +5937,9 @@ nodes {
   template_node_child: false
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -5731,6 +5996,9 @@ nodes {
   template_node_child: false
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -5769,9 +6037,10 @@ nodes {
   layer: ""
   inherit_alpha: false
   alpha: 1.0
-  template: "/widget/button.gui"
+  template: "/euler/widget/button.gui"
   template_node_child: false
   custom_type: 0
+  enabled: true
 }
 nodes {
   position {
@@ -5828,6 +6097,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -5884,6 +6156,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -5940,6 +6215,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -5996,6 +6274,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -6052,6 +6333,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -6116,6 +6400,9 @@ nodes {
   text_leading: 1.0
   text_tracking: 0.0
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -6154,9 +6441,10 @@ nodes {
   layer: ""
   inherit_alpha: false
   alpha: 1.0
-  template: "/widget/button.gui"
+  template: "/euler/widget/button.gui"
   template_node_child: false
   custom_type: 0
+  enabled: true
 }
 nodes {
   position {
@@ -6213,6 +6501,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -6269,6 +6560,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -6325,6 +6619,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -6381,6 +6678,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -6437,6 +6737,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -6501,6 +6804,9 @@ nodes {
   text_leading: 1.0
   text_tracking: 0.0
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -6539,9 +6845,10 @@ nodes {
   layer: ""
   inherit_alpha: false
   alpha: 1.0
-  template: "/widget/button.gui"
+  template: "/euler/widget/button.gui"
   template_node_child: false
   custom_type: 0
+  enabled: true
 }
 nodes {
   position {
@@ -6598,6 +6905,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -6654,6 +6964,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -6710,6 +7023,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -6766,6 +7082,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -6822,6 +7141,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -6886,6 +7208,9 @@ nodes {
   text_leading: 1.0
   text_tracking: 0.0
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -6924,9 +7249,10 @@ nodes {
   layer: ""
   inherit_alpha: false
   alpha: 1.0
-  template: "/widget/button.gui"
+  template: "/euler/widget/button.gui"
   template_node_child: false
   custom_type: 0
+  enabled: true
 }
 nodes {
   position {
@@ -6983,6 +7309,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -7039,6 +7368,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -7095,6 +7427,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -7151,6 +7486,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -7207,6 +7545,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -7271,6 +7612,9 @@ nodes {
   text_leading: 1.0
   text_tracking: 0.0
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -7309,9 +7653,10 @@ nodes {
   layer: ""
   inherit_alpha: false
   alpha: 1.0
-  template: "/widget/button.gui"
+  template: "/euler/widget/button.gui"
   template_node_child: false
   custom_type: 0
+  enabled: true
 }
 nodes {
   position {
@@ -7368,6 +7713,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -7424,6 +7772,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -7480,6 +7831,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -7536,6 +7890,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -7592,6 +7949,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -7656,6 +8016,9 @@ nodes {
   text_leading: 1.0
   text_tracking: 0.0
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -7694,9 +8057,10 @@ nodes {
   layer: ""
   inherit_alpha: false
   alpha: 1.0
-  template: "/widget/button.gui"
+  template: "/euler/widget/button.gui"
   template_node_child: false
   custom_type: 0
+  enabled: true
 }
 nodes {
   position {
@@ -7753,6 +8117,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -7809,6 +8176,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -7865,6 +8235,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -7921,6 +8294,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -7977,6 +8353,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -8041,6 +8420,9 @@ nodes {
   text_leading: 1.0
   text_tracking: 0.0
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -8079,9 +8461,10 @@ nodes {
   layer: ""
   inherit_alpha: false
   alpha: 1.0
-  template: "/widget/button.gui"
+  template: "/euler/widget/button.gui"
   template_node_child: false
   custom_type: 0
+  enabled: true
 }
 nodes {
   position {
@@ -8138,6 +8521,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -8194,6 +8580,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -8250,6 +8639,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -8306,6 +8698,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -8362,6 +8757,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -8426,6 +8824,9 @@ nodes {
   text_leading: 1.0
   text_tracking: 0.0
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -8464,9 +8865,10 @@ nodes {
   layer: ""
   inherit_alpha: false
   alpha: 1.0
-  template: "/widget/button.gui"
+  template: "/euler/widget/button.gui"
   template_node_child: false
   custom_type: 0
+  enabled: true
 }
 nodes {
   position {
@@ -8523,6 +8925,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -8579,6 +8984,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -8635,6 +9043,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -8691,6 +9102,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -8747,6 +9161,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -8811,6 +9228,9 @@ nodes {
   text_leading: 1.0
   text_tracking: 0.0
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -8849,9 +9269,10 @@ nodes {
   layer: ""
   inherit_alpha: false
   alpha: 1.0
-  template: "/widget/button.gui"
+  template: "/euler/widget/button.gui"
   template_node_child: false
   custom_type: 0
+  enabled: true
 }
 nodes {
   position {
@@ -8908,6 +9329,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -8964,6 +9388,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -9020,6 +9447,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -9076,6 +9506,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -9132,6 +9565,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -9196,6 +9632,9 @@ nodes {
   text_leading: 1.0
   text_tracking: 0.0
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -9234,9 +9673,10 @@ nodes {
   layer: ""
   inherit_alpha: false
   alpha: 1.0
-  template: "/widget/button.gui"
+  template: "/euler/widget/button.gui"
   template_node_child: false
   custom_type: 0
+  enabled: true
 }
 nodes {
   position {
@@ -9293,6 +9733,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -9349,6 +9792,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -9405,6 +9851,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -9461,6 +9910,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -9517,6 +9969,9 @@ nodes {
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -9581,6 +10036,9 @@ nodes {
   text_leading: 1.0
   text_tracking: 0.0
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
 nodes {
   position {
@@ -9637,7 +10095,10 @@ nodes {
   template_node_child: false
   size_mode: SIZE_MODE_MANUAL
   custom_type: 0
+  enabled: true
+  visible: true
+  material: ""
 }
-material: "/widget/euler.material"
+material: "/euler/widget/euler.material"
 adjust_reference: ADJUST_REFERENCE_PARENT
 max_nodes: 512

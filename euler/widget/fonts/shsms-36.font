@@ -1,6 +1,6 @@
-font: "/widget/fonts/SourceHanSansK-MediumSub.ttf"
+font: "/euler/widget/fonts/SourceHanSansK-MediumSub.ttf"
 material: "/builtins/fonts/font.material"
-size: 12
+size: 36
 antialias: 1
 alpha: 1.0
 outline_alpha: 0.0

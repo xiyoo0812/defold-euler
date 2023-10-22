@@ -1,7 +1,8 @@
 [project]
-title = euler
+title = defold-euler
 version = 1.0
 dependencies#0 = https://github.com/d954mas/defold-utf8/archive/master.zip
+dependencies#1 = https://github.com/xiyoo0812/defold-oop/archive/master.zip
 
 [bootstrap]
 main_collection = /main/main.collectionc
@@ -19,7 +20,7 @@ height = 720
 shared_state = 1
 
 [library]
-include_dirs = euler widget
+include_dirs = euler
 
 [ios]
 bundle_identifier = se.svenandersson.eulerui
