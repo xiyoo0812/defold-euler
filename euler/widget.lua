@@ -134,12 +134,13 @@ function Widget:on_input(action_id, action)
 				self.euler:set_focus(self)
 				return self:on_lbutton_down(action)
 			end
-			if action.released and self.focus then
-				return self:on_lbutton_up(action)
-			end
 			if action.repeated and self.repeated_capture then
 				return self:on_lbutton_repeated(action)
 			end
+		end
+		if action.released and self.focus then
+			self.euler:set_focus(nil)
+			self:on_lbutton_up(action)
 		end
 		return true
 	end

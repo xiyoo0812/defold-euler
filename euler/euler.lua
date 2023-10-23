@@ -100,11 +100,16 @@ function Euler:init_radio_group()
 end
 
 function Euler:set_focus(widget)
+    if self.focus == widget then
+        return
+    end
     if self.focus then
         self.focus:set_focus(false)
         self.focus:update(0)
     end
-    widget:set_focus(true)
+    if widget then
+        widget:set_focus(true)
+    end
     self.focus = widget
 end
 
