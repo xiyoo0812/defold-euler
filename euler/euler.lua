@@ -143,6 +143,9 @@ function Euler:on_input(action_id, action)
             return
         end
     end
+    if action_id == ActionID.TEXT then
+        return
+    end
     for _, widget in ipairs(self.widgets) do
         if widget ~= focus then
             if not widget:on_input(action_id, action) then

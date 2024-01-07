@@ -137,6 +137,10 @@ function Widget:on_input(action_id, action)
 			if action.repeated and self.repeated_capture then
 				return self:on_lbutton_repeated(action)
 			end
+			if action.released then
+				return self:on_lbutton_up(action)
+			end
+			return true
 		end
 		if action.released and self.focus then
 			self.euler:set_focus(nil)
