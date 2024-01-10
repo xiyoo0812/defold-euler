@@ -15,7 +15,7 @@ prop:accessor("numbered", false)
 prop:accessor("length", false)
 prop:accessor("text", "", true)
 prop:accessor("cursor", 1, true)
-prop:accessor("placeholder", "empty", true)
+prop:accessor("placeholder", "", true)
 
 function Editbox:__init(id, text)
 	self.text_capture = true

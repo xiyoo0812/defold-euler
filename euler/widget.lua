@@ -50,7 +50,7 @@ function Widget:set_image(name, image)
 end
 
 function Widget:is_enabled()
-	return gui.is_enabled(self.root)
+	return gui.is_enabled(self.root, true)
 end
 
 function Widget:set_enabled(enabled)
