@@ -1,7 +1,6 @@
 --examples.gui_script
-local Euler = require "euler.euler"
 
-local euler = Euler()
+local euler = require "euler.euler"
 
 function init(self)
     msg.post(".", "acquire_input_focus")

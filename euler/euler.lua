@@ -21,7 +21,7 @@ local RadioGroup  = require("euler.radio_group")
 local ImageButton = require("euler.image_button")
 local ProgressBar  = require("euler.progress_bar")
 
-local Euler = class()
+local Euler = singleton()
 local prop = property(Euler)
 prop:reader("frame", 0)
 prop:reader("focus", nil)
@@ -155,4 +155,6 @@ function Euler:on_input(action_id, action)
     end
 end
 
-return Euler
+_G.euler = Euler()
+
+return _G.euler
